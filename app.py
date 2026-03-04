@@ -940,8 +940,8 @@ This index draws on **6 data sources** providing **15 variables** across 3 layer
 |---|---|---|---|
 | [V-Dem v15](https://www.v-dem.net) | Animal rights index, rule of law, civic space, civil liberties, animal rights trend (5) | 1900–2023 | [Download](https://www.v-dem.net/data/the-v-dem-dataset/) |
 | [FAOSTAT](https://www.fao.org/faostat) | Farmed animals per capita, aquaculture %, meat consumption, plant protein ratio (4) | 2004–2022 | [Download](https://www.fao.org/faostat/en/#data/FBS) |
-| [Google Trends](https://trends.google.com) | Public concern for animal welfare (1) | 2004–2022 | [Explore](https://trends.google.com) |
-| [OpenAlex](https://openalex.org) | AI welfare research output, AI sentience research output (2) | 2004–2022 | [API](https://openalex.org) |
+| [Google Trends](https://trends.google.com) | Public concern for animal welfare (1) | 2004–2022 | [trends.google.com](https://trends.google.com) |
+| [OpenAlex](https://openalex.org) | AI welfare research output, AI sentience research output (2) | 2004–2022 | [openalex.org](https://openalex.org) |
 | [PATSTAT / LENS](https://www.lens.org) | Livestock AI patent intensity (1) | 2004–2022 | [Search](https://www.lens.org) |
 | AWPRI Database | AI governance framework adoption (1) | 2004–2022 | Compiled by authors |
 
