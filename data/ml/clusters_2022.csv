@@ -1,0 +1,26 @@
+country_iso2,cluster,risk_archetype,AWPRI_score,country_name
+AR,1,High Risk,0.5575,Argentina
+AU,0,Moderate Risk,0.3797,Australia
+BR,1,High Risk,0.5656,Brazil
+CA,0,Moderate Risk,0.3526,Canada
+CN,2,Critical Risk,0.8021,China
+DE,0,Moderate Risk,0.3532,Germany
+DK,0,Moderate Risk,0.4122,Denmark
+ES,0,Moderate Risk,0.4939,Spain
+FR,0,Moderate Risk,0.4036,France
+GB,0,Moderate Risk,0.3081,United Kingdom
+IN,1,High Risk,0.5117,India
+IT,0,Moderate Risk,0.4706,Italy
+JP,0,Moderate Risk,0.4418,Japan
+KE,1,High Risk,0.4181,Kenya
+KR,0,Moderate Risk,0.4508,South Korea
+MX,1,High Risk,0.5126,Mexico
+NG,1,High Risk,0.4195,Nigeria
+NL,0,Moderate Risk,0.3485,Netherlands
+NZ,0,Moderate Risk,0.488,New Zealand
+PL,1,High Risk,0.518,Poland
+SE,0,Moderate Risk,0.3449,Sweden
+TH,1,High Risk,0.586,Thailand
+US,0,Moderate Risk,0.3245,United States
+VN,1,High Risk,0.6119,Vietnam
+ZA,1,High Risk,0.4486,South Africa

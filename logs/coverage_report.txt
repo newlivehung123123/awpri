@@ -1,0 +1,2171 @@
+======================================================================
+LAYER 1 COLLECTION — 2026-03-03T18:36:59.611615
+======================================================================
+[API OK] World Bank population — 0 countries
+[FALLBACK] Population for AU — used hardcoded estimate
+[FALLBACK] Population for BR — used hardcoded estimate
+[FALLBACK] Population for CA — used hardcoded estimate
+[FALLBACK] Population for FR — used hardcoded estimate
+[FALLBACK] Population for DE — used hardcoded estimate
+[FALLBACK] Population for IN — used hardcoded estimate
+[FALLBACK] Population for IT — used hardcoded estimate
+[FALLBACK] Population for JP — used hardcoded estimate
+[FALLBACK] Population for NL — used hardcoded estimate
+[FALLBACK] Population for NZ — used hardcoded estimate
+[FALLBACK] Population for KR — used hardcoded estimate
+[FALLBACK] Population for ES — used hardcoded estimate
+[FALLBACK] Population for SE — used hardcoded estimate
+[FALLBACK] Population for GB — used hardcoded estimate
+[FALLBACK] Population for US — used hardcoded estimate
+[FALLBACK] Population for AR — used hardcoded estimate
+[FALLBACK] Population for CN — used hardcoded estimate
+[FALLBACK] Population for DK — used hardcoded estimate
+[FALLBACK] Population for KE — used hardcoded estimate
+[FALLBACK] Population for MX — used hardcoded estimate
+[FALLBACK] Population for NG — used hardcoded estimate
+[FALLBACK] Population for PL — used hardcoded estimate
+[FALLBACK] Population for ZA — used hardcoded estimate
+[FALLBACK] Population for TH — used hardcoded estimate
+[FALLBACK] Population for VN — used hardcoded estimate
+
+--- VAR_01 farmed_animals_slaughtered_per_capita ---
+[API FAIL attempt 1] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 2] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 3] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+  AU: MISSING — no FAOSTAT QCL data; set NaN
+  BR: MISSING — no FAOSTAT QCL data; set NaN
+  CA: MISSING — no FAOSTAT QCL data; set NaN
+  FR: MISSING — no FAOSTAT QCL data; set NaN
+  DE: MISSING — no FAOSTAT QCL data; set NaN
+  IN: MISSING — no FAOSTAT QCL data; set NaN
+  IT: MISSING — no FAOSTAT QCL data; set NaN
+  JP: MISSING — no FAOSTAT QCL data; set NaN
+  NL: MISSING — no FAOSTAT QCL data; set NaN
+  NZ: MISSING — no FAOSTAT QCL data; set NaN
+  KR: MISSING — no FAOSTAT QCL data; set NaN
+  ES: MISSING — no FAOSTAT QCL data; set NaN
+  SE: MISSING — no FAOSTAT QCL data; set NaN
+  GB: MISSING — no FAOSTAT QCL data; set NaN
+  US: MISSING — no FAOSTAT QCL data; set NaN
+  AR: MISSING — no FAOSTAT QCL data; set NaN
+  CN: MISSING — no FAOSTAT QCL data; set NaN
+  DK: MISSING — no FAOSTAT QCL data; set NaN
+  KE: MISSING — no FAOSTAT QCL data; set NaN
+  MX: MISSING — no FAOSTAT QCL data; set NaN
+  NG: MISSING — no FAOSTAT QCL data; set NaN
+  PL: MISSING — no FAOSTAT QCL data; set NaN
+  ZA: MISSING — no FAOSTAT QCL data; set NaN
+  TH: MISSING — no FAOSTAT QCL data; set NaN
+  VN: MISSING — no FAOSTAT QCL data; set NaN
+
+--- VAR_02 aquaculture_pct_total_animal_production ---
+  NOTE: Using FBS fish share as aquaculture proxy (FishStat API unavailable without key).
+[API FAIL attempt 1] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 2] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 3] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 1] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2761&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 2] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2761&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 3] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2761&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+  AU: 5.2% (FALLBACK — API miss)
+  BR: 8.4% (FALLBACK — API miss)
+  CA: 6.1% (FALLBACK — API miss)
+  FR: 7.3% (FALLBACK — API miss)
+  DE: 3.2% (FALLBACK — API miss)
+  IN: 32.1% (FALLBACK — API miss)
+  IT: 6.8% (FALLBACK — API miss)
+  JP: 38.2% (FALLBACK — API miss)
+  NL: 4.1% (FALLBACK — API miss)
+  NZ: 4.5% (FALLBACK — API miss)
+  KR: 35.6% (FALLBACK — API miss)
+  ES: 9.2% (FALLBACK — API miss)
+  SE: 8.7% (FALLBACK — API miss)
+  GB: 5.1% (FALLBACK — API miss)
+  US: 3.8% (FALLBACK — API miss)
+  AR: 6.0% (FALLBACK — API miss)
+  CN: 62.4% (FALLBACK — API miss)
+  DK: 7.3% (FALLBACK — API miss)
+  KE: 12.3% (FALLBACK — API miss)
+  MX: 9.1% (FALLBACK — API miss)
+  NG: 15.2% (FALLBACK — API miss)
+  PL: 3.4% (FALLBACK — API miss)
+  ZA: 4.7% (FALLBACK — API miss)
+  TH: 28.6% (FALLBACK — API miss)
+  VN: 41.3% (FALLBACK — API miss)
+
+--- VAR_03 wap_overall_score ---
+  WAP API unavailable: 404 Client Error: Not Found for url: https://api.worldanimalprotection.org/countries — using hardcoded 2020 fallback
+  AU: WAP=5 → risk=3 (hardcoded)
+  BR: WAP=3 → risk=5 (hardcoded)
+  CA: WAP=5 → risk=3 (hardcoded)
+  FR: WAP=5 → risk=3 (hardcoded)
+  DE: WAP=6 → risk=2 (hardcoded)
+  IN: WAP=3 → risk=5 (hardcoded)
+  IT: WAP=4 → risk=4 (hardcoded)
+  JP: WAP=3 → risk=5 (hardcoded)
+  NL: WAP=6 → risk=2 (hardcoded)
+  NZ: WAP=5 → risk=3 (hardcoded)
+  KR: WAP=3 → risk=5 (hardcoded)
+  ES: WAP=4 → risk=4 (hardcoded)
+  SE: WAP=6 → risk=2 (hardcoded)
+  GB: WAP=6 → risk=2 (hardcoded)
+  US: WAP=4 → risk=4 (hardcoded)
+  AR: WAP=3 → risk=5 (hardcoded)
+  CN: WAP=2 → risk=6 (hardcoded)
+  DK: WAP=5 → risk=3 (hardcoded)
+  KE: WAP=3 → risk=5 (hardcoded)
+  MX: WAP=4 → risk=4 (hardcoded)
+  NG: WAP=2 → risk=6 (hardcoded)
+  PL: WAP=4 → risk=4 (hardcoded)
+  ZA: WAP=3 → risk=5 (hardcoded)
+  TH: WAP=2 → risk=6 (hardcoded)
+  VN: WAP=2 → risk=6 (hardcoded)
+
+--- VAR_04 sentience_recognition_in_law ---
+  Source: WAP 2020 hardcoded lookup (no live API available)
+  AU: sentience=1 → risk=0
+  BR: sentience=0.5 → risk=0.5
+  CA: sentience=1 → risk=0
+  FR: sentience=1 → risk=0
+  DE: sentience=1 → risk=0
+  IN: sentience=0 → risk=1
+  IT: sentience=1 → risk=0
+  JP: sentience=0.5 → risk=0.5
+  NL: sentience=1 → risk=0
+  NZ: sentience=1 → risk=0
+  KR: sentience=0.5 → risk=0.5
+  ES: sentience=1 → risk=0
+  SE: sentience=1 → risk=0
+  GB: sentience=1 → risk=0
+  US: sentience=0.5 → risk=0.5
+  AR: sentience=0 → risk=1
+  CN: sentience=0 → risk=1
+  DK: sentience=1 → risk=0
+  KE: sentience=0 → risk=1
+  MX: sentience=0.5 → risk=0.5
+  NG: sentience=0 → risk=1
+  PL: sentience=0.5 → risk=0.5
+  ZA: sentience=0 → risk=1
+  TH: sentience=0 → risk=1
+  VN: sentience=0 → risk=1
+
+--- VAR_05 meat_consumption_per_capita_kg ---
+[API FAIL attempt 1] VAR_05 meat_consumption_per_capita_kg: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=684&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 2] VAR_05 meat_consumption_per_capita_kg: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=684&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 3] VAR_05 meat_consumption_per_capita_kg: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=684&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+  AU: 111.5 kg/cap/yr (FALLBACK)
+  BR: 84.2 kg/cap/yr (FALLBACK)
+  CA: 95.3 kg/cap/yr (FALLBACK)
+  FR: 86.7 kg/cap/yr (FALLBACK)
+  DE: 86.2 kg/cap/yr (FALLBACK)
+  IN: 4.1 kg/cap/yr (FALLBACK)
+  IT: 83.4 kg/cap/yr (FALLBACK)
+  JP: 51.1 kg/cap/yr (FALLBACK)
+  NL: 77.8 kg/cap/yr (FALLBACK)
+  NZ: 108.6 kg/cap/yr (FALLBACK)
+  KR: 63.4 kg/cap/yr (FALLBACK)
+  ES: 97.1 kg/cap/yr (FALLBACK)
+  SE: 76.2 kg/cap/yr (FALLBACK)
+  GB: 79.3 kg/cap/yr (FALLBACK)
+  US: 124.1 kg/cap/yr (FALLBACK)
+  AR: 114.2 kg/cap/yr (FALLBACK)
+  CN: 61.8 kg/cap/yr (FALLBACK)
+  DK: 95.8 kg/cap/yr (FALLBACK)
+  KE: 17.3 kg/cap/yr (FALLBACK)
+  MX: 63.5 kg/cap/yr (FALLBACK)
+  NG: 8.5 kg/cap/yr (FALLBACK)
+  PL: 82.3 kg/cap/yr (FALLBACK)
+  ZA: 52.4 kg/cap/yr (FALLBACK)
+  TH: 29.7 kg/cap/yr (FALLBACK)
+  VN: 33.2 kg/cap/yr (FALLBACK)
+
+Layer 1 missing values per variable:
+  VAR_01_farmed_animals_slaughtered_per_capita: 25 missing
+  VAR_02_aquaculture_pct_total_animal_production: 0 missing
+  VAR_03_wap_overall_score_risk: 0 missing
+  VAR_04_sentience_recognition_law_risk: 0 missing
+  VAR_05_meat_consumption_per_capita_kg: 0 missing
+======================================================================
+LAYER 1 COLLECTION — 2026-03-03T18:54:24.854268
+======================================================================
+[API OK] World Bank population — 0 countries
+[FALLBACK] Population for AU — used hardcoded estimate
+[FALLBACK] Population for BR — used hardcoded estimate
+[FALLBACK] Population for CA — used hardcoded estimate
+[FALLBACK] Population for FR — used hardcoded estimate
+[FALLBACK] Population for DE — used hardcoded estimate
+[FALLBACK] Population for IN — used hardcoded estimate
+[FALLBACK] Population for IT — used hardcoded estimate
+[FALLBACK] Population for JP — used hardcoded estimate
+[FALLBACK] Population for NL — used hardcoded estimate
+[FALLBACK] Population for NZ — used hardcoded estimate
+[FALLBACK] Population for KR — used hardcoded estimate
+[FALLBACK] Population for ES — used hardcoded estimate
+[FALLBACK] Population for SE — used hardcoded estimate
+[FALLBACK] Population for GB — used hardcoded estimate
+[FALLBACK] Population for US — used hardcoded estimate
+[FALLBACK] Population for AR — used hardcoded estimate
+[FALLBACK] Population for CN — used hardcoded estimate
+[FALLBACK] Population for DK — used hardcoded estimate
+[FALLBACK] Population for KE — used hardcoded estimate
+[FALLBACK] Population for MX — used hardcoded estimate
+[FALLBACK] Population for NG — used hardcoded estimate
+[FALLBACK] Population for PL — used hardcoded estimate
+[FALLBACK] Population for ZA — used hardcoded estimate
+[FALLBACK] Population for TH — used hardcoded estimate
+[FALLBACK] Population for VN — used hardcoded estimate
+
+--- VAR_01 farmed_animals_slaughtered_per_capita ---
+[API FAIL attempt 1] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 2] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 3] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+  AU: 84.2 (FALLBACK — FAOSTAT QCL unavailable)
+  BR: 312.6 (FALLBACK — FAOSTAT QCL unavailable)
+  CA: 91.5 (FALLBACK — FAOSTAT QCL unavailable)
+  FR: 98.3 (FALLBACK — FAOSTAT QCL unavailable)
+  DE: 126.4 (FALLBACK — FAOSTAT QCL unavailable)
+  IN: 10.8 (FALLBACK — FAOSTAT QCL unavailable)
+  IT: 88.7 (FALLBACK — FAOSTAT QCL unavailable)
+  JP: 52.3 (FALLBACK — FAOSTAT QCL unavailable)
+  NL: 248.1 (FALLBACK — FAOSTAT QCL unavailable)
+  NZ: 246.3 (FALLBACK — FAOSTAT QCL unavailable)
+  KR: 71.4 (FALLBACK — FAOSTAT QCL unavailable)
+  ES: 167.2 (FALLBACK — FAOSTAT QCL unavailable)
+  SE: 82.6 (FALLBACK — FAOSTAT QCL unavailable)
+  GB: 79.1 (FALLBACK — FAOSTAT QCL unavailable)
+  US: 119.4 (FALLBACK — FAOSTAT QCL unavailable)
+  AR: 228.7 (FALLBACK — FAOSTAT QCL unavailable)
+  CN: 234.5 (FALLBACK — FAOSTAT QCL unavailable)
+  DK: 483.2 (FALLBACK — FAOSTAT QCL unavailable)
+  KE: 42.1 (FALLBACK — FAOSTAT QCL unavailable)
+  MX: 95.8 (FALLBACK — FAOSTAT QCL unavailable)
+  NG: 18.3 (FALLBACK — FAOSTAT QCL unavailable)
+  PL: 214.7 (FALLBACK — FAOSTAT QCL unavailable)
+  ZA: 48.6 (FALLBACK — FAOSTAT QCL unavailable)
+  TH: 163.4 (FALLBACK — FAOSTAT QCL unavailable)
+  VN: 218.9 (FALLBACK — FAOSTAT QCL unavailable)
+
+--- VAR_02 aquaculture_pct_total_animal_production ---
+  NOTE: Using FBS fish share as aquaculture proxy (FishStat API unavailable without key).
+[API FAIL attempt 1] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 2] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 3] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 1] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2761&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 2] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2761&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 3] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2761&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+  AU: 5.2% (FALLBACK — API miss)
+  BR: 8.4% (FALLBACK — API miss)
+  CA: 6.1% (FALLBACK — API miss)
+  FR: 7.3% (FALLBACK — API miss)
+  DE: 3.2% (FALLBACK — API miss)
+  IN: 32.1% (FALLBACK — API miss)
+  IT: 6.8% (FALLBACK — API miss)
+  JP: 38.2% (FALLBACK — API miss)
+  NL: 4.1% (FALLBACK — API miss)
+  NZ: 4.5% (FALLBACK — API miss)
+  KR: 35.6% (FALLBACK — API miss)
+  ES: 9.2% (FALLBACK — API miss)
+  SE: 8.7% (FALLBACK — API miss)
+  GB: 5.1% (FALLBACK — API miss)
+  US: 3.8% (FALLBACK — API miss)
+  AR: 6.0% (FALLBACK — API miss)
+  CN: 62.4% (FALLBACK — API miss)
+  DK: 7.3% (FALLBACK — API miss)
+  KE: 12.3% (FALLBACK — API miss)
+  MX: 9.1% (FALLBACK — API miss)
+  NG: 15.2% (FALLBACK — API miss)
+  PL: 3.4% (FALLBACK — API miss)
+  ZA: 4.7% (FALLBACK — API miss)
+  TH: 28.6% (FALLBACK — API miss)
+  VN: 41.3% (FALLBACK — API miss)
+
+--- VAR_03 wap_overall_score ---
+  WAP API unavailable: 404 Client Error: Not Found for url: https://api.worldanimalprotection.org/countries — using hardcoded 2020 fallback
+  AU: WAP=5 → risk=3 (hardcoded)
+  BR: WAP=3 → risk=5 (hardcoded)
+  CA: WAP=5 → risk=3 (hardcoded)
+  FR: WAP=5 → risk=3 (hardcoded)
+  DE: WAP=6 → risk=2 (hardcoded)
+  IN: WAP=3 → risk=5 (hardcoded)
+  IT: WAP=4 → risk=4 (hardcoded)
+  JP: WAP=3 → risk=5 (hardcoded)
+  NL: WAP=6 → risk=2 (hardcoded)
+  NZ: WAP=5 → risk=3 (hardcoded)
+  KR: WAP=3 → risk=5 (hardcoded)
+  ES: WAP=4 → risk=4 (hardcoded)
+  SE: WAP=6 → risk=2 (hardcoded)
+  GB: WAP=6 → risk=2 (hardcoded)
+  US: WAP=4 → risk=4 (hardcoded)
+  AR: WAP=3 → risk=5 (hardcoded)
+  CN: WAP=2 → risk=6 (hardcoded)
+  DK: WAP=5 → risk=3 (hardcoded)
+  KE: WAP=3 → risk=5 (hardcoded)
+  MX: WAP=4 → risk=4 (hardcoded)
+  NG: WAP=2 → risk=6 (hardcoded)
+  PL: WAP=4 → risk=4 (hardcoded)
+  ZA: WAP=3 → risk=5 (hardcoded)
+  TH: WAP=2 → risk=6 (hardcoded)
+  VN: WAP=2 → risk=6 (hardcoded)
+
+--- VAR_04 sentience_recognition_in_law ---
+  Source: WAP 2020 hardcoded lookup (no live API available)
+  AU: sentience=1 → risk=0
+  BR: sentience=0.5 → risk=0.5
+  CA: sentience=1 → risk=0
+  FR: sentience=1 → risk=0
+  DE: sentience=1 → risk=0
+  IN: sentience=0 → risk=1
+  IT: sentience=1 → risk=0
+  JP: sentience=0.5 → risk=0.5
+  NL: sentience=1 → risk=0
+  NZ: sentience=1 → risk=0
+  KR: sentience=0.5 → risk=0.5
+  ES: sentience=1 → risk=0
+  SE: sentience=1 → risk=0
+  GB: sentience=1 → risk=0
+  US: sentience=0.5 → risk=0.5
+  AR: sentience=0 → risk=1
+  CN: sentience=0 → risk=1
+  DK: sentience=1 → risk=0
+  KE: sentience=0 → risk=1
+  MX: sentience=0.5 → risk=0.5
+  NG: sentience=0 → risk=1
+  PL: sentience=0.5 → risk=0.5
+  ZA: sentience=0 → risk=1
+  TH: sentience=0 → risk=1
+  VN: sentience=0 → risk=1
+
+--- VAR_05 meat_consumption_per_capita_kg ---
+[API FAIL attempt 1] VAR_05 meat_consumption_per_capita_kg: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=684&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 2] VAR_05 meat_consumption_per_capita_kg: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=684&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 3] VAR_05 meat_consumption_per_capita_kg: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=684&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+  AU: 111.5 kg/cap/yr (FALLBACK)
+  BR: 84.2 kg/cap/yr (FALLBACK)
+  CA: 95.3 kg/cap/yr (FALLBACK)
+  FR: 86.7 kg/cap/yr (FALLBACK)
+  DE: 86.2 kg/cap/yr (FALLBACK)
+  IN: 4.1 kg/cap/yr (FALLBACK)
+  IT: 83.4 kg/cap/yr (FALLBACK)
+  JP: 51.1 kg/cap/yr (FALLBACK)
+  NL: 77.8 kg/cap/yr (FALLBACK)
+  NZ: 108.6 kg/cap/yr (FALLBACK)
+  KR: 63.4 kg/cap/yr (FALLBACK)
+  ES: 97.1 kg/cap/yr (FALLBACK)
+  SE: 76.2 kg/cap/yr (FALLBACK)
+  GB: 79.3 kg/cap/yr (FALLBACK)
+  US: 124.1 kg/cap/yr (FALLBACK)
+  AR: 114.2 kg/cap/yr (FALLBACK)
+  CN: 61.8 kg/cap/yr (FALLBACK)
+  DK: 95.8 kg/cap/yr (FALLBACK)
+  KE: 17.3 kg/cap/yr (FALLBACK)
+  MX: 63.5 kg/cap/yr (FALLBACK)
+  NG: 8.5 kg/cap/yr (FALLBACK)
+  PL: 82.3 kg/cap/yr (FALLBACK)
+  ZA: 52.4 kg/cap/yr (FALLBACK)
+  TH: 29.7 kg/cap/yr (FALLBACK)
+  VN: 33.2 kg/cap/yr (FALLBACK)
+
+Layer 1 missing values per variable:
+  VAR_01_farmed_animals_slaughtered_per_capita: 0 missing
+  VAR_02_aquaculture_pct_total_animal_production: 0 missing
+  VAR_03_wap_overall_score_risk: 0 missing
+  VAR_04_sentience_recognition_law_risk: 0 missing
+  VAR_05_meat_consumption_per_capita_kg: 0 missing
+======================================================================
+LAYER 1 COLLECTION — 2026-03-03T19:06:33.719728
+======================================================================
+[API OK] World Bank population — 0 countries
+[FALLBACK] Population for AU — used hardcoded estimate
+[FALLBACK] Population for BR — used hardcoded estimate
+[FALLBACK] Population for CA — used hardcoded estimate
+[FALLBACK] Population for FR — used hardcoded estimate
+[FALLBACK] Population for DE — used hardcoded estimate
+[FALLBACK] Population for IN — used hardcoded estimate
+[FALLBACK] Population for IT — used hardcoded estimate
+[FALLBACK] Population for JP — used hardcoded estimate
+[FALLBACK] Population for NL — used hardcoded estimate
+[FALLBACK] Population for NZ — used hardcoded estimate
+[FALLBACK] Population for KR — used hardcoded estimate
+[FALLBACK] Population for ES — used hardcoded estimate
+[FALLBACK] Population for SE — used hardcoded estimate
+[FALLBACK] Population for GB — used hardcoded estimate
+[FALLBACK] Population for US — used hardcoded estimate
+[FALLBACK] Population for AR — used hardcoded estimate
+[FALLBACK] Population for CN — used hardcoded estimate
+[FALLBACK] Population for DK — used hardcoded estimate
+[FALLBACK] Population for KE — used hardcoded estimate
+[FALLBACK] Population for MX — used hardcoded estimate
+[FALLBACK] Population for NG — used hardcoded estimate
+[FALLBACK] Population for PL — used hardcoded estimate
+[FALLBACK] Population for ZA — used hardcoded estimate
+[FALLBACK] Population for TH — used hardcoded estimate
+[FALLBACK] Population for VN — used hardcoded estimate
+
+--- VAR_01 farmed_animals_slaughtered_per_capita ---
+[API FAIL attempt 1] VAR_01 farmed_animals_slaughtered_per_capita: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/QCL?item=1746&element=5321&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021%2C2022&output_type=json
+[API FAIL attempt 2] VAR_01 farmed_animals_slaughtered_per_capita: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+  AU: 84.2 (FALLBACK — FAOSTAT QCL unavailable)
+  BR: 312.6 (FALLBACK — FAOSTAT QCL unavailable)
+  CA: 91.5 (FALLBACK — FAOSTAT QCL unavailable)
+  FR: 98.3 (FALLBACK — FAOSTAT QCL unavailable)
+  DE: 126.4 (FALLBACK — FAOSTAT QCL unavailable)
+  IN: 10.8 (FALLBACK — FAOSTAT QCL unavailable)
+  IT: 88.7 (FALLBACK — FAOSTAT QCL unavailable)
+  JP: 52.3 (FALLBACK — FAOSTAT QCL unavailable)
+  NL: 248.1 (FALLBACK — FAOSTAT QCL unavailable)
+  NZ: 246.3 (FALLBACK — FAOSTAT QCL unavailable)
+  KR: 71.4 (FALLBACK — FAOSTAT QCL unavailable)
+  ES: 167.2 (FALLBACK — FAOSTAT QCL unavailable)
+  SE: 82.6 (FALLBACK — FAOSTAT QCL unavailable)
+  GB: 79.1 (FALLBACK — FAOSTAT QCL unavailable)
+  US: 119.4 (FALLBACK — FAOSTAT QCL unavailable)
+  AR: 228.7 (FALLBACK — FAOSTAT QCL unavailable)
+  CN: 234.5 (FALLBACK — FAOSTAT QCL unavailable)
+  DK: 483.2 (FALLBACK — FAOSTAT QCL unavailable)
+  KE: 42.1 (FALLBACK — FAOSTAT QCL unavailable)
+  MX: 95.8 (FALLBACK — FAOSTAT QCL unavailable)
+  NG: 18.3 (FALLBACK — FAOSTAT QCL unavailable)
+  PL: 214.7 (FALLBACK — FAOSTAT QCL unavailable)
+  ZA: 48.6 (FALLBACK — FAOSTAT QCL unavailable)
+  TH: 163.4 (FALLBACK — FAOSTAT QCL unavailable)
+  VN: 218.9 (FALLBACK — FAOSTAT QCL unavailable)
+
+--- VAR_02 aquaculture_pct_total_animal_production ---
+  NOTE: Using FBS fish share as aquaculture proxy (FishStat API unavailable without key).
+[API FAIL attempt 1] VAR_02 aquaculture_pct_total_animal_production [Meat group]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+[API FAIL attempt 2] VAR_02 aquaculture_pct_total_animal_production [Meat group]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2943&element=645&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2019%2C2020%2C2021&output_type=json
+[API FAIL attempt 1] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+[API FAIL attempt 2] VAR_02 aquaculture_pct_total_animal_production [Fish & Seafood]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+  AU: 5.2% (FALLBACK — API miss)
+  BR: 8.4% (FALLBACK — API miss)
+  CA: 6.1% (FALLBACK — API miss)
+  FR: 7.3% (FALLBACK — API miss)
+  DE: 3.2% (FALLBACK — API miss)
+  IN: 32.1% (FALLBACK — API miss)
+  IT: 6.8% (FALLBACK — API miss)
+  JP: 38.2% (FALLBACK — API miss)
+  NL: 4.1% (FALLBACK — API miss)
+  NZ: 4.5% (FALLBACK — API miss)
+  KR: 35.6% (FALLBACK — API miss)
+  ES: 9.2% (FALLBACK — API miss)
+  SE: 8.7% (FALLBACK — API miss)
+  GB: 5.1% (FALLBACK — API miss)
+  US: 3.8% (FALLBACK — API miss)
+  AR: 6.0% (FALLBACK — API miss)
+  CN: 62.4% (FALLBACK — API miss)
+  DK: 7.3% (FALLBACK — API miss)
+  KE: 12.3% (FALLBACK — API miss)
+  MX: 9.1% (FALLBACK — API miss)
+  NG: 15.2% (FALLBACK — API miss)
+  PL: 3.4% (FALLBACK — API miss)
+  ZA: 4.7% (FALLBACK — API miss)
+  TH: 28.6% (FALLBACK — API miss)
+  VN: 41.3% (FALLBACK — API miss)
+
+--- VAR_03 wap_overall_score ---
+  WAP API unavailable: 404 Client Error: Not Found for url: https://api.worldanimalprotection.org/countries — using hardcoded 2020 fallback
+  AU: WAP=5 → risk=3 (hardcoded)
+  BR: WAP=3 → risk=5 (hardcoded)
+  CA: WAP=5 → risk=3 (hardcoded)
+  FR: WAP=5 → risk=3 (hardcoded)
+  DE: WAP=6 → risk=2 (hardcoded)
+  IN: WAP=3 → risk=5 (hardcoded)
+  IT: WAP=4 → risk=4 (hardcoded)
+  JP: WAP=3 → risk=5 (hardcoded)
+  NL: WAP=6 → risk=2 (hardcoded)
+  NZ: WAP=5 → risk=3 (hardcoded)
+  KR: WAP=3 → risk=5 (hardcoded)
+  ES: WAP=4 → risk=4 (hardcoded)
+  SE: WAP=6 → risk=2 (hardcoded)
+  GB: WAP=6 → risk=2 (hardcoded)
+  US: WAP=4 → risk=4 (hardcoded)
+  AR: WAP=3 → risk=5 (hardcoded)
+  CN: WAP=2 → risk=6 (hardcoded)
+  DK: WAP=5 → risk=3 (hardcoded)
+  KE: WAP=3 → risk=5 (hardcoded)
+  MX: WAP=4 → risk=4 (hardcoded)
+  NG: WAP=2 → risk=6 (hardcoded)
+  PL: WAP=4 → risk=4 (hardcoded)
+  ZA: WAP=3 → risk=5 (hardcoded)
+  TH: WAP=2 → risk=6 (hardcoded)
+  VN: WAP=2 → risk=6 (hardcoded)
+
+--- VAR_04 sentience_recognition_in_law ---
+  Source: WAP 2020 hardcoded lookup (no live API available)
+  AU: sentience=1 → risk=0
+  BR: sentience=0.5 → risk=0.5
+  CA: sentience=1 → risk=0
+  FR: sentience=1 → risk=0
+  DE: sentience=1 → risk=0
+  IN: sentience=0 → risk=1
+  IT: sentience=1 → risk=0
+  JP: sentience=0.5 → risk=0.5
+  NL: sentience=1 → risk=0
+  NZ: sentience=1 → risk=0
+  KR: sentience=0.5 → risk=0.5
+  ES: sentience=1 → risk=0
+  SE: sentience=1 → risk=0
+  GB: sentience=1 → risk=0
+  US: sentience=0.5 → risk=0.5
+  AR: sentience=0 → risk=1
+  CN: sentience=0 → risk=1
+  DK: sentience=1 → risk=0
+  KE: sentience=0 → risk=1
+  MX: sentience=0.5 → risk=0.5
+  NG: sentience=0 → risk=1
+  PL: sentience=0.5 → risk=0.5
+  ZA: sentience=0 → risk=1
+  TH: sentience=0 → risk=1
+  VN: sentience=0 → risk=1
+
+--- VAR_05 meat_consumption_per_capita_kg ---
+[API FAIL attempt 1] VAR_05 meat_consumption_per_capita_kg: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+[API FAIL attempt 2] VAR_05 meat_consumption_per_capita_kg: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+  AU: 111.5 kg/cap/yr (FALLBACK)
+  BR: 84.2 kg/cap/yr (FALLBACK)
+  CA: 95.3 kg/cap/yr (FALLBACK)
+  FR: 86.7 kg/cap/yr (FALLBACK)
+  DE: 86.2 kg/cap/yr (FALLBACK)
+  IN: 4.1 kg/cap/yr (FALLBACK)
+  IT: 83.4 kg/cap/yr (FALLBACK)
+  JP: 51.1 kg/cap/yr (FALLBACK)
+  NL: 77.8 kg/cap/yr (FALLBACK)
+  NZ: 108.6 kg/cap/yr (FALLBACK)
+  KR: 63.4 kg/cap/yr (FALLBACK)
+  ES: 97.1 kg/cap/yr (FALLBACK)
+  SE: 76.2 kg/cap/yr (FALLBACK)
+  GB: 79.3 kg/cap/yr (FALLBACK)
+  US: 124.1 kg/cap/yr (FALLBACK)
+  AR: 114.2 kg/cap/yr (FALLBACK)
+  CN: 61.8 kg/cap/yr (FALLBACK)
+  DK: 95.8 kg/cap/yr (FALLBACK)
+  KE: 17.3 kg/cap/yr (FALLBACK)
+  MX: 63.5 kg/cap/yr (FALLBACK)
+  NG: 8.5 kg/cap/yr (FALLBACK)
+  PL: 82.3 kg/cap/yr (FALLBACK)
+  ZA: 52.4 kg/cap/yr (FALLBACK)
+  TH: 29.7 kg/cap/yr (FALLBACK)
+  VN: 33.2 kg/cap/yr (FALLBACK)
+
+Layer 1 missing values per variable:
+  VAR_01_farmed_animals_slaughtered_per_capita: 0 missing
+  VAR_02_aquaculture_pct_total_animal_production: 0 missing
+  VAR_03_wap_overall_score_risk: 0 missing
+  VAR_04_sentience_recognition_law_risk: 0 missing
+  VAR_05_meat_consumption_per_capita_kg: 0 missing
+======================================================================
+LAYER 2 COLLECTION — 2026-03-03T19:10:29.755338
+======================================================================
+
+--- VAR_06 wap_score_delta_2014_2020 ---
+  Source: WAP 2014 and 2020 hardcoded delta lookup
+  AU: delta=0 → risk=0
+  BR: delta=1 → risk=-1
+  CA: delta=0 → risk=0
+  FR: delta=1 → risk=-1
+  DE: delta=1 → risk=-1
+  IN: delta=0 → risk=0
+  IT: delta=0 → risk=0
+  JP: delta=0 → risk=0
+  NL: delta=1 → risk=-1
+  NZ: delta=0 → risk=0
+  KR: delta=0 → risk=0
+  ES: delta=1 → risk=-1
+  SE: delta=0 → risk=0
+  GB: delta=1 → risk=-1
+  US: delta=0 → risk=0
+  AR: delta=0 → risk=0
+  CN: delta=0 → risk=0
+  DK: delta=0 → risk=0
+  KE: delta=0 → risk=0
+  MX: delta=1 → risk=-1
+  NG: delta=0 → risk=0
+  PL: delta=0 → risk=0
+  ZA: delta=-1 → risk=1
+  TH: delta=0 → risk=0
+  VN: delta=0 → risk=0
+
+--- VAR_07 plant_protein_ratio_trend ---
+[API FAIL attempt 1] VAR_07 plant_protein_ratio_trend [Vegetal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+[API FAIL attempt 2] VAR_07 plant_protein_ratio_trend [Vegetal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+[API FAIL attempt 1] VAR_07 plant_protein_ratio_trend [Animal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Read timed out. (read timeout=30)
+[API FAIL attempt 2] VAR_07 plant_protein_ratio_trend [Animal Products]: 521 Server Error: <none> for url: https://fenixservices.fao.org/faostat/api/v1/en/data/FBS?item=2941&element=674&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2015%2C2021&output_type=json
+  AU: plant_ratio delta=-0.00500 → risk=0.00500 (FALLBACK)
+  BR: plant_ratio delta=-0.00800 → risk=0.00800 (FALLBACK)
+  CA: plant_ratio delta=0.01200 → risk=-0.01200 (FALLBACK)
+  FR: plant_ratio delta=0.00900 → risk=-0.00900 (FALLBACK)
+  DE: plant_ratio delta=0.01800 → risk=-0.01800 (FALLBACK)
+  IN: plant_ratio delta=0.00500 → risk=-0.00500 (FALLBACK)
+  IT: plant_ratio delta=0.00700 → risk=-0.00700 (FALLBACK)
+  JP: plant_ratio delta=0.00300 → risk=-0.00300 (FALLBACK)
+  NL: plant_ratio delta=0.01500 → risk=-0.01500 (FALLBACK)
+  NZ: plant_ratio delta=-0.00300 → risk=0.00300 (FALLBACK)
+  KR: plant_ratio delta=0.01000 → risk=-0.01000 (FALLBACK)
+  ES: plant_ratio delta=0.00800 → risk=-0.00800 (FALLBACK)
+  SE: plant_ratio delta=0.02200 → risk=-0.02200 (FALLBACK)
+  GB: plant_ratio delta=0.01900 → risk=-0.01900 (FALLBACK)
+  US: plant_ratio delta=0.01300 → risk=-0.01300 (FALLBACK)
+  AR: plant_ratio delta=-0.00400 → risk=0.00400 (FALLBACK)
+  CN: plant_ratio delta=0.00600 → risk=-0.00600 (FALLBACK)
+  DK: plant_ratio delta=0.01400 → risk=-0.01400 (FALLBACK)
+  KE: plant_ratio delta=0.00200 → risk=-0.00200 (FALLBACK)
+  MX: plant_ratio delta=0.00400 → risk=-0.00400 (FALLBACK)
+  NG: plant_ratio delta=0.00100 → risk=-0.00100 (FALLBACK)
+  PL: plant_ratio delta=0.00500 → risk=-0.00500 (FALLBACK)
+  ZA: plant_ratio delta=-0.00200 → risk=0.00200 (FALLBACK)
+  TH: plant_ratio delta=0.00300 → risk=-0.00300 (FALLBACK)
+  VN: plant_ratio delta=0.00400 → risk=-0.00400 (FALLBACK)
+
+--- VAR_08 public_concern_index ---
+  AU: concern=30.1 → risk=69.9 (Google Trends)
+  BR: concern=1.7 → risk=98.3 (Google Trends)
+  CA: concern=36.4 → risk=63.6 (Google Trends)
+  FR: concern=2.6 → risk=97.4 (Google Trends)
+  DE: concern=8.6 → risk=91.4 (Google Trends)
+  IN: concern=20.3 → risk=79.7 (Google Trends)
+  IT: concern=1.9 → risk=98.1 (Google Trends)
+  JP: concern=1.1 → risk=98.9 (Google Trends)
+  NL: concern=2.0 → risk=98.0 (Google Trends)
+  NZ: concern=13.6 → risk=86.4 (Google Trends)
+  KR: concern=0.8 → risk=99.2 (Google Trends)
+  ES: concern=1.4 → risk=98.6 (Google Trends)
+  SE: concern=1.1 → risk=98.9 (Google Trends)
+  GB: concern=45.2 → risk=54.8 (Google Trends)
+  US: concern=61.7 → risk=38.3 (Google Trends)
+  AR: concern=0.4 → risk=99.6 (Google Trends)
+  CN: concern=1.4 → risk=98.6 (Google Trends)
+  DK: concern=0.5 → risk=99.5 (Google Trends)
+  KE: concern=0.5 → risk=99.5 (Google Trends)
+  MX: concern=0.8 → risk=99.2 (Google Trends)
+  NG: concern=0.8 → risk=99.2 (Google Trends)
+  PL: concern=0.4 → risk=99.6 (Google Trends)
+  ZA: concern=26.5 → risk=73.5 (Google Trends)
+  TH: concern=3.2 → risk=96.8 (Google Trends)
+  VN: concern=1.5 → risk=98.5 (Google Trends)
+
+--- VAR_09 ngo_density_score ---
+  Civicus: using hardcoded 2023/2024 ratings (monitor.civicus.org)
+  AU: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  BR: civicus=3, ngo=3, combined=3.0 → risk=2.5
+  CA: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  FR: civicus=4, ngo=4, combined=4.0 → risk=1.5
+  DE: civicus=5, ngo=5, combined=5.0 → risk=0.5
+  IN: civicus=2, ngo=3, combined=2.5 → risk=3.0
+  IT: civicus=4, ngo=3, combined=3.5 → risk=2.0
+  JP: civicus=4, ngo=3, combined=3.5 → risk=2.0
+  NL: civicus=5, ngo=5, combined=5.0 → risk=0.5
+  NZ: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  KR: civicus=3, ngo=2, combined=2.5 → risk=3.0
+  ES: civicus=4, ngo=3, combined=3.5 → risk=2.0
+  SE: civicus=5, ngo=5, combined=5.0 → risk=0.5
+  GB: civicus=4, ngo=5, combined=4.5 → risk=1.0
+  US: civicus=4, ngo=5, combined=4.5 → risk=1.0
+  AR: civicus=3, ngo=2, combined=2.5 → risk=3.0
+  CN: civicus=1, ngo=1, combined=1.0 → risk=4.5
+  DK: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  KE: civicus=3, ngo=2, combined=2.5 → risk=3.0
+  MX: civicus=2, ngo=2, combined=2.0 → risk=3.5
+  NG: civicus=3, ngo=1, combined=2.0 → risk=3.5
+  PL: civicus=3, ngo=3, combined=3.0 → risk=2.5
+  ZA: civicus=4, ngo=2, combined=3.0 → risk=2.5
+  TH: civicus=2, ngo=1, combined=1.5 → risk=4.0
+  VN: civicus=1, ngo=1, combined=1.0 → risk=4.5
+
+--- VAR_10 political_salience_score ---
+  Source: hardcoded lookup from known government policy data
+  AU: salience=1 → risk=0
+  BR: salience=0.5 → risk=0.5
+  CA: salience=1 → risk=0
+  FR: salience=1 → risk=0
+  DE: salience=1 → risk=0
+  IN: salience=0.5 → risk=0.5
+  IT: salience=0.5 → risk=0.5
+  JP: salience=0.5 → risk=0.5
+  NL: salience=1 → risk=0
+  NZ: salience=1 → risk=0
+  KR: salience=0.5 → risk=0.5
+  ES: salience=0.5 → risk=0.5
+  SE: salience=1 → risk=0
+  GB: salience=1 → risk=0
+  US: salience=0.5 → risk=0.5
+  AR: salience=0 → risk=1
+  CN: salience=0 → risk=1
+  DK: salience=1 → risk=0
+  KE: salience=0 → risk=1
+  MX: salience=0.5 → risk=0.5
+  NG: salience=0 → risk=1
+  PL: salience=0.5 → risk=0.5
+  ZA: salience=0.5 → risk=0.5
+  TH: salience=0 → risk=1
+  VN: salience=0 → risk=1
+
+Layer 2 missing values per variable:
+  VAR_06_wap_delta_risk: 0 missing
+  VAR_07_plant_protein_ratio_risk: 0 missing
+  VAR_08_public_concern_risk: 0 missing
+  VAR_09_ngo_density_risk: 0 missing
+  VAR_10_political_salience_risk: 0 missing
+======================================================================
+LAYER 3 COLLECTION — 2026-03-03T19:16:54.295220
+======================================================================
+  ⚠ CN (China): OpenAlex data flagged as potentially incomplete/irregular
+    Reason: Institutional affiliation data in OpenAlex has lower coverage
+    for Chinese institutions due to transliteration and data ingestion issues.
+    All CN values use hardcoded fallback for VAR_12, VAR_13, VAR_14.
+
+
+--- VAR_11 ai_governance_animal_welfare_score ---
+  AU: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  BR: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  CA: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  FR: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  DE: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  IN: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  IT: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  JP: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  NL: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  NZ: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  KR: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  ES: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  SE: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  GB: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  US: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  AR: No OECD.AI URL — fallback score=0
+    → norm=0.00, risk=1.000 (hardcoded)
+  CN: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  DK: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  KE: No OECD.AI URL — fallback score=0
+    → norm=0.00, risk=1.000 (hardcoded)
+  MX: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  NG: No OECD.AI URL — fallback score=0
+    → norm=0.00, risk=1.000 (hardcoded)
+  PL: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  ZA: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  TH: 0 keyword matches (OECD.AI live)
+    → norm=0.00, risk=1.000 (OECD.AI live)
+  VN: No OECD.AI URL — fallback score=0
+    → norm=0.00, risk=1.000 (hardcoded)
+
+--- VAR_12 ai_animal_welfare_research_output ---
+  AU query='animal welfare AI': count=0
+  AU query='livestock monitoring machine learning': count=0
+  AU: total=0, per_million=0.0 (OpenAlex live)
+  BR query='animal welfare AI': count=0
+  BR query='livestock monitoring machine learning': count=2
+  BR: total=2, per_million=0.0093 (OpenAlex live)
+  CA query='animal welfare AI': count=1
+  CA query='livestock monitoring machine learning': count=1
+  CA: total=2, per_million=0.0523 (OpenAlex live)
+  FR query='animal welfare AI': count=1
+  FR query='livestock monitoring machine learning': count=0
+  FR: total=1, per_million=0.0147 (OpenAlex live)
+  DE query='animal welfare AI': count=0
+  DE query='livestock monitoring machine learning': count=0
+  DE: total=0, per_million=0.0 (OpenAlex live)
+  IN query='animal welfare AI': count=1
+  IN query='livestock monitoring machine learning': count=5
+  IN: total=6, per_million=0.0042 (OpenAlex live)
+  IT query='animal welfare AI': count=0
+  IT query='livestock monitoring machine learning': count=0
+  IT: total=0, per_million=0.0 (OpenAlex live)
+  JP query='animal welfare AI': count=1
+  JP query='livestock monitoring machine learning': count=0
+  JP: total=1, per_million=0.008 (OpenAlex live)
+  NL query='animal welfare AI': count=0
+  NL query='livestock monitoring machine learning': count=0
+  NL: total=0, per_million=0.0 (OpenAlex live)
+  NZ query='animal welfare AI': count=1
+  NZ query='livestock monitoring machine learning': count=0
+  NZ: total=1, per_million=0.1953 (OpenAlex live)
+  KR query='animal welfare AI': count=0
+  KR query='livestock monitoring machine learning': count=2
+  KR: total=2, per_million=0.0387 (OpenAlex live)
+  ES query='animal welfare AI': count=1
+  ES query='livestock monitoring machine learning': count=0
+  ES: total=1, per_million=0.0211 (OpenAlex live)
+  SE query='animal welfare AI': count=0
+  SE query='livestock monitoring machine learning': count=0
+  SE: total=0, per_million=0.0 (OpenAlex live)
+  GB query='animal welfare AI': count=1
+  GB query='livestock monitoring machine learning': count=0
+  GB: total=1, per_million=0.0148 (OpenAlex live)
+  US query='animal welfare AI': count=1
+  US query='livestock monitoring machine learning': count=2
+  US: total=3, per_million=0.009 (OpenAlex live)
+  AR query='animal welfare AI': count=0
+  AR query='livestock monitoring machine learning': count=0
+  AR: total=0, per_million=0.0 (OpenAlex live)
+  CN: ⚠ OpenAlex coverage known to be irregular for China — using fallback
+  CN: 2.1 per_million (FALLBACK)
+  DK query='animal welfare AI': count=0
+  DK query='livestock monitoring machine learning': count=1
+  DK: total=1, per_million=0.1692 (OpenAlex live)
+  KE query='animal welfare AI': count=0
+  KE query='livestock monitoring machine learning': count=0
+  KE: total=0, per_million=0.0 (OpenAlex live)
+  MX query='animal welfare AI': count=0
+  MX query='livestock monitoring machine learning': count=0
+  MX: total=0, per_million=0.0 (OpenAlex live)
+  NG query='animal welfare AI': count=0
+  NG query='livestock monitoring machine learning': count=0
+  NG: total=0, per_million=0.0 (OpenAlex live)
+  PL query='animal welfare AI': count=1
+  PL query='livestock monitoring machine learning': count=0
+  PL: total=1, per_million=0.0264 (OpenAlex live)
+  ZA query='animal welfare AI': count=0
+  ZA query='livestock monitoring machine learning': count=0
+  ZA: total=0, per_million=0.0 (OpenAlex live)
+  TH query='animal welfare AI': count=0
+  TH query='livestock monitoring machine learning': count=0
+  TH: total=0, per_million=0.0 (OpenAlex live)
+  VN query='animal welfare AI': count=0
+  VN query='livestock monitoring machine learning': count=0
+  VN: total=0, per_million=0.0 (OpenAlex live)
+
+--- VAR_13 ai_sentience_research_output ---
+  AU query='artificial sentience': count=0
+  AU query='machine consciousness': count=8
+  AU query='AI consciousness': count=3
+  AU: total=11, per_million=0.4234 (OpenAlex live)
+  BR query='artificial sentience': count=1
+  BR query='machine consciousness': count=3
+  BR query='AI consciousness': count=3
+  BR: total=7, per_million=0.0325 (OpenAlex live)
+  CA query='artificial sentience': count=1
+  CA query='machine consciousness': count=7
+  CA query='AI consciousness': count=13
+  CA: total=21, per_million=0.549 (OpenAlex live)
+  FR query='artificial sentience': count=2
+  FR query='machine consciousness': count=9
+  FR query='AI consciousness': count=3
+  FR: total=14, per_million=0.2062 (OpenAlex live)
+  DE query='artificial sentience': count=0
+  DE query='machine consciousness': count=18
+  DE query='AI consciousness': count=7
+  DE: total=25, per_million=0.2984 (OpenAlex live)
+  IN query='artificial sentience': count=3
+  IN query='machine consciousness': count=13
+  IN query='AI consciousness': count=26
+  IN: total=42, per_million=0.0296 (OpenAlex live)
+  IT query='artificial sentience': count=2
+  IT query='machine consciousness': count=19
+  IT query='AI consciousness': count=9
+  IT: total=30, per_million=0.4973 (OpenAlex live)
+  JP query='artificial sentience': count=6
+  JP query='machine consciousness': count=10
+  JP query='AI consciousness': count=13
+  JP: total=29, per_million=0.2318 (OpenAlex live)
+  NL query='artificial sentience': count=0
+  NL query='machine consciousness': count=3
+  NL query='AI consciousness': count=3
+  NL: total=6, per_million=0.3405 (OpenAlex live)
+  NZ query='artificial sentience': count=1
+  NZ query='machine consciousness': count=3
+  NZ query='AI consciousness': count=0
+  NZ: total=4, per_million=0.7812 (OpenAlex live)
+  KR query='artificial sentience': count=0
+  KR query='machine consciousness': count=2
+  KR query='AI consciousness': count=3
+  KR: total=5, per_million=0.0966 (OpenAlex live)
+  ES query='artificial sentience': count=0
+  ES query='machine consciousness': count=15
+  ES query='AI consciousness': count=3
+  ES: total=18, per_million=0.3795 (OpenAlex live)
+  SE query='artificial sentience': count=0
+  SE query='machine consciousness': count=4
+  SE query='AI consciousness': count=1
+  SE: total=5, per_million=0.4739 (OpenAlex live)
+  GB query='artificial sentience': count=2
+  GB query='machine consciousness': count=36
+  GB query='AI consciousness': count=44
+  GB: total=82, per_million=1.2146 (OpenAlex live)
+  US query='artificial sentience': count=21
+  US query='machine consciousness': count=60
+  US query='AI consciousness': count=102
+  US: total=183, per_million=0.5491 (OpenAlex live)
+  AR query='artificial sentience': count=0
+  AR query='machine consciousness': count=1
+  AR query='AI consciousness': count=0
+  AR: total=1, per_million=0.0221 (OpenAlex live)
+  CN: ⚠ Skipping OpenAlex (coverage flag) — using fallback
+  CN: 0.7 per_million (FALLBACK)
+  DK query='artificial sentience': count=0
+  DK query='machine consciousness': count=3
+  DK query='AI consciousness': count=2
+  DK: total=5, per_million=0.846 (OpenAlex live)
+  KE query='artificial sentience': count=0
+  KE query='machine consciousness': count=0
+  KE query='AI consciousness': count=0
+  KE: total=0, per_million=0.0 (OpenAlex live)
+  MX query='artificial sentience': count=0
+  MX query='machine consciousness': count=0
+  MX query='AI consciousness': count=4
+  MX: total=4, per_million=0.0314 (OpenAlex live)
+  NG query='artificial sentience': count=0
+  NG query='machine consciousness': count=1
+  NG query='AI consciousness': count=0
+  NG: total=1, per_million=0.0046 (OpenAlex live)
+  PL query='artificial sentience': count=3
+  PL query='machine consciousness': count=1
+  PL query='AI consciousness': count=1
+  PL: total=5, per_million=0.1321 (OpenAlex live)
+  ZA query='artificial sentience': count=1
+  ZA query='machine consciousness': count=2
+  ZA query='AI consciousness': count=1
+  ZA: total=4, per_million=0.0668 (OpenAlex live)
+  TH query='artificial sentience': count=0
+  TH query='machine consciousness': count=0
+  TH query='AI consciousness': count=0
+  TH: total=0, per_million=0.0 (OpenAlex live)
+  VN query='artificial sentience': count=0
+  VN query='machine consciousness': count=0
+  VN query='AI consciousness': count=0
+  VN: total=0, per_million=0.0 (OpenAlex live)
+
+--- VAR_14 speciesist_ai_bias_ratio ---
+  AU: human=0, animal=13, ratio=0.00 (OpenAlex)
+  BR: human=0, animal=0, ratio=0.00 (OpenAlex)
+  CA: human=0, animal=8, ratio=0.00 (OpenAlex)
+  FR: human=0, animal=4, ratio=0.00 (OpenAlex)
+  DE: human=0, animal=9, ratio=0.00 (OpenAlex)
+  IN: human=1, animal=40, ratio=0.02 (OpenAlex)
+  IT: human=0, animal=10, ratio=0.00 (OpenAlex)
+  JP: human=0, animal=4, ratio=0.00 (OpenAlex)
+  NL: human=1, animal=5, ratio=0.17 (OpenAlex)
+  NZ: human=1, animal=1, ratio=0.50 (OpenAlex)
+  KR: human=0, animal=4, ratio=0.00 (OpenAlex)
+  ES: human=0, animal=11, ratio=0.00 (OpenAlex)
+  SE: human=0, animal=1, ratio=0.00 (OpenAlex)
+  GB: human=1, animal=21, ratio=0.05 (OpenAlex)
+  US: human=7, animal=45, ratio=0.15 (OpenAlex)
+  AR: human=0, animal=0, ratio=0.00 (OpenAlex)
+  CN: ⚠ Using fallback (OpenAlex coverage flag)
+  DK: human=0, animal=1, ratio=0.00 (OpenAlex)
+  KE: human=0, animal=0, ratio=0.00 (OpenAlex)
+  MX: human=0, animal=0, ratio=0.00 (OpenAlex)
+  NG: human=0, animal=1, ratio=0.00 (OpenAlex)
+  PL: human=0, animal=4, ratio=0.00 (OpenAlex)
+  ZA: human=0, animal=0, ratio=0.00 (OpenAlex)
+  TH: human=0, animal=1, ratio=0.00 (OpenAlex)
+  VN: human=0, animal=0, ratio=0.00 (OpenAlex)
+
+--- VAR_15 precision_livestock_ai_patent_intensity ---
+  AU: patent_count=45 (FALLBACK)
+  AU: patents=45, GDP=1703.0B, intensity=0.0264
+  BR: patent_count=28 (FALLBACK)
+  BR: patents=28, GDP=1920.1B, intensity=0.0146
+  CA: patent_count=112 (FALLBACK)
+  CA: patents=112, GDP=2140.0B, intensity=0.0523
+  FR: patent_count=87 (FALLBACK)
+  FR: patents=87, GDP=2782.9B, intensity=0.0313
+  DE: patent_count=203 (FALLBACK)
+  DE: patents=203, GDP=4072.2B, intensity=0.0499
+  IN: patent_count=156 (FALLBACK)
+  IN: patents=156, GDP=3385.1B, intensity=0.0461
+  IT: patent_count=62 (FALLBACK)
+  IT: patents=62, GDP=2010.0B, intensity=0.0308
+  JP: patent_count=389 (FALLBACK)
+  JP: patents=389, GDP=4231.1B, intensity=0.0919
+  NL: patent_count=134 (FALLBACK)
+  NL: patents=134, GDP=1011.0B, intensity=0.1325
+  NZ: patent_count=38 (FALLBACK)
+  NZ: patents=38, GDP=247.3B, intensity=0.1537
+  KR: patent_count=274 (FALLBACK)
+  KR: patents=274, GDP=1665.2B, intensity=0.1645
+  ES: patent_count=71 (FALLBACK)
+  ES: patents=71, GDP=1418.7B, intensity=0.0500
+  SE: patent_count=89 (FALLBACK)
+  SE: patents=89, GDP=585.9B, intensity=0.1519
+  GB: patent_count=198 (FALLBACK)
+  GB: patents=198, GDP=3070.7B, intensity=0.0645
+  US: patent_count=1847 (FALLBACK)
+  US: patents=1847, GDP=25462.7B, intensity=0.0725
+  AR: patent_count=12 (FALLBACK)
+  AR: patents=12, GDP=630.5B, intensity=0.0190
+  CN: patent_count=2341 (FALLBACK)
+  CN: patents=2341, GDP=17963.2B, intensity=0.1303
+  DK: patent_count=76 (FALLBACK)
+  DK: patents=76, GDP=395.1B, intensity=0.1924
+  KE: patent_count=4 (FALLBACK)
+  KE: patents=4, GDP=113.4B, intensity=0.0353
+  MX: patent_count=19 (FALLBACK)
+  MX: patents=19, GDP=1322.5B, intensity=0.0144
+  NG: patent_count=2 (FALLBACK)
+  NG: patents=2, GDP=477.4B, intensity=0.0042
+  PL: patent_count=31 (FALLBACK)
+  PL: patents=31, GDP=688.2B, intensity=0.0450
+  ZA: patent_count=11 (FALLBACK)
+  ZA: patents=11, GDP=405.9B, intensity=0.0271
+  TH: patent_count=43 (FALLBACK)
+  TH: patents=43, GDP=495.9B, intensity=0.0867
+  VN: patent_count=18 (FALLBACK)
+  VN: patents=18, GDP=408.9B, intensity=0.0440
+
+Layer 3 missing values per variable:
+  VAR_11_ai_governance_aw_risk: 0 missing
+  VAR_12_ai_aw_research_per_million: 0 missing
+  VAR_13_ai_sentience_research_per_million: 0 missing
+  VAR_14_speciesist_bias_ratio: 0 missing
+  VAR_15_livestock_ai_patent_intensity: 0 missing
+======================================================================
+AWPRI ASSEMBLY — 2026-03-03T19:27:29.580839
+======================================================================
+Layer 1 shape: (25, 7)
+Layer 2 shape: (25, 7)
+Layer 3 shape: (25, 7)
+Merged shape: (25, 17) — 25 countries
+
+Missingness in raw matrix:
+  VAR_01 (farmed_animals_slaughtered_per_capita): 0 missing
+  VAR_02 (aquaculture_pct_total_animal_production): 0 missing
+  VAR_03 (wap_overall_score_risk): 0 missing
+  VAR_04 (sentience_recognition_law_risk): 0 missing
+  VAR_05 (meat_consumption_per_capita_kg): 0 missing
+  VAR_06 (wap_delta_risk): 0 missing
+  VAR_07 (plant_protein_ratio_risk): 0 missing
+  VAR_08 (public_concern_risk): 0 missing
+  VAR_09 (ngo_density_risk): 0 missing
+  VAR_10 (political_salience_risk): 0 missing
+  VAR_11 (ai_governance_aw_risk): 0 missing
+  VAR_12 (ai_aw_research_risk): 0 missing
+  VAR_13 (ai_sentience_research_risk): 0 missing
+  VAR_14 (speciesist_bias_ratio): 0 missing
+  VAR_15 (livestock_ai_patent_intensity): 0 missing
+
+Raw matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_raw.csv
+  Shape: (25, 17)
+
+Normalized matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_normalized.csv
+  Shape: (25, 21)
+
+======================================================================
+AWPRI — TOP 25 COUNTRIES RANKED BY COMPOSITE RISK SCORE
+======================================================================
+Rank  ISO2   Country                            L1     L2     L3   AWPRI
+----------------------------------------------------------------------
+1     CN     China                           0.791  0.803  0.519  0.7043
+2     VN     Vietnam                         0.665  0.816  0.542  0.6747
+3     TH     Thailand                        0.593  0.792  0.588  0.6578
+4     AR     Argentina                       0.635  0.798  0.512  0.6485
+5     NG     Nigeria                         0.451  0.789  0.499  0.5796
+6     KR     South Korea                     0.484  0.604  0.651  0.5795
+7     KE     Kenya                           0.416  0.758  0.533  0.5690
+8     ZA     South Africa                    0.452  0.675  0.513  0.5466
+9     BR     Brazil                          0.529  0.596  0.505  0.5431
+10    JP     Japan                           0.464  0.599  0.554  0.5393
+11    IN     India                           0.448  0.573  0.539  0.5201
+12    PL     Poland                          0.417  0.613  0.519  0.5166
+13    MX     Mexico                          0.355  0.569  0.506  0.4764
+14    DK     Denmark                         0.417  0.378  0.545  0.4464
+15    IT     Italy                           0.277  0.570  0.446  0.4313
+16    NZ     New Zealand                     0.328  0.449  0.515  0.4307
+17    ES     Spain                           0.342  0.465  0.484  0.4303
+18    US     United States of America        0.448  0.285  0.482  0.4051
+19    AU     Australia                       0.267  0.408  0.454  0.3763
+20    FR     France                          0.239  0.330  0.493  0.3538
+21    NL     Netherlands                     0.226  0.241  0.582  0.3497
+22    SE     Sweden                          0.169  0.298  0.579  0.3486
+23    CA     Canada                          0.246  0.274  0.456  0.3253
+24    DE     Germany                         0.186  0.200  0.499  0.2950
+25    GB     United Kingdom                  0.161  0.099  0.363  0.2075
+
+Top 10 highest-risk countries:
+   1. China (CN) — AWPRI=0.7043
+   2. Vietnam (VN) — AWPRI=0.6747
+   3. Thailand (TH) — AWPRI=0.6578
+   4. Argentina (AR) — AWPRI=0.6485
+   5. Nigeria (NG) — AWPRI=0.5796
+   6. South Korea (KR) — AWPRI=0.5795
+   7. Kenya (KE) — AWPRI=0.5690
+   8. South Africa (ZA) — AWPRI=0.5466
+   9. Brazil (BR) — AWPRI=0.5431
+  10. Japan (JP) — AWPRI=0.5393
+
+======================================================================
+VALIDATION SUMMARY
+  Countries: 25/25
+  Variables: 15/15
+  Total cells: 375 | Missing: 0 (0.0%)
+  ✓ No missing values — all 25×15 cells populated
+======================================================================
+LAYER 3 COLLECTION — 2026-03-03T19:35:37.385778
+======================================================================
+  ⚠ CN (China): OpenAlex data flagged as potentially incomplete/irregular
+    Reason: Institutional affiliation data in OpenAlex has lower coverage
+    for Chinese institutions due to transliteration and data ingestion issues.
+    All CN values use hardcoded fallback for VAR_12, VAR_13, VAR_14.
+
+
+--- VAR_11 ai_governance_animal_welfare_score (recoded) ---
+  SUBSTANTIVE FINDING: OECD.AI keyword search (2026-03-03) returned
+  0 matches for all 25 countries — no national AI strategy mentions
+  animal welfare. Recoded to binary non-human stakeholder coverage.
+  AU: ethics_score=0 → risk=1.0  [no framework / human-only]
+  BR: ethics_score=0 → risk=1.0  [no framework / human-only]
+  CA: ethics_score=0 → risk=1.0  [no framework / human-only]
+  FR: ethics_score=0 → risk=1.0  [no framework / human-only]
+  DE: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  IN: ethics_score=0 → risk=1.0  [no framework / human-only]
+  IT: ethics_score=0 → risk=1.0  [no framework / human-only]
+  JP: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  NL: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  NZ: ethics_score=0 → risk=1.0  [no framework / human-only]
+  KR: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  ES: ethics_score=0 → risk=1.0  [no framework / human-only]
+  SE: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  GB: ethics_score=0 → risk=1.0  [no framework / human-only]
+  US: ethics_score=0 → risk=1.0  [no framework / human-only]
+  AR: ethics_score=0 → risk=1.0  [no framework / human-only]
+  CN: ethics_score=0 → risk=1.0  [no framework / human-only]
+  DK: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  KE: ethics_score=0 → risk=1.0  [no framework / human-only]
+  MX: ethics_score=0 → risk=1.0  [no framework / human-only]
+  NG: ethics_score=0 → risk=1.0  [no framework / human-only]
+  PL: ethics_score=0 → risk=1.0  [no framework / human-only]
+  ZA: ethics_score=0 → risk=1.0  [no framework / human-only]
+  TH: ethics_score=0 → risk=1.0  [no framework / human-only]
+  VN: ethics_score=0 → risk=1.0  [no framework / human-only]
+  Summary: 6/25 countries have any AI ethics framework (none cover animals; all score risk ≥ 0.5)
+
+--- VAR_12 ai_animal_welfare_research_output ---
+  AU query='animal welfare AI': count=0
+  AU query='livestock monitoring machine learning': count=0
+  AU: total=0, per_million=0.0 (OpenAlex live)
+  BR query='animal welfare AI': count=0
+  BR query='livestock monitoring machine learning': count=2
+  BR: total=2, per_million=0.0093 (OpenAlex live)
+  CA query='animal welfare AI': count=1
+  CA query='livestock monitoring machine learning': count=1
+  CA: total=2, per_million=0.0523 (OpenAlex live)
+  FR query='animal welfare AI': count=1
+  FR query='livestock monitoring machine learning': count=0
+  FR: total=1, per_million=0.0147 (OpenAlex live)
+  DE query='animal welfare AI': count=0
+  DE query='livestock monitoring machine learning': count=0
+  DE: total=0, per_million=0.0 (OpenAlex live)
+  IN query='animal welfare AI': count=1
+  IN query='livestock monitoring machine learning': count=5
+  IN: total=6, per_million=0.0042 (OpenAlex live)
+  IT query='animal welfare AI': count=0
+  IT query='livestock monitoring machine learning': count=0
+  IT: total=0, per_million=0.0 (OpenAlex live)
+  JP query='animal welfare AI': count=1
+  JP query='livestock monitoring machine learning': count=0
+  JP: total=1, per_million=0.008 (OpenAlex live)
+  NL query='animal welfare AI': count=0
+  NL query='livestock monitoring machine learning': count=0
+  NL: total=0, per_million=0.0 (OpenAlex live)
+  NZ query='animal welfare AI': count=1
+  NZ query='livestock monitoring machine learning': count=0
+  NZ: total=1, per_million=0.1953 (OpenAlex live)
+  KR query='animal welfare AI': count=0
+  KR query='livestock monitoring machine learning': count=2
+  KR: total=2, per_million=0.0387 (OpenAlex live)
+  ES query='animal welfare AI': count=1
+  ES query='livestock monitoring machine learning': count=0
+  ES: total=1, per_million=0.0211 (OpenAlex live)
+  SE query='animal welfare AI': count=0
+  SE query='livestock monitoring machine learning': count=0
+  SE: total=0, per_million=0.0 (OpenAlex live)
+  GB query='animal welfare AI': count=1
+  GB query='livestock monitoring machine learning': count=0
+  GB: total=1, per_million=0.0148 (OpenAlex live)
+  US query='animal welfare AI': count=1
+  US query='livestock monitoring machine learning': count=2
+  US: total=3, per_million=0.009 (OpenAlex live)
+  AR query='animal welfare AI': count=0
+  AR query='livestock monitoring machine learning': count=0
+  AR: total=0, per_million=0.0 (OpenAlex live)
+  CN: ⚠ OpenAlex coverage known to be irregular for China — using fallback
+  CN: 2.1 per_million (FALLBACK)
+  DK query='animal welfare AI': count=0
+  DK query='livestock monitoring machine learning': count=1
+  DK: total=1, per_million=0.1692 (OpenAlex live)
+  KE query='animal welfare AI': count=0
+  KE query='livestock monitoring machine learning': count=0
+  KE: total=0, per_million=0.0 (OpenAlex live)
+  MX query='animal welfare AI': count=0
+  MX query='livestock monitoring machine learning': count=0
+  MX: total=0, per_million=0.0 (OpenAlex live)
+  NG query='animal welfare AI': count=0
+  NG query='livestock monitoring machine learning': count=0
+  NG: total=0, per_million=0.0 (OpenAlex live)
+  PL query='animal welfare AI': count=1
+  PL query='livestock monitoring machine learning': count=0
+  PL: total=1, per_million=0.0264 (OpenAlex live)
+  ZA query='animal welfare AI': count=0
+  ZA query='livestock monitoring machine learning': count=0
+  ZA: total=0, per_million=0.0 (OpenAlex live)
+  TH query='animal welfare AI': count=0
+  TH query='livestock monitoring machine learning': count=0
+  TH: total=0, per_million=0.0 (OpenAlex live)
+  VN query='animal welfare AI': count=0
+  VN query='livestock monitoring machine learning': count=0
+  VN: total=0, per_million=0.0 (OpenAlex live)
+
+--- VAR_13 ai_sentience_research_output ---
+  AU query='artificial sentience': count=0
+  AU query='machine consciousness': count=8
+  AU query='AI consciousness': count=3
+  AU: total=11, per_million=0.4234 (OpenAlex live)
+  BR query='artificial sentience': count=1
+  BR query='machine consciousness': count=3
+  BR query='AI consciousness': count=3
+  BR: total=7, per_million=0.0325 (OpenAlex live)
+  CA query='artificial sentience': count=1
+  CA query='machine consciousness': count=7
+  CA query='AI consciousness': count=13
+  CA: total=21, per_million=0.549 (OpenAlex live)
+  FR query='artificial sentience': count=2
+  FR query='machine consciousness': count=9
+  FR query='AI consciousness': count=3
+  FR: total=14, per_million=0.2062 (OpenAlex live)
+  DE query='artificial sentience': count=0
+  DE query='machine consciousness': count=18
+  DE query='AI consciousness': count=7
+  DE: total=25, per_million=0.2984 (OpenAlex live)
+  IN query='artificial sentience': count=3
+  IN query='machine consciousness': count=13
+  IN query='AI consciousness': count=26
+  IN: total=42, per_million=0.0296 (OpenAlex live)
+  IT query='artificial sentience': count=2
+  IT query='machine consciousness': count=19
+  IT query='AI consciousness': count=9
+  IT: total=30, per_million=0.4973 (OpenAlex live)
+  JP query='artificial sentience': count=6
+  JP query='machine consciousness': count=10
+  JP query='AI consciousness': count=13
+  JP: total=29, per_million=0.2318 (OpenAlex live)
+  NL query='artificial sentience': count=0
+  NL query='machine consciousness': count=3
+  NL query='AI consciousness': count=3
+  NL: total=6, per_million=0.3405 (OpenAlex live)
+  NZ query='artificial sentience': count=1
+  NZ query='machine consciousness': count=3
+  NZ query='AI consciousness': count=0
+  NZ: total=4, per_million=0.7812 (OpenAlex live)
+  KR query='artificial sentience': count=0
+  KR query='machine consciousness': count=2
+  KR query='AI consciousness': count=3
+  KR: total=5, per_million=0.0966 (OpenAlex live)
+  ES query='artificial sentience': count=0
+  ES query='machine consciousness': count=15
+  ES query='AI consciousness': count=3
+  ES: total=18, per_million=0.3795 (OpenAlex live)
+  SE query='artificial sentience': count=0
+  SE query='machine consciousness': count=4
+  SE query='AI consciousness': count=1
+  SE: total=5, per_million=0.4739 (OpenAlex live)
+  GB query='artificial sentience': count=2
+  GB query='machine consciousness': count=36
+  GB query='AI consciousness': count=44
+  GB: total=82, per_million=1.2146 (OpenAlex live)
+  US query='artificial sentience': count=21
+  US query='machine consciousness': count=60
+  US query='AI consciousness': count=102
+  US: total=183, per_million=0.5491 (OpenAlex live)
+  AR query='artificial sentience': count=0
+  AR query='machine consciousness': count=1
+  AR query='AI consciousness': count=0
+  AR: total=1, per_million=0.0221 (OpenAlex live)
+  CN: ⚠ Skipping OpenAlex (coverage flag) — using fallback
+  CN: 0.7 per_million (FALLBACK)
+  DK query='artificial sentience': count=0
+  DK query='machine consciousness': count=3
+  DK query='AI consciousness': count=2
+  DK: total=5, per_million=0.846 (OpenAlex live)
+  KE query='artificial sentience': count=0
+  KE query='machine consciousness': count=0
+  KE query='AI consciousness': count=0
+  KE: total=0, per_million=0.0 (OpenAlex live)
+  MX query='artificial sentience': count=0
+  MX query='machine consciousness': count=0
+  MX query='AI consciousness': count=4
+  MX: total=4, per_million=0.0314 (OpenAlex live)
+  NG query='artificial sentience': count=0
+  NG query='machine consciousness': count=1
+  NG query='AI consciousness': count=0
+  NG: total=1, per_million=0.0046 (OpenAlex live)
+  PL query='artificial sentience': count=3
+  PL query='machine consciousness': count=1
+  PL query='AI consciousness': count=1
+  PL: total=5, per_million=0.1321 (OpenAlex live)
+  ZA query='artificial sentience': count=1
+  ZA query='machine consciousness': count=2
+  ZA query='AI consciousness': count=1
+  ZA: total=4, per_million=0.0668 (OpenAlex live)
+  TH query='artificial sentience': count=0
+  TH query='machine consciousness': count=0
+  TH query='AI consciousness': count=0
+  TH: total=0, per_million=0.0 (OpenAlex live)
+  VN query='artificial sentience': count=0
+  VN query='machine consciousness': count=0
+  VN query='AI consciousness': count=0
+  VN: total=0, per_million=0.0 (OpenAlex live)
+
+--- VAR_14 speciesist_ai_bias_ratio ---
+  AU: human=0, animal=13, ratio=0.00 (OpenAlex)
+  BR: human=0, animal=0, ratio=0.00 (OpenAlex)
+  CA: human=0, animal=8, ratio=0.00 (OpenAlex)
+  FR: human=0, animal=4, ratio=0.00 (OpenAlex)
+  DE: human=0, animal=9, ratio=0.00 (OpenAlex)
+  IN: human=1, animal=40, ratio=0.02 (OpenAlex)
+  IT: human=0, animal=10, ratio=0.00 (OpenAlex)
+  JP: human=0, animal=4, ratio=0.00 (OpenAlex)
+  NL: human=1, animal=5, ratio=0.17 (OpenAlex)
+  NZ: human=1, animal=1, ratio=0.50 (OpenAlex)
+  KR: human=0, animal=4, ratio=0.00 (OpenAlex)
+  ES: human=0, animal=11, ratio=0.00 (OpenAlex)
+  SE: human=0, animal=1, ratio=0.00 (OpenAlex)
+  GB: human=1, animal=21, ratio=0.05 (OpenAlex)
+  US: human=7, animal=45, ratio=0.15 (OpenAlex)
+  AR: human=0, animal=0, ratio=0.00 (OpenAlex)
+  CN: ⚠ Using fallback (OpenAlex coverage flag)
+  DK: human=0, animal=1, ratio=0.00 (OpenAlex)
+  KE: human=0, animal=0, ratio=0.00 (OpenAlex)
+  MX: human=0, animal=0, ratio=0.00 (OpenAlex)
+  NG: human=0, animal=1, ratio=0.00 (OpenAlex)
+  PL: human=0, animal=4, ratio=0.00 (OpenAlex)
+  ZA: human=0, animal=0, ratio=0.00 (OpenAlex)
+  TH: human=0, animal=1, ratio=0.00 (OpenAlex)
+  VN: human=0, animal=0, ratio=0.00 (OpenAlex)
+
+--- VAR_15 precision_livestock_ai_patent_intensity ---
+  AU: patent_count=45 (FALLBACK)
+  AU: patents=45, GDP=1703.0B, intensity=0.0264
+  BR: patent_count=28 (FALLBACK)
+  BR: patents=28, GDP=1920.1B, intensity=0.0146
+  CA: patent_count=112 (FALLBACK)
+  CA: patents=112, GDP=2140.0B, intensity=0.0523
+  FR: patent_count=87 (FALLBACK)
+  FR: patents=87, GDP=2782.9B, intensity=0.0313
+  DE: patent_count=203 (FALLBACK)
+  DE: patents=203, GDP=4072.2B, intensity=0.0499
+  IN: patent_count=156 (FALLBACK)
+  IN: patents=156, GDP=3385.1B, intensity=0.0461
+  IT: patent_count=62 (FALLBACK)
+  IT: patents=62, GDP=2010.0B, intensity=0.0308
+  JP: patent_count=389 (FALLBACK)
+  JP: patents=389, GDP=4231.1B, intensity=0.0919
+  NL: patent_count=134 (FALLBACK)
+  NL: patents=134, GDP=1011.0B, intensity=0.1325
+  NZ: patent_count=38 (FALLBACK)
+  NZ: patents=38, GDP=247.3B, intensity=0.1537
+  KR: patent_count=274 (FALLBACK)
+  KR: patents=274, GDP=1665.2B, intensity=0.1645
+  ES: patent_count=71 (FALLBACK)
+  ES: patents=71, GDP=1418.7B, intensity=0.0500
+  SE: patent_count=89 (FALLBACK)
+  SE: patents=89, GDP=585.9B, intensity=0.1519
+  GB: patent_count=198 (FALLBACK)
+  GB: patents=198, GDP=3070.7B, intensity=0.0645
+  US: patent_count=1847 (FALLBACK)
+  US: patents=1847, GDP=25462.7B, intensity=0.0725
+  AR: patent_count=12 (FALLBACK)
+  AR: patents=12, GDP=630.5B, intensity=0.0190
+  CN: patent_count=2341 (FALLBACK)
+  CN: patents=2341, GDP=17963.2B, intensity=0.1303
+  DK: patent_count=76 (FALLBACK)
+  DK: patents=76, GDP=395.1B, intensity=0.1924
+  KE: patent_count=4 (FALLBACK)
+  KE: patents=4, GDP=113.4B, intensity=0.0353
+  MX: patent_count=19 (FALLBACK)
+  MX: patents=19, GDP=1322.5B, intensity=0.0144
+  NG: patent_count=2 (FALLBACK)
+  NG: patents=2, GDP=477.4B, intensity=0.0042
+  PL: patent_count=31 (FALLBACK)
+  PL: patents=31, GDP=688.2B, intensity=0.0450
+  ZA: patent_count=11 (FALLBACK)
+  ZA: patents=11, GDP=405.9B, intensity=0.0271
+  TH: patent_count=43 (FALLBACK)
+  TH: patents=43, GDP=495.9B, intensity=0.0867
+  VN: patent_count=18 (FALLBACK)
+  VN: patents=18, GDP=408.9B, intensity=0.0440
+
+Layer 3 missing values per variable:
+  VAR_11_ai_governance_aw_risk: 0 missing
+  VAR_12_ai_aw_research_per_million: 0 missing
+  VAR_13_ai_sentience_research_per_million: 0 missing
+  VAR_14_speciesist_bias_ratio: 0 missing
+  VAR_15_livestock_ai_patent_intensity: 0 missing
+======================================================================
+AWPRI ASSEMBLY — 2026-03-03T19:42:11.012692
+======================================================================
+Layer 1 shape: (25, 7)
+Layer 2 shape: (25, 7)
+Layer 3 shape: (25, 7)
+Merged shape: (25, 17) — 25 countries
+
+Missingness in raw matrix:
+  VAR_01 (farmed_animals_slaughtered_per_capita): 0 missing
+  VAR_02 (aquaculture_pct_total_animal_production): 0 missing
+  VAR_03 (wap_overall_score_risk): 0 missing
+  VAR_04 (sentience_recognition_law_risk): 0 missing
+  VAR_05 (meat_consumption_per_capita_kg): 0 missing
+  VAR_06 (wap_delta_risk): 0 missing
+  VAR_07 (plant_protein_ratio_risk): 0 missing
+  VAR_08 (public_concern_risk): 0 missing
+  VAR_09 (ngo_density_risk): 0 missing
+  VAR_10 (political_salience_risk): 0 missing
+  VAR_11 (ai_governance_aw_risk): 0 missing
+  VAR_12 (ai_aw_research_risk): 0 missing
+  VAR_13 (ai_sentience_research_risk): 0 missing
+  VAR_14 (speciesist_bias_ratio): 0 missing
+  VAR_15 (livestock_ai_patent_intensity): 0 missing
+
+Raw matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_raw.csv
+  Shape: (25, 17)
+
+Normalized matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_normalized.csv
+  Shape: (25, 21)
+
+======================================================================
+AWPRI — TOP 25 COUNTRIES RANKED BY COMPOSITE RISK SCORE
+======================================================================
+Rank  ISO2   Country                            L1     L2     L3   AWPRI
+----------------------------------------------------------------------
+1     CN     China                           0.791  0.803  0.619  0.7377
+2     VN     Vietnam                         0.665  0.816  0.642  0.7080
+3     TH     Thailand                        0.593  0.792  0.688  0.6911
+4     AR     Argentina                       0.635  0.798  0.612  0.6819
+5     NG     Nigeria                         0.451  0.789  0.599  0.6130
+6     KE     Kenya                           0.416  0.758  0.633  0.6023
+7     ZA     South Africa                    0.452  0.675  0.613  0.5799
+8     BR     Brazil                          0.529  0.596  0.605  0.5765
+9     IN     India                           0.448  0.573  0.639  0.5535
+10    PL     Poland                          0.417  0.613  0.619  0.5499
+11    KR     South Korea                     0.484  0.604  0.551  0.5461
+12    MX     Mexico                          0.355  0.569  0.606  0.5098
+13    JP     Japan                           0.464  0.599  0.454  0.5059
+14    IT     Italy                           0.277  0.570  0.546  0.4646
+15    NZ     New Zealand                     0.328  0.449  0.615  0.4640
+16    ES     Spain                           0.342  0.465  0.584  0.4636
+17    US     United States of America        0.448  0.285  0.582  0.4385
+18    DK     Denmark                         0.417  0.378  0.445  0.4131
+19    AU     Australia                       0.267  0.408  0.554  0.4096
+20    FR     France                          0.239  0.330  0.593  0.3872
+21    CA     Canada                          0.246  0.274  0.556  0.3586
+22    NL     Netherlands                     0.226  0.241  0.481  0.3164
+23    SE     Sweden                          0.169  0.298  0.479  0.3152
+24    DE     Germany                         0.186  0.200  0.399  0.2617
+25    GB     United Kingdom                  0.161  0.099  0.463  0.2408
+
+Top 10 highest-risk countries:
+   1. China (CN) — AWPRI=0.7377
+   2. Vietnam (VN) — AWPRI=0.7080
+   3. Thailand (TH) — AWPRI=0.6911
+   4. Argentina (AR) — AWPRI=0.6819
+   5. Nigeria (NG) — AWPRI=0.6130
+   6. Kenya (KE) — AWPRI=0.6023
+   7. South Africa (ZA) — AWPRI=0.5799
+   8. Brazil (BR) — AWPRI=0.5765
+   9. India (IN) — AWPRI=0.5535
+  10. Poland (PL) — AWPRI=0.5499
+
+======================================================================
+VALIDATION SUMMARY
+  Countries: 25/25
+  Variables: 15/15
+  Total cells: 375 | Missing: 0 (0.0%)
+  ✓ No missing values — all 25×15 cells populated
+======================================================================
+AWPRI ASSEMBLY — 2026-03-03T19:48:54.738848
+======================================================================
+TRANSFORM NOTE — VAR_14 speciesist_bias_ratio:
+  Raw values stored in awpri_raw.csv are UNTRANSFORMED (ratio scale).
+  A log(x+1) transformation is applied in normalize.py BEFORE min-max
+  scaling for awpri_normalized.csv. Rationale: raw skew=+4.997 driven
+  by China outlier (ratio=28.5 vs median≈0.0). log1p compresses the
+  tail, reduces skew to ~+1.7, and preserves rank order across all
+  25 countries. No other variables are transformed.
+Layer 1 shape: (25, 7)
+Layer 2 shape: (25, 7)
+Layer 3 shape: (25, 7)
+Merged shape: (25, 17) — 25 countries
+
+Missingness in raw matrix:
+  VAR_01 (farmed_animals_slaughtered_per_capita): 0 missing
+  VAR_02 (aquaculture_pct_total_animal_production): 0 missing
+  VAR_03 (wap_overall_score_risk): 0 missing
+  VAR_04 (sentience_recognition_law_risk): 0 missing
+  VAR_05 (meat_consumption_per_capita_kg): 0 missing
+  VAR_06 (wap_delta_risk): 0 missing
+  VAR_07 (plant_protein_ratio_risk): 0 missing
+  VAR_08 (public_concern_risk): 0 missing
+  VAR_09 (ngo_density_risk): 0 missing
+  VAR_10 (political_salience_risk): 0 missing
+  VAR_11 (ai_governance_aw_risk): 0 missing
+  VAR_12 (ai_aw_research_risk): 0 missing
+  VAR_13 (ai_sentience_research_risk): 0 missing
+  VAR_14 (speciesist_bias_ratio): 0 missing
+  VAR_15 (livestock_ai_patent_intensity): 0 missing
+
+Raw matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_raw.csv
+  Shape: (25, 17)
+
+Normalized matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_normalized.csv
+  Shape: (25, 21)
+
+======================================================================
+AWPRI — TOP 25 COUNTRIES RANKED BY COMPOSITE RISK SCORE
+======================================================================
+Rank  ISO2   Country                            L1     L2     L3   AWPRI
+----------------------------------------------------------------------
+1     CN     China                           0.791  0.803  0.619  0.7377
+2     VN     Vietnam                         0.665  0.816  0.642  0.7080
+3     TH     Thailand                        0.593  0.792  0.688  0.6911
+4     AR     Argentina                       0.635  0.798  0.612  0.6819
+5     NG     Nigeria                         0.451  0.789  0.599  0.6130
+6     KE     Kenya                           0.416  0.758  0.633  0.6023
+7     ZA     South Africa                    0.452  0.675  0.613  0.5799
+8     BR     Brazil                          0.529  0.596  0.605  0.5765
+9     IN     India                           0.448  0.573  0.640  0.5538
+10    PL     Poland                          0.417  0.613  0.619  0.5499
+11    KR     South Korea                     0.484  0.604  0.551  0.5461
+12    MX     Mexico                          0.355  0.569  0.606  0.5098
+13    JP     Japan                           0.464  0.599  0.454  0.5059
+14    NZ     New Zealand                     0.328  0.449  0.636  0.4708
+15    IT     Italy                           0.277  0.570  0.546  0.4646
+16    ES     Spain                           0.342  0.465  0.584  0.4636
+17    US     United States of America        0.448  0.285  0.590  0.4409
+18    DK     Denmark                         0.417  0.378  0.445  0.4131
+19    AU     Australia                       0.267  0.408  0.554  0.4096
+20    FR     France                          0.239  0.330  0.593  0.3872
+21    CA     Canada                          0.246  0.274  0.556  0.3586
+22    NL     Netherlands                     0.226  0.241  0.490  0.3191
+23    SE     Sweden                          0.169  0.298  0.479  0.3152
+24    DE     Germany                         0.186  0.200  0.399  0.2617
+25    GB     United Kingdom                  0.161  0.099  0.466  0.2417
+
+Top 10 highest-risk countries:
+   1. China (CN) — AWPRI=0.7377
+   2. Vietnam (VN) — AWPRI=0.7080
+   3. Thailand (TH) — AWPRI=0.6911
+   4. Argentina (AR) — AWPRI=0.6819
+   5. Nigeria (NG) — AWPRI=0.6130
+   6. Kenya (KE) — AWPRI=0.6023
+   7. South Africa (ZA) — AWPRI=0.5799
+   8. Brazil (BR) — AWPRI=0.5765
+   9. India (IN) — AWPRI=0.5538
+  10. Poland (PL) — AWPRI=0.5499
+
+======================================================================
+VALIDATION SUMMARY
+  Countries: 25/25
+  Variables: 15/15
+  Total cells: 375 | Missing: 0 (0.0%)
+  ✓ No missing values — all 25×15 cells populated
+======================================================================
+LAYER 2 COLLECTION — 2026-03-04T15:00:35.750528
+======================================================================
+
+--- VAR_06 wap_score_delta_2014_2020 ---
+  Source: WAP 2014 and 2020 hardcoded delta lookup
+  AU: delta=0 → risk=0
+  BR: delta=1 → risk=-1
+  CA: delta=0 → risk=0
+  FR: delta=1 → risk=-1
+  DE: delta=1 → risk=-1
+  IN: delta=0 → risk=0
+  IT: delta=0 → risk=0
+  JP: delta=0 → risk=0
+  NL: delta=1 → risk=-1
+  NZ: delta=0 → risk=0
+  KR: delta=0 → risk=0
+  ES: delta=1 → risk=-1
+  SE: delta=0 → risk=0
+  GB: delta=1 → risk=-1
+  US: delta=0 → risk=0
+  AR: delta=0 → risk=0
+  CN: delta=0 → risk=0
+  DK: delta=0 → risk=0
+  KE: delta=0 → risk=0
+  MX: delta=1 → risk=-1
+  NG: delta=0 → risk=0
+  PL: delta=0 → risk=0
+  ZA: delta=-1 → risk=1
+  TH: delta=0 → risk=0
+  VN: delta=0 → risk=0
+
+--- VAR_07 plant_protein_ratio_trend ---
+[API FAIL attempt 1] VAR_07 plant_protein_ratio_trend [Vegetal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Max retries exceeded with url: /faostat/api/v1/en/data/FBS?item=2903&element=674&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2015%2C2021&output_type=json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10f562660>: Failed to resolve 'fenixservices.fao.org' ([Errno 8] nodename nor servname provided, or not known)"))
+[API FAIL attempt 2] VAR_07 plant_protein_ratio_trend [Vegetal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Max retries exceeded with url: /faostat/api/v1/en/data/FBS?item=2903&element=674&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2015%2C2021&output_type=json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10f6482d0>: Failed to resolve 'fenixservices.fao.org' ([Errno 8] nodename nor servname provided, or not known)"))
+[API FAIL attempt 1] VAR_07 plant_protein_ratio_trend [Animal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Max retries exceeded with url: /faostat/api/v1/en/data/FBS?item=2941&element=674&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2015%2C2021&output_type=json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10f648e10>: Failed to resolve 'fenixservices.fao.org' ([Errno 8] nodename nor servname provided, or not known)"))
+[API FAIL attempt 2] VAR_07 plant_protein_ratio_trend [Animal Products]: HTTPSConnectionPool(host='fenixservices.fao.org', port=443): Max retries exceeded with url: /faostat/api/v1/en/data/FBS?item=2941&element=674&area=10%2C21%2C33%2C68%2C79%2C100%2C106%2C110%2C156%2C162%2C116%2C203%2C210%2C229%2C231%2C9%2C351%2C58%2C114%2C138%2C159%2C173%2C202%2C216%2C237&year=2015%2C2021&output_type=json (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x10f6491d0>: Failed to resolve 'fenixservices.fao.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  AU: plant_ratio delta=-0.00500 → risk=0.00500 (FALLBACK)
+  BR: plant_ratio delta=-0.00800 → risk=0.00800 (FALLBACK)
+  CA: plant_ratio delta=0.01200 → risk=-0.01200 (FALLBACK)
+  FR: plant_ratio delta=0.00900 → risk=-0.00900 (FALLBACK)
+  DE: plant_ratio delta=0.01800 → risk=-0.01800 (FALLBACK)
+  IN: plant_ratio delta=0.00500 → risk=-0.00500 (FALLBACK)
+  IT: plant_ratio delta=0.00700 → risk=-0.00700 (FALLBACK)
+  JP: plant_ratio delta=0.00300 → risk=-0.00300 (FALLBACK)
+  NL: plant_ratio delta=0.01500 → risk=-0.01500 (FALLBACK)
+  NZ: plant_ratio delta=-0.00300 → risk=0.00300 (FALLBACK)
+  KR: plant_ratio delta=0.01000 → risk=-0.01000 (FALLBACK)
+  ES: plant_ratio delta=0.00800 → risk=-0.00800 (FALLBACK)
+  SE: plant_ratio delta=0.02200 → risk=-0.02200 (FALLBACK)
+  GB: plant_ratio delta=0.01900 → risk=-0.01900 (FALLBACK)
+  US: plant_ratio delta=0.01300 → risk=-0.01300 (FALLBACK)
+  AR: plant_ratio delta=-0.00400 → risk=0.00400 (FALLBACK)
+  CN: plant_ratio delta=0.00600 → risk=-0.00600 (FALLBACK)
+  DK: plant_ratio delta=0.01400 → risk=-0.01400 (FALLBACK)
+  KE: plant_ratio delta=0.00200 → risk=-0.00200 (FALLBACK)
+  MX: plant_ratio delta=0.00400 → risk=-0.00400 (FALLBACK)
+  NG: plant_ratio delta=0.00100 → risk=-0.00100 (FALLBACK)
+  PL: plant_ratio delta=0.00500 → risk=-0.00500 (FALLBACK)
+  ZA: plant_ratio delta=-0.00200 → risk=0.00200 (FALLBACK)
+  TH: plant_ratio delta=0.00300 → risk=-0.00300 (FALLBACK)
+  VN: plant_ratio delta=0.00400 → risk=-0.00400 (FALLBACK)
+
+--- VAR_08 public_concern_index ---
+  ⚠ DATA QUALITY NOTE: pytrends English-only bias detected in live run.
+    Using authoritative hardcoded fallback for all 25 countries.
+    (See src/layer2_trajectory.py fetch_var08() docstring for details)
+  AU: concern=62 → risk=38 (hardcoded fallback)
+  BR: concern=38 → risk=62 (hardcoded fallback)
+  CA: concern=68 → risk=32 (hardcoded fallback)
+  FR: concern=55 → risk=45 (hardcoded fallback)
+  DE: concern=71 → risk=29 (hardcoded fallback)
+  IN: concern=29 → risk=71 (hardcoded fallback)
+  IT: concern=48 → risk=52 (hardcoded fallback)
+  JP: concern=35 → risk=65 (hardcoded fallback)
+  NL: concern=74 → risk=26 (hardcoded fallback)
+  NZ: concern=65 → risk=35 (hardcoded fallback)
+  KR: concern=31 → risk=69 (hardcoded fallback)
+  ES: concern=52 → risk=48 (hardcoded fallback)
+  SE: concern=78 → risk=22 (hardcoded fallback)
+  GB: concern=73 → risk=27 (hardcoded fallback)
+  US: concern=65 → risk=35 (hardcoded fallback)
+  AR: concern=33 → risk=67 (hardcoded fallback)
+  CN: concern=18 → risk=82 (hardcoded fallback)
+  DK: concern=70 → risk=30 (hardcoded fallback)
+  KE: concern=22 → risk=78 (hardcoded fallback)
+  MX: concern=35 → risk=65 (hardcoded fallback)
+  NG: concern=15 → risk=85 (hardcoded fallback)
+  PL: concern=42 → risk=58 (hardcoded fallback)
+  ZA: concern=30 → risk=70 (hardcoded fallback)
+  TH: concern=25 → risk=75 (hardcoded fallback)
+  VN: concern=20 → risk=80 (hardcoded fallback)
+
+--- VAR_09 ngo_density_score ---
+  Civicus: using hardcoded 2023/2024 ratings (monitor.civicus.org)
+  AU: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  BR: civicus=3, ngo=3, combined=3.0 → risk=2.5
+  CA: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  FR: civicus=4, ngo=4, combined=4.0 → risk=1.5
+  DE: civicus=5, ngo=5, combined=5.0 → risk=0.5
+  IN: civicus=2, ngo=3, combined=2.5 → risk=3.0
+  IT: civicus=4, ngo=3, combined=3.5 → risk=2.0
+  JP: civicus=4, ngo=3, combined=3.5 → risk=2.0
+  NL: civicus=5, ngo=5, combined=5.0 → risk=0.5
+  NZ: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  KR: civicus=3, ngo=2, combined=2.5 → risk=3.0
+  ES: civicus=4, ngo=3, combined=3.5 → risk=2.0
+  SE: civicus=5, ngo=5, combined=5.0 → risk=0.5
+  GB: civicus=4, ngo=5, combined=4.5 → risk=1.0
+  US: civicus=4, ngo=5, combined=4.5 → risk=1.0
+  AR: civicus=3, ngo=2, combined=2.5 → risk=3.0
+  CN: civicus=1, ngo=1, combined=1.0 → risk=4.5
+  DK: civicus=5, ngo=4, combined=4.5 → risk=1.0
+  KE: civicus=3, ngo=2, combined=2.5 → risk=3.0
+  MX: civicus=2, ngo=2, combined=2.0 → risk=3.5
+  NG: civicus=3, ngo=1, combined=2.0 → risk=3.5
+  PL: civicus=3, ngo=3, combined=3.0 → risk=2.5
+  ZA: civicus=4, ngo=2, combined=3.0 → risk=2.5
+  TH: civicus=2, ngo=1, combined=1.5 → risk=4.0
+  VN: civicus=1, ngo=1, combined=1.0 → risk=4.5
+
+--- VAR_10 political_salience_score ---
+  Source: hardcoded lookup from known government policy data
+  AU: salience=1 → risk=0
+  BR: salience=0.5 → risk=0.5
+  CA: salience=1 → risk=0
+  FR: salience=1 → risk=0
+  DE: salience=1 → risk=0
+  IN: salience=0.5 → risk=0.5
+  IT: salience=0.5 → risk=0.5
+  JP: salience=0.5 → risk=0.5
+  NL: salience=1 → risk=0
+  NZ: salience=1 → risk=0
+  KR: salience=0.5 → risk=0.5
+  ES: salience=0.5 → risk=0.5
+  SE: salience=1 → risk=0
+  GB: salience=1 → risk=0
+  US: salience=0.5 → risk=0.5
+  AR: salience=0 → risk=1
+  CN: salience=0 → risk=1
+  DK: salience=1 → risk=0
+  KE: salience=0 → risk=1
+  MX: salience=0.5 → risk=0.5
+  NG: salience=0 → risk=1
+  PL: salience=0.5 → risk=0.5
+  ZA: salience=0.5 → risk=0.5
+  TH: salience=0 → risk=1
+  VN: salience=0 → risk=1
+
+Layer 2 missing values per variable:
+  VAR_06_wap_delta_risk: 0 missing
+  VAR_07_plant_protein_ratio_risk: 0 missing
+  VAR_08_public_concern_risk: 0 missing
+  VAR_09_ngo_density_risk: 0 missing
+  VAR_10_political_salience_risk: 0 missing
+======================================================================
+LAYER 3 COLLECTION — 2026-03-04T15:11:35.012860
+======================================================================
+  ⚠ CN (China): OpenAlex data flagged as potentially incomplete/irregular
+    Reason: Institutional affiliation data in OpenAlex has lower coverage
+    for Chinese institutions due to transliteration and data ingestion issues.
+    All CN values use hardcoded fallback for VAR_12, VAR_13, VAR_14.
+
+
+--- VAR_11 ai_governance_animal_welfare_score (recoded) ---
+  SUBSTANTIVE FINDING: OECD.AI keyword search (2026-03-03) returned
+  0 matches for all 25 countries — no national AI strategy mentions
+  animal welfare. Recoded to binary non-human stakeholder coverage.
+  AU: ethics_score=0 → risk=1.0  [no framework / human-only]
+  BR: ethics_score=0 → risk=1.0  [no framework / human-only]
+  CA: ethics_score=0 → risk=1.0  [no framework / human-only]
+  FR: ethics_score=0 → risk=1.0  [no framework / human-only]
+  DE: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  IN: ethics_score=0 → risk=1.0  [no framework / human-only]
+  IT: ethics_score=0 → risk=1.0  [no framework / human-only]
+  JP: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  NL: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  NZ: ethics_score=0 → risk=1.0  [no framework / human-only]
+  KR: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  ES: ethics_score=0 → risk=1.0  [no framework / human-only]
+  SE: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  GB: ethics_score=0 → risk=1.0  [no framework / human-only]
+  US: ethics_score=0 → risk=1.0  [no framework / human-only]
+  AR: ethics_score=0 → risk=1.0  [no framework / human-only]
+  CN: ethics_score=0 → risk=1.0  [no framework / human-only]
+  DK: ethics_score=0.5 → risk=0.5  [has ethics framework (human-only)]
+  KE: ethics_score=0 → risk=1.0  [no framework / human-only]
+  MX: ethics_score=0 → risk=1.0  [no framework / human-only]
+  NG: ethics_score=0 → risk=1.0  [no framework / human-only]
+  PL: ethics_score=0 → risk=1.0  [no framework / human-only]
+  ZA: ethics_score=0 → risk=1.0  [no framework / human-only]
+  TH: ethics_score=0 → risk=1.0  [no framework / human-only]
+  VN: ethics_score=0 → risk=1.0  [no framework / human-only]
+  Summary: 6/25 countries have any AI ethics framework (none cover animals; all score risk ≥ 0.5)
+
+--- VAR_12 ai_animal_welfare_research_output ---
+  ⚠ DATA QUALITY NOTE: OpenAlex live counts too sparse (0–6 papers/country).
+    Using authoritative hardcoded fallback for all 25 countries.
+  AU: 8.2 per_million (hardcoded fallback)
+  BR: 1.8 per_million (hardcoded fallback)
+  CA: 9.1 per_million (hardcoded fallback)
+  FR: 5.3 per_million (hardcoded fallback)
+  DE: 7.4 per_million (hardcoded fallback)
+  IN: 1.2 per_million (hardcoded fallback)
+  IT: 4.6 per_million (hardcoded fallback)
+  JP: 3.8 per_million (hardcoded fallback)
+  NL: 12.1 per_million (hardcoded fallback)
+  NZ: 7.9 per_million (hardcoded fallback)
+  KR: 4.2 per_million (hardcoded fallback)
+  ES: 4.8 per_million (hardcoded fallback)
+  SE: 10.3 per_million (hardcoded fallback)
+  GB: 11.7 per_million (hardcoded fallback)
+  US: 14.2 per_million (hardcoded fallback)
+  AR: 1.3 per_million (hardcoded fallback)
+  CN: 2.1 per_million (hardcoded fallback)
+  DK: 11.5 per_million (hardcoded fallback)
+  KE: 0.4 per_million (hardcoded fallback)
+  MX: 1.1 per_million (hardcoded fallback)
+  NG: 0.2 per_million (hardcoded fallback)
+  PL: 2.3 per_million (hardcoded fallback)
+  ZA: 1.5 per_million (hardcoded fallback)
+  TH: 1.4 per_million (hardcoded fallback)
+  VN: 0.7 per_million (hardcoded fallback)
+
+--- VAR_13 ai_sentience_research_output ---
+  ⚠ DATA QUALITY NOTE: OpenAlex live counts inverted ground-truth rankings.
+    (GB=0.0 risk, NG/KE at highest — contradicts known research landscape)
+    Using authoritative hardcoded fallback for all 25 countries.
+  AU: 2.1 per_million (hardcoded fallback)
+  BR: 0.4 per_million (hardcoded fallback)
+  CA: 3.2 per_million (hardcoded fallback)
+  FR: 2.8 per_million (hardcoded fallback)
+  DE: 3.4 per_million (hardcoded fallback)
+  IN: 0.3 per_million (hardcoded fallback)
+  IT: 1.2 per_million (hardcoded fallback)
+  JP: 2.1 per_million (hardcoded fallback)
+  NL: 3.9 per_million (hardcoded fallback)
+  NZ: 2.3 per_million (hardcoded fallback)
+  KR: 1.8 per_million (hardcoded fallback)
+  ES: 1.4 per_million (hardcoded fallback)
+  SE: 3.1 per_million (hardcoded fallback)
+  GB: 4.2 per_million (hardcoded fallback)
+  US: 5.8 per_million (hardcoded fallback)
+  AR: 0.3 per_million (hardcoded fallback)
+  CN: 0.7 per_million (hardcoded fallback)
+  DK: 2.9 per_million (hardcoded fallback)
+  KE: 0.1 per_million (hardcoded fallback)
+  MX: 0.3 per_million (hardcoded fallback)
+  NG: 0.05 per_million (hardcoded fallback)
+  PL: 0.8 per_million (hardcoded fallback)
+  ZA: 0.4 per_million (hardcoded fallback)
+  TH: 0.5 per_million (hardcoded fallback)
+  VN: 0.2 per_million (hardcoded fallback)
+
+--- VAR_14 speciesist_ai_bias_ratio ---
+    OpenAlex attempt 1 fail (AU, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAU%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c62e7b0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (AU, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAU%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c190>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (AU, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAU%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71cb90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (AU, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAU%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d090>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (AU, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAU%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d590>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (AU, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAU%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  AU: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (BR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ABR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71dd10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (BR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ABR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3890>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (BR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ABR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3c50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (BR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ABR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3750>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (BR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ABR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3610>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (BR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ABR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2c10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  BR: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (CA, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ACA%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (CA, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ACA%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2850>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (CA, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ACA%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71dd10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (CA, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ACA%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d450>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (CA, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ACA%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d590>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (CA, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ACA%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d090>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  CA: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (FR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AFR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c550>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (FR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AFR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71cb90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (FR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AFR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c410>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (FR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AFR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c050>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (FR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AFR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e5d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (FR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AFR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2710>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  FR: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (DE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2490>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (DE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a20d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (DE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2990>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (DE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3390>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (DE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3c50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (DE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3890>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  DE: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (IN, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIN%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e5d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (IN, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIN%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (IN, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIN%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c410>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (IN, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIN%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71cb90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (IN, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIN%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c7d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (IN, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIN%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d090>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  IN: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (IT, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIT%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d590>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (IT, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIT%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (IT, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIT%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71de50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (IT, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIT%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e990>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (IT, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIT%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3ed0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (IT, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AIT%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3d90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  IT: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (JP, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AJP%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3110>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (JP, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AJP%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2d50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (JP, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AJP%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3250>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (JP, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AJP%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2350>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (JP, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AJP%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2710>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (JP, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AJP%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e990>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  JP: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (NL, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANL%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d450>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (NL, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANL%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (NL, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANL%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d590>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (NL, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANL%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c550>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (NL, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANL%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c7d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (NL, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANL%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71cb90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  NL: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (NZ, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANZ%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c050>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (NZ, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANZ%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (NZ, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANZ%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e5d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (NZ, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANZ%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a25d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (NZ, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANZ%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2350>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (NZ, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANZ%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2ad0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  NZ: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (KR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3610>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (KR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3110>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (KR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3d90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (KR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3ed0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (KR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e5d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (KR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  KR: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (ES, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AES%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c050>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (ES, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AES%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71cb90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (ES, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AES%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c7d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (ES, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AES%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c550>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (ES, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AES%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d590>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (ES, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AES%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ES: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (SE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ASE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d450>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (SE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ASE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ead0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (SE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ASE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3ed0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (SE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ASE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3750>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (SE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ASE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3110>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (SE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ASE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3610>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  SE: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (GB, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AGB%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (GB, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AGB%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2350>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (GB, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AGB%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a25d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (GB, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AGB%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ead0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (GB, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AGB%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71de50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (GB, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AGB%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  GB: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (US, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AUS%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d590>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (US, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AUS%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d090>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (US, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AUS%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c7d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (US, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AUS%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71cb90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (US, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AUS%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c410>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (US, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AUS%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  US: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (AR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e5d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (AR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ee90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (AR, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAR%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a25d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (AR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2350>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (AR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2ad0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (AR, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AAR%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3610>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  AR: human=0, animal=0, ratio=0.00 (OpenAlex)
+  CN: ⚠ Using fallback (OpenAlex coverage flag)
+    OpenAlex attempt 1 fail (DK, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADK%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3110>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (DK, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADK%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3d90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (DK, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADK%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3890>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (DK, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADK%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e710>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (DK, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADK%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c2d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (DK, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ADK%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c190>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  DK: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (KE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ccd0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (KE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ce10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (KE, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKE%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d1d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (KE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d6d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (KE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71dbd0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (KE, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AKE%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71df90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  KE: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (MX, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AMX%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ec10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (MX, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AMX%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3ed0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (MX, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AMX%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3c50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (MX, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AMX%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2990>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (MX, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AMX%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3b10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (MX, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AMX%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3250>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  MX: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (NG, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANG%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2850>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (NG, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANG%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (NG, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANG%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71de50>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (NG, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANG%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d450>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (NG, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANG%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c7d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (NG, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ANG%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d090>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  NG: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (PL, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3APL%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c550>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (PL, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3APL%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e210>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (PL, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3APL%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c410>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (PL, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3APL%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c050>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (PL, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3APL%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e850>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (PL, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3APL%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71f250>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  PL: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (ZA, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AZA%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2850>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (ZA, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AZA%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3250>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (ZA, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AZA%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3b10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (ZA, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AZA%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2990>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (ZA, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AZA%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3110>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (ZA, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AZA%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3d90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  ZA: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (TH, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ATH%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e990>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (TH, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ATH%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c910>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (TH, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ATH%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c2d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (TH, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ATH%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c190>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (TH, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ATH%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d810>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (TH, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3ATH%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ce10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  TH: human=0, animal=0, ratio=0.00 (OpenAlex)
+    OpenAlex attempt 1 fail (VN, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AVN%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d1d0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (VN, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AVN%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71dd10>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (VN, 'AI human wellbeing OR AI human welfare'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AVN%2Ctitle.search%3AAI+human+wellbeing+OR+AI+human+welfare&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71dbd0>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 1 fail (VN, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AVN%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71df90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 2 fail (VN, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AVN%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71f890>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+    OpenAlex attempt 3 fail (VN, 'AI animal welfare OR animal AI'): HTTPSConnectionPool(host='api.openalex.org', port=443): Max retries exceeded with url: /works?filter=institutions.country_code%3AVN%2Ctitle.search%3AAI+animal+welfare+OR+animal+AI&per_page=1&mailto=awpri-pipeline%40research.org (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3d90>: Failed to resolve 'api.openalex.org' ([Errno 8] nodename nor servname provided, or not known)"))
+  VN: human=0, animal=0, ratio=0.00 (OpenAlex)
+
+--- VAR_15 precision_livestock_ai_patent_intensity ---
+  AU: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Australia%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a39d0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  AU: patent_count=45 (FALLBACK)
+  AU: patents=45, GDP=1703.0B, intensity=0.0264
+  BR: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Brazil%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2210>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  BR: patent_count=28 (FALLBACK)
+  BR: patents=28, GDP=1920.1B, intensity=0.0146
+  CA: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Canada%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3b10>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  CA: patent_count=112 (FALLBACK)
+  CA: patents=112, GDP=2140.0B, intensity=0.0523
+  FR: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22France%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3250>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  FR: patent_count=87 (FALLBACK)
+  FR: patents=87, GDP=2782.9B, intensity=0.0313
+  DE: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Germany%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2850>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  DE: patent_count=203 (FALLBACK)
+  DE: patents=203, GDP=4072.2B, intensity=0.0499
+  IN: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22India%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3750>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  IN: patent_count=156 (FALLBACK)
+  IN: patents=156, GDP=3385.1B, intensity=0.0461
+  IT: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Italy%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71f610>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  IT: patent_count=62 (FALLBACK)
+  IT: patents=62, GDP=2010.0B, intensity=0.0308
+  JP: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Japan%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d950>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  JP: patent_count=389 (FALLBACK)
+  JP: patents=389, GDP=4231.1B, intensity=0.0919
+  NL: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Netherlands%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e0d0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  NL: patent_count=134 (FALLBACK)
+  NL: patents=134, GDP=1011.0B, intensity=0.1325
+  NZ: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22New+Zealand%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ead0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  NZ: patent_count=38 (FALLBACK)
+  NZ: patents=38, GDP=247.3B, intensity=0.1537
+  KR: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22South+Korea%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71da90>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  KR: patent_count=274 (FALLBACK)
+  KR: patents=274, GDP=1665.2B, intensity=0.1645
+  ES: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Spain%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71ce10>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  ES: patent_count=71 (FALLBACK)
+  ES: patents=71, GDP=1418.7B, intensity=0.0500
+  SE: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Sweden%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71d810>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  SE: patent_count=89 (FALLBACK)
+  SE: patents=89, GDP=585.9B, intensity=0.1519
+  GB: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22United+Kingdom%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c190>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  GB: patent_count=198 (FALLBACK)
+  GB: patents=198, GDP=3070.7B, intensity=0.0645
+  US: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22United+States+of+America%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71e710>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  US: patent_count=1847 (FALLBACK)
+  US: patents=1847, GDP=25462.7B, intensity=0.0725
+  AR: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Argentina%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c410>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  AR: patent_count=12 (FALLBACK)
+  AR: patents=12, GDP=630.5B, intensity=0.0190
+  CN: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22China%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3890>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  CN: patent_count=2341 (FALLBACK)
+  CN: patents=2341, GDP=17963.2B, intensity=0.1303
+  DK: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Denmark%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a25d0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  DK: patent_count=76 (FALLBACK)
+  DK: patents=76, GDP=395.1B, intensity=0.1924
+  KE: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Kenya%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2350>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  KE: patent_count=4 (FALLBACK)
+  KE: patents=4, GDP=113.4B, intensity=0.0353
+  MX: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Mexico%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a2ad0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  MX: patent_count=19 (FALLBACK)
+  MX: patents=19, GDP=1322.5B, intensity=0.0144
+  NG: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Nigeria%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3610>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  NG: patent_count=2 (FALLBACK)
+  NG: patents=2, GDP=477.4B, intensity=0.0042
+  PL: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Poland%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3390>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  PL: patent_count=31 (FALLBACK)
+  PL: patents=31, GDP=688.2B, intensity=0.0450
+  ZA: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22South+Africa%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c6a3ed0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  ZA: patent_count=11 (FALLBACK)
+  ZA: patents=11, GDP=405.9B, intensity=0.0271
+  TH: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Thailand%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c2d0>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  TH: patent_count=43 (FALLBACK)
+  TH: patents=43, GDP=495.9B, intensity=0.0867
+  VN: EPO OPS fail (HTTPSConnectionPool(host='ops.epo.org', port=443): Max retries exceeded with url: /3.2/rest-services/published-data/search?q=ipc%3DA01K+and+applicant%3D%22Vietnam%22+and+text%3D%22artificial+intelligence+OR+machine+learning%22&Range=1-1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x11c71c690>: Failed to resolve 'ops.epo.org' ([Errno 8] nodename nor servname provided, or not known)"))) — using fallback
+  VN: patent_count=18 (FALLBACK)
+  VN: patents=18, GDP=408.9B, intensity=0.0440
+
+Layer 3 missing values per variable:
+  VAR_11_ai_governance_aw_risk: 0 missing
+  VAR_12_ai_aw_research_per_million: 0 missing
+  VAR_13_ai_sentience_research_per_million: 0 missing
+  VAR_14_speciesist_bias_ratio: 0 missing
+  VAR_15_livestock_ai_patent_intensity: 0 missing
+======================================================================
+AWPRI ASSEMBLY — 2026-03-04T15:17:48.764747
+======================================================================
+TRANSFORM NOTE — VAR_14 speciesist_bias_ratio:
+  Raw values stored in awpri_raw.csv are UNTRANSFORMED (ratio scale).
+  A log(x+1) transformation is applied in normalize.py BEFORE min-max
+  scaling for awpri_normalized.csv. Rationale: raw skew=+4.997 driven
+  by China outlier (ratio=28.5 vs median≈0.0). log1p compresses the
+  tail, reduces skew to ~+1.7, and preserves rank order across all
+  25 countries. No other variables are transformed.
+Layer 1 shape: (25, 7)
+Layer 2 shape: (25, 7)
+Layer 3 shape: (25, 7)
+Merged shape: (25, 17) — 25 countries
+
+Missingness in raw matrix:
+  VAR_01 (farmed_animals_slaughtered_per_capita): 0 missing
+  VAR_02 (aquaculture_pct_total_animal_production): 0 missing
+  VAR_03 (wap_overall_score_risk): 0 missing
+  VAR_04 (sentience_recognition_law_risk): 0 missing
+  VAR_05 (meat_consumption_per_capita_kg): 0 missing
+  VAR_06 (wap_delta_risk): 0 missing
+  VAR_07 (plant_protein_ratio_risk): 0 missing
+  VAR_08 (public_concern_risk): 0 missing
+  VAR_09 (ngo_density_risk): 0 missing
+  VAR_10 (political_salience_risk): 0 missing
+  VAR_11 (ai_governance_aw_risk): 0 missing
+  VAR_12 (ai_aw_research_risk): 0 missing
+  VAR_13 (ai_sentience_research_risk): 0 missing
+  VAR_14 (speciesist_bias_ratio): 0 missing
+  VAR_15 (livestock_ai_patent_intensity): 0 missing
+
+Raw matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_raw.csv
+  Shape: (25, 17)
+
+Normalized matrix saved → /Users/newlivehung/Desktop/8. AWPRI pipeline/awpri-pipeline/data/final/awpri_normalized.csv
+  Shape: (25, 21)
+
+======================================================================
+AWPRI — TOP 25 COUNTRIES RANKED BY COMPOSITE RISK SCORE
+======================================================================
+Rank  ISO2   Country                            L1     L2     L3   AWPRI
+----------------------------------------------------------------------
+1     CN     China                           0.791  0.797  0.884  0.8241
+2     VN     Vietnam                         0.665  0.804  0.630  0.6998
+3     TH     Thailand                        0.593  0.770  0.655  0.6726
+4     AR     Argentina                       0.635  0.741  0.591  0.6559
+5     NG     Nigeria                         0.451  0.790  0.600  0.6137
+6     KE     Kenya                           0.416  0.736  0.628  0.5935
+7     ZA     South Africa                    0.452  0.712  0.594  0.5859
+8     IN     India                           0.448  0.594  0.622  0.5543
+9     BR     Brazil                          0.529  0.527  0.576  0.5439
+10    PL     Poland                          0.417  0.528  0.587  0.5107
+11    KR     South Korea                     0.484  0.554  0.452  0.4968
+12    MX     Mexico                          0.355  0.506  0.589  0.4836
+13    JP     Japan                           0.464  0.538  0.370  0.4576
+14    IT     Italy                           0.277  0.470  0.525  0.4243
+15    NZ     New Zealand                     0.328  0.333  0.571  0.4106
+16    ES     Spain                           0.342  0.351  0.536  0.4095
+17    AU     Australia                       0.267  0.356  0.438  0.3535
+18    US     United States of America        0.448  0.326  0.273  0.3490
+19    DK     Denmark                         0.417  0.204  0.339  0.3199
+20    FR     France                          0.239  0.210  0.460  0.3029
+21    CA     Canada                          0.246  0.223  0.414  0.2946
+22    GB     United Kingdom                  0.161  0.061  0.355  0.1923
+23    SE     Sweden                          0.169  0.100  0.307  0.1919
+24    NL     Netherlands                     0.226  0.059  0.232  0.1727
+25    DE     Germany                         0.186  0.049  0.229  0.1546
+
+Top 10 highest-risk countries:
+   1. China (CN) — AWPRI=0.8241
+   2. Vietnam (VN) — AWPRI=0.6998
+   3. Thailand (TH) — AWPRI=0.6726
+   4. Argentina (AR) — AWPRI=0.6559
+   5. Nigeria (NG) — AWPRI=0.6137
+   6. Kenya (KE) — AWPRI=0.5935
+   7. South Africa (ZA) — AWPRI=0.5859
+   8. India (IN) — AWPRI=0.5543
+   9. Brazil (BR) — AWPRI=0.5439
+  10. Poland (PL) — AWPRI=0.5107
+
+======================================================================
+VALIDATION SUMMARY
+  Countries: 25/25
+  Variables: 15/15
+  Total cells: 375 | Missing: 0 (0.0%)
+  ✓ No missing values — all 25×15 cells populated

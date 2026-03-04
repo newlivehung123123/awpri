@@ -1,0 +1,4 @@
+Layer,Mean_Score,Min,Max
+L1_Current_State,0.42160400000000003,0.2511,0.6268
+L2_Policy_Trajectory,0.40955600000000003,0.256,0.8952
+L3_AI_Amplification,0.551724,0.2175,0.8843

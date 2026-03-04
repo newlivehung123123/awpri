@@ -1,0 +1,16 @@
+,mean,std,min,max,cv
+farmed_animals_per_capita,0.2843,0.2291,0.0,1.0,0.806
+aquaculture_pct,0.195,0.2628,0.0,1.0,1.348
+animal_rights_risk,0.7503,0.3028,0.0,1.0,0.404
+rule_of_law_risk,0.3168,0.3609,0.0,1.0,1.139
+meat_consumption_kg,0.5617,0.2745,0.0,1.0,0.489
+animal_rights_delta_risk,0.3296,0.1724,0.0,1.0,0.523
+plant_protein_risk,0.7146,0.2839,0.0,1.0,0.397
+public_concern_risk,0.5054,0.3243,0.0,1.0,0.642
+civic_space_risk,0.281,0.2099,0.0,1.0,0.747
+civil_liberties_risk,0.2172,0.2715,0.0,1.0,1.25
+ai_governance_risk,0.56,0.5066,0.0,1.0,0.905
+ai_aw_research_risk,0.6454,0.3094,0.0,1.0,0.479
+ai_sentience_risk,0.7009,0.2717,0.0,1.0,0.388
+speciesist_bias_ratio,0.5066,0.231,0.0,1.0,0.456
+patent_intensity,0.3458,0.287,0.0,1.0,0.83

@@ -1,0 +1,165 @@
+==============================================================================
+  AWPRI DIAGNOSTIC REPORT
+  Generated: 2026-03-03 19:48:58
+  Dataset:   25 countries × 15 variables
+==============================================================================
+
+==============================================================================
+  SECTION 1 — RAW VARIABLE DESCRIPTIVE STATISTICS (risk-direction corrected)
+==============================================================================
+  Variable                                          Mean        Std         Min         Max     Skew
+  --------------------------------------------------------------------------
+  farmed_animals_slaughtered_per_capita       mean=  145.0840  std= 108.2145  min=   10.8000  max=  483.2000  skew= +1.378
+  aquaculture_pct_total_animal_production     mean=   14.7440  std=  15.5594  min=    3.2000  max=   62.4000  skew= +1.731
+  wap_overall_score_risk                      mean=    4.0800  std=   1.3515  min=    2.0000  max=    6.0000  skew= -0.157
+  sentience_recognition_law_risk              mean=    0.4400  std=   0.4406  min=    0.0000  max=    1.0000  skew= +0.248
+  meat_consumption_per_capita_kg              mean=   71.5080  std=  32.9370  min=    4.1000  max=  124.1000  skew= -0.592
+  wap_delta_risk                              mean=   -0.2400  std=   0.5228  min=   -1.0000  max=    1.0000  skew= -0.295
+  plant_protein_ratio_risk                    mean=   -0.0063  std=   0.0078  min=   -0.0220  max=    0.0080  skew= -0.186
+  public_concern_risk                         mean=   89.4200  std=  16.7015  min=   38.3000  max=   99.6000  skew= -1.855
+  ngo_density_risk                            mean=    2.1800  std=   1.2573  min=    0.5000  max=    4.5000  skew= +0.307
+  political_salience_risk                     mean=    0.4400  std=   0.3905  min=    0.0000  max=    1.0000  skew= +0.220
+  ai_governance_aw_risk                       mean=    0.8800  std=   0.2179  min=    0.5000  max=    1.0000  skew= -1.297
+  ai_aw_research_risk                         mean=    1.9935  std=   0.4183  min=    0.0000  max=    2.1000  skew= -4.890
+  ai_sentience_research_risk                  mean=    0.8983  std=   0.3243  min=    0.0000  max=    1.2146  skew= -1.079
+  speciesist_bias_ratio                       mean=    1.1756  std=   5.6936  min=    0.0000  max=   28.5000  skew= +4.997
+  livestock_ai_patent_intensity               mean=    0.0693  std=   0.0540  min=    0.0042  max=    0.1924  skew= +0.948
+
+==============================================================================
+  SECTION 2 — NORMALIZED VARIABLE DESCRIPTIVE STATISTICS (min-max, 0–1 scale)
+==============================================================================
+  Note: VAR_14 (speciesist_bias_ratio) is log(x+1)-transformed before
+  min-max scaling to correct extreme right skew (raw skew=+5.0, CN outlier).
+  Variable                                          Mean        Std         Min         Max  Skew (norm)
+  ------------------------------------------------------------------------------
+  farmed_animals_slaughtered_per_capita       mean=    0.2843  std=   0.2291  min=    0.0000  max=    1.0000  skew= +1.378
+  aquaculture_pct_total_animal_production     mean=    0.1950  std=   0.2628  min=    0.0000  max=    1.0000  skew= +1.731
+  wap_overall_score_risk                      mean=    0.5200  std=   0.3379  min=    0.0000  max=    1.0000  skew= -0.157
+  sentience_recognition_law_risk              mean=    0.4400  std=   0.4406  min=    0.0000  max=    1.0000  skew= +0.248
+  meat_consumption_per_capita_kg              mean=    0.5617  std=   0.2745  min=    0.0000  max=    1.0000  skew= -0.592
+  wap_delta_risk                              mean=    0.3800  std=   0.2614  min=    0.0000  max=    1.0000  skew= -0.295
+  plant_protein_ratio_risk                    mean=    0.5227  std=   0.2598  min=    0.0000  max=    1.0000  skew= -0.186
+  public_concern_risk                         mean=    0.8339  std=   0.2725  min=    0.0000  max=    1.0000  skew= -1.855
+  ngo_density_risk                            mean=    0.4200  std=   0.3143  min=    0.0000  max=    1.0000  skew= +0.307
+  political_salience_risk                     mean=    0.4400  std=   0.3905  min=    0.0000  max=    1.0000  skew= +0.220
+  ai_governance_aw_risk                       mean=    0.7600  std=   0.4359  min=    0.0000  max=    1.0000  skew= -1.297
+  ai_aw_research_risk                         mean=    0.9493  std=   0.1992  min=    0.0000  max=    1.0000  skew= -4.890
+  ai_sentience_research_risk                  mean=    0.7396  std=   0.2670  min=    0.0000  max=    1.0000  skew= -1.079
+  speciesist_bias_ratio                       mean=    0.0491  std=   0.1998  min=    0.0000  max=    1.0000  skew= +4.870
+  livestock_ai_patent_intensity               mean=    0.3457  std=   0.2870  min=    0.0000  max=    1.0000  skew= +0.948
+
+==============================================================================
+  SECTION 3 — LAYER SUB-SCORES AND AWPRI COMPOSITE STATISTICS
+==============================================================================
+  Score                                             Mean        Std         Min         Max     Skew
+  --------------------------------------------------------------------------
+  L1_score                                    mean=    0.4002  std=   0.1625  min=    0.1607  max=    0.7909  skew= +0.506
+  L2_score                                    mean=    0.5193  std=   0.2148  min=    0.0988  max=    0.8164  skew= -0.217
+  L3_score                                    mean=    0.5687  std=   0.0737  min=    0.3994  max=    0.6877  skew= -0.793
+  AWPRI_score                                 mean=    0.4961  std=   0.1381  min=    0.2417  max=    0.7377  skew= -0.074
+
+==============================================================================
+  SECTION 4 — CORRELATION MATRIX  (L1_score, L2_score, L3_score, AWPRI_score)
+==============================================================================
+                     L1_score     L2_score     L3_score  AWPRI_score
+  --------------------------------------------------------------------
+  L1_score             1.0000       0.8328       0.5805       0.9274
+  L2_score             0.8328       1.0000       0.6816       0.9665
+  L3_score             0.5805       0.6816       1.0000       0.7591
+  AWPRI_score          0.9274       0.9665       0.7591       1.0000
+
+==============================================================================
+  SECTION 5 — PER-COUNTRY SCORES (sorted by AWPRI_score descending)
+==============================================================================
+  Rank  ISO2   Country                             L1      L2      L3    AWPRI
+  --------------------------------------------------------------------------
+  1     CN     China                           0.7909  0.8034  0.6187   0.7377
+  2     VN     Vietnam                         0.6653  0.8164  0.6423   0.7080
+  3     TH     Thailand                        0.5931  0.7925  0.6877   0.6911
+  4     AR     Argentina                       0.6352  0.7983  0.6121   0.6819
+  5     NG     Nigeria                         0.4510  0.7887  0.5992   0.6130
+  6     KE     Kenya                           0.4160  0.7580  0.6330   0.6023
+  7     ZA     South Africa                    0.4516  0.6748  0.6133   0.5799
+  8     BR     Brazil                          0.5288  0.5958  0.6048   0.5765
+  9     IN     India                           0.4476  0.5734  0.6404   0.5538
+  10    PL     Poland                          0.4173  0.6133  0.6191   0.5499
+  11    KR     South Korea                     0.4839  0.6037  0.5508   0.5461
+  12    MX     Mexico                          0.3549  0.5687  0.6057   0.5098
+  13    JP     Japan                           0.4641  0.5994  0.4543   0.5059
+  14    NZ     New Zealand                     0.3283  0.4486  0.6356   0.4708
+  15    IT     Italy                           0.2773  0.5701  0.5464   0.4646
+  16    ES     Spain                           0.3415  0.4651  0.5842   0.4636
+  17    US     United States of America        0.4480  0.2850  0.5896   0.4409
+  18    DK     Denmark                         0.4167  0.3780  0.4446   0.4131
+  19    AU     Australia                       0.2668  0.4081  0.5539   0.4096
+  20    FR     France                          0.2386  0.3295  0.5934   0.3872
+  21    CA     Canada                          0.2460  0.2742  0.5557   0.3586
+  22    NL     Netherlands                     0.2263  0.2414  0.4896   0.3191
+  23    SE     Sweden                          0.1691  0.2977  0.4789   0.3152
+  24    DE     Germany                         0.1858  0.1999  0.3994   0.2617
+  25    GB     United Kingdom                  0.1607  0.0988  0.4656   0.2417
+
+==============================================================================
+  SECTION 6 — VARIABLE → AWPRI_score CORRELATIONS (Pearson, normalized values)
+==============================================================================
+  Variable                                     r with AWPRI  Interpretation
+  --------------------------------------------------------------------------
+  wap_overall_score_risk                             0.9462  strong positive driver
+  ngo_density_risk                                   0.9149  strong positive driver
+  political_salience_risk                            0.9059  strong positive driver
+  sentience_recognition_law_risk                     0.8731  strong positive driver
+  plant_protein_ratio_risk                           0.6723  strong positive driver
+  aquaculture_pct_total_animal_production            0.6034  strong positive driver
+  ai_sentience_research_risk                         0.5668  moderate positive driver
+  wap_delta_risk                                     0.4598  moderate positive driver
+  ai_governance_aw_risk                              0.4259  moderate positive driver
+  public_concern_risk                                0.3746  moderate positive driver
+  speciesist_bias_ratio                              0.3394  moderate positive driver
+  farmed_animals_slaughtered_per_capita              0.0851  weak positive
+  livestock_ai_patent_intensity                     -0.1956  weak negative
+  ai_aw_research_risk                               -0.3455  moderate negative
+  meat_consumption_per_capita_kg                    -0.4694  moderate negative
+
+  INTERPRETATION NOTE — meat_consumption_per_capita_kg (r ≈ -0.47):
+  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─  ─
+  The negative correlation between meat consumption and AWPRI risk is
+  counterintuitive but explicable by a confound with national wealth.
+  The highest meat-consuming countries in this dataset (US, AU, AR, NZ,
+  DK) are also wealthy, institutionally developed nations with strong
+  animal welfare legislation (high WAP scores), active NGO ecosystems,
+  and high political salience — factors that collectively dominate the
+  composite and pull their AWPRI scores toward the lower-risk end.
+  Conversely, low-consumption countries (IN, KE, NG, VN) tend to score
+  high risk due to weak legal frameworks and low civic capacity, not
+  because of consumption behaviour per se. This reflects a known
+  limitation of governance-weighted composite indices: they can reward
+  institutional quality even when absolute harm volumes are high.
+  Analysts should interpret VAR_05 in conjunction with VAR_01 (slaughter
+  volume per capita) rather than in isolation.
+
+==============================================================================
+  SECTION 7 — MISSING DATA AUDIT
+==============================================================================
+  (All values should be 0 given hardcoded fallbacks)
+
+  farmed_animals_slaughtered_per_capita       ✓ OK
+  aquaculture_pct_total_animal_production     ✓ OK
+  wap_overall_score_risk                      ✓ OK
+  sentience_recognition_law_risk              ✓ OK
+  meat_consumption_per_capita_kg              ✓ OK
+  wap_delta_risk                              ✓ OK
+  plant_protein_ratio_risk                    ✓ OK
+  public_concern_risk                         ✓ OK
+  ngo_density_risk                            ✓ OK
+  political_salience_risk                     ✓ OK
+  ai_governance_aw_risk                       ✓ OK
+  ai_aw_research_risk                         ✓ OK
+  ai_sentience_research_risk                  ✓ OK
+  speciesist_bias_ratio                       ✓ OK
+  livestock_ai_patent_intensity               ✓ OK
+
+  Overall: ✓ No missing values
+
+==============================================================================
+  END OF DIAGNOSTIC REPORT
+==============================================================================

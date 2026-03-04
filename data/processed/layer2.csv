@@ -1,0 +1,26 @@
+country_iso2,country_name,VAR_06_wap_delta_risk,VAR_07_plant_protein_ratio_risk,VAR_08_public_concern_risk,VAR_09_ngo_density_risk,VAR_10_political_salience_risk
+AU,Australia,0,0.005,38,1.0,0.0
+BR,Brazil,-1,0.008,62,2.5,0.5
+CA,Canada,0,-0.012,32,1.0,0.0
+FR,France,-1,-0.009,45,1.5,0.0
+DE,Germany,-1,-0.018,29,0.5,0.0
+IN,India,0,-0.005,71,3.0,0.5
+IT,Italy,0,-0.007,52,2.0,0.5
+JP,Japan,0,-0.003,65,2.0,0.5
+NL,Netherlands,-1,-0.015,26,0.5,0.0
+NZ,New Zealand,0,0.003,35,1.0,0.0
+KR,South Korea,0,-0.01,69,3.0,0.5
+ES,Spain,-1,-0.008,48,2.0,0.5
+SE,Sweden,0,-0.022,22,0.5,0.0
+GB,United Kingdom,-1,-0.019,27,1.0,0.0
+US,United States of America,0,-0.013,35,1.0,0.5
+AR,Argentina,0,0.004,67,3.0,1.0
+CN,China,0,-0.006,82,4.5,1.0
+DK,Denmark,0,-0.014,30,1.0,0.0
+KE,Kenya,0,-0.002,78,3.0,1.0
+MX,Mexico,-1,-0.004,65,3.5,0.5
+NG,Nigeria,0,-0.001,85,3.5,1.0
+PL,Poland,0,-0.005,58,2.5,0.5
+ZA,South Africa,1,0.002,70,2.5,0.5
+TH,Thailand,0,-0.003,75,4.0,1.0
+VN,Vietnam,0,-0.004,80,4.5,1.0

@@ -1,0 +1,10 @@
+variable,coefficient,p_value,significant
+farmed_animals_per_capita,0.08971200557868306,0.0,True
+aquaculture_pct,0.0688513887236601,0.0,True
+animal_rights_risk,0.06878819293506873,0.0,True
+rule_of_law_risk,0.06809828165124299,0.0,True
+animal_rights_delta_risk,0.06667942973738186,0.0,True
+plant_protein_risk,0.06643379962349277,0.0,True
+civic_space_risk,0.0678109300685742,0.0,True
+civil_liberties_risk,0.06525558747496603,0.0,True
+ai_governance_risk,0.0667754026474842,0.0,True
