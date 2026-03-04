@@ -3,8 +3,7 @@
 An AI/ML-driven prototype for assessing animal welfare policy risk across 25 countries (2004–2030). Built for the **Futurekind AI Fellowship**.
 
 ## 🚀 Live Dashboard
-**[Launch AWPRI Dashboard →](https://newlivehung123123-awpri-app-py.streamlit.app)**
-*(update this link after Streamlit deployment)*
+**[Launch AWPRI Dashboard →](https://awpri-dashboard.streamlit.app)**
 
 ## What It Does
 - **Nowcasting** — real-time risk scores for any country, any year (2004–2022)
@@ -68,5 +67,5 @@ awpri-pipeline/
 ```
 AWPRI Project (2025). Animal Welfare and Policy Risk Index:
 An AI/ML-driven prototype. Futurekind AI Fellowship.
-GitHub: https://github.com/newlivehung123123/awpri
+GitHub: https://awpri-dashboard.streamlit.app
 ```
