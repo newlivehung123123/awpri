@@ -103,7 +103,7 @@ with st.sidebar:
     st.divider()
     st.caption("Data: V-Dem v15, FAOSTAT, OpenAlex, Google Trends")
     st.caption("Model: PCA + K-Means + Random Forest + ARIMA")
-    st.caption("© 2025 AWPRI Project")
+    st.caption("© 2026 AWPRI Project")
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 1 — GLOBAL OVERVIEW
@@ -931,16 +931,21 @@ elif page == "📖 Methodology":
 
     st.divider()
 
-    st.markdown("## Data Sources")
     st.markdown("""
-    | Source | Variables | Coverage |
-    |---|---|---|
-    | [V-Dem v15](https://www.v-dem.net) | Animal rights, rule of law, civic space, civil liberties | 1900–2023 |
-    | [FAOSTAT](https://www.fao.org/faostat) | Farmed animals, aquaculture, meat consumption, plant protein | 2004–2022 |
-    | [Google Trends](https://trends.google.com) | Public concern for animal welfare | 2004–2022 |
-    | [OpenAlex](https://openalex.org) | AI welfare and sentience research output | 2004–2022 |
-    | PATSTAT / LENS | Livestock AI patent intensity | 2004–2022 |
-    | AWPRI Database | AI governance framework adoption | 2004–2022 |
+## Data Sources
+
+This index draws on **6 data sources** providing **15 variables** across 3 layers.
+
+| Source | Variables (N) | Coverage | Link |
+|---|---|---|---|
+| [V-Dem v15](https://www.v-dem.net) | Animal rights index, rule of law, civic space, civil liberties, animal rights trend (5) | 1900–2023 | [Download](https://www.v-dem.net/data/the-v-dem-dataset/) |
+| [FAOSTAT](https://www.fao.org/faostat) | Farmed animals per capita, aquaculture %, meat consumption, plant protein ratio (4) | 2004–2022 | [Download](https://www.fao.org/faostat/en/#data/FBS) |
+| [Google Trends](https://trends.google.com) | Public concern for animal welfare (1) | 2004–2022 | [Explore](https://trends.google.com) |
+| [OpenAlex](https://openalex.org) | AI welfare research output, AI sentience research output (2) | 2004–2022 | [API](https://openalex.org) |
+| [PATSTAT / LENS](https://www.lens.org) | Livestock AI patent intensity (1) | 2004–2022 | [Search](https://www.lens.org) |
+| AWPRI Database | AI governance framework adoption (1) | 2004–2022 | Compiled by authors |
+
+*Note: V-Dem data used under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). FAOSTAT data is open access.*
     """)
 
     st.divider()
