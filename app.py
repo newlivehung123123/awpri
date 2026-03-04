@@ -330,9 +330,13 @@ elif page == "🔍 Country Deep-Dive":
                 opacity=0.3,
             ))
             fig_radar.update_layout(
-                polar=dict(radialaxis=dict(visible=True, range=[0,1])),
-                showlegend=True, height=420,
-                margin=dict(l=40, r=40, t=20, b=20),
+                polar=dict(
+                    radialaxis=dict(visible=True, range=[0,1]),
+                    angularaxis=dict(tickfont=dict(size=9)),
+                    domain=dict(x=[0.05, 0.95], y=[0.05, 0.95])
+                ),
+                showlegend=True, height=550,
+                margin=dict(l=80, r=80, t=40, b=40),
             )
             st.plotly_chart(fig_radar, use_container_width=True, key="radar_single")
 
@@ -482,7 +486,14 @@ elif page == "🔍 Country Deep-Dive":
                 fill="toself", name="Global Avg",
                 line_color="#9e9e9e", fillcolor="#9e9e9e", opacity=0.3,
             ))
-            fig_radar1.update_layout(height=400, margin=dict(l=40, r=40, t=20, b=20))
+            fig_radar1.update_layout(
+                polar=dict(
+                    radialaxis=dict(visible=True, range=[0,1]),
+                    angularaxis=dict(tickfont=dict(size=9)),
+                    domain=dict(x=[0.05, 0.95], y=[0.05, 0.95])
+                ),
+                height=550, margin=dict(l=80, r=80, t=40, b=40)
+            )
             st.plotly_chart(fig_radar1, use_container_width=True, key="radar_compare1")
 
         with col_rad2:
@@ -504,7 +515,14 @@ elif page == "🔍 Country Deep-Dive":
                 fill="toself", name="Global Avg",
                 line_color="#9e9e9e", fillcolor="#9e9e9e", opacity=0.3,
             ))
-            fig_radar2.update_layout(height=400, margin=dict(l=40, r=40, t=20, b=20))
+            fig_radar2.update_layout(
+                polar=dict(
+                    radialaxis=dict(visible=True, range=[0,1]),
+                    angularaxis=dict(tickfont=dict(size=9)),
+                    domain=dict(x=[0.05, 0.95], y=[0.05, 0.95])
+                ),
+                height=550, margin=dict(l=80, r=80, t=40, b=40)
+            )
             st.plotly_chart(fig_radar2, use_container_width=True, key="radar_compare2")
 
         # ── Trajectory comparison ──
