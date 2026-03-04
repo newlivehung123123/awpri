@@ -118,10 +118,19 @@ if page == "🌍 Global Overview":
 
     with col_map:
         st.subheader(f"AWPRI World Map — {selected_year}")
+        ISO2_TO_ISO3 = {
+            "AR":"ARG","AU":"AUS","BR":"BRA","CA":"CAN","CN":"CHN",
+            "DE":"DEU","DK":"DNK","ES":"ESP","FR":"FRA","GB":"GBR",
+            "IN":"IND","IT":"ITA","JP":"JPN","KE":"KEN","KR":"KOR",
+            "MX":"MEX","NG":"NGA","NL":"NLD","NZ":"NZL","PL":"POL",
+            "SE":"SWE","TH":"THA","US":"USA","VN":"VNM","ZA":"ZAF",
+        }
+        year_df["iso3"] = year_df["country_iso2"].map(ISO2_TO_ISO3)
+
         fig_map = px.choropleth(
             year_df,
-            locations="country_iso2",
-            locationmode="ISO-3166",
+            locations="iso3",
+            locationmode="ISO-3",
             color="AWPRI_score",
             hover_name="country_name",
             hover_data={
