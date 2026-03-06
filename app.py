@@ -380,12 +380,17 @@ elif page == "🔍 Country Deep-Dive":
   }}
   #popup-trigger:hover {{ background: #3d3d5e; color: white; }}
 
+  html, body {{
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    background: transparent;
+  }}
   #popup-overlay {{
     display: none;
     position: fixed;
     top: 0; left: 0;
     width: 100vw; height: 100vh;
-    background: rgba(0,0,0,0.82);
+    background: rgba(10,10,20,0.95);
     z-index: 999999;
     justify-content: center;
     align-items: center;
@@ -434,6 +439,13 @@ var rendered = false;
 
 function openPopup() {{
   document.getElementById('popup-overlay').classList.add('open');
+  // Expand iframe to fill viewport
+  window.frameElement && (window.frameElement.style.height = '100vh');
+  window.frameElement && (window.frameElement.style.position = 'fixed');
+  window.frameElement && (window.frameElement.style.top = '0');
+  window.frameElement && (window.frameElement.style.left = '0');
+  window.frameElement && (window.frameElement.style.width = '100vw');
+  window.frameElement && (window.frameElement.style.zIndex = '999998');
   if (!rendered) {{
     renderChart();
     rendered = true;
@@ -442,6 +454,13 @@ function openPopup() {{
 
 function closePopup() {{
   document.getElementById('popup-overlay').classList.remove('open');
+  // Restore iframe to button size
+  window.frameElement && (window.frameElement.style.height = '55px');
+  window.frameElement && (window.frameElement.style.position = '');
+  window.frameElement && (window.frameElement.style.top = '');
+  window.frameElement && (window.frameElement.style.left = '');
+  window.frameElement && (window.frameElement.style.width = '');
+  window.frameElement && (window.frameElement.style.zIndex = '');
 }}
 
 function handleOverlayClick(e) {{
@@ -509,7 +528,7 @@ function renderChart() {{
 </script>
 </body>
 </html>
-""", height=55)
+""", height=600)
 
         with col_vars:
             st.subheader("Variable Breakdown")
