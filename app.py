@@ -1008,41 +1008,60 @@ elif page == "📈 Forecasts 2030":
     f2030.index += 1
 
     fig_f2030 = go.Figure()
-    baseline_2022 = norm[norm["year"]==2022][["country_iso2","AWPRI_score"]]
     f2030_merged = f2030.merge(baseline_2022, on="country_iso2")
     f2030_merged = f2030_merged.sort_values("AWPRI_forecast", ascending=True)
 
-    fig_f2030.add_trace(go.Bar(
-        y=f2030_merged["country_iso2"],
-        x=f2030_merged["AWPRI_score"],
-        name="2022 (actual)",
-        orientation="h",
-        marker_color="#90a4ae",
-    ))
+    # Colour each country bar by its 2030 forecast risk level
     f2030_merged["bar_color"] = f2030_merged["AWPRI_forecast"].apply(
         lambda x: "#d32f2f" if x >= 0.6 else "#ff8f00" if x >= 0.4 else "#388e3c"
     )
-    fig_f2030.add_trace(go.Bar(
+
+    # 2022 actual — grey dots
+    fig_f2030.add_trace(go.Scatter(
+        x=f2030_merged["AWPRI_score"],
         y=f2030_merged["country_iso2"],
-        x=f2030_merged["AWPRI_forecast"],
-        name="2030 forecast — 🔴 High risk (≥0.6)  🟡 Moderate (0.4–0.6)  🟢 Low (<0.4)",
-        orientation="h",
-        marker_color=f2030_merged["bar_color"],
-        opacity=0.85,
+        mode="markers",
+        name="2022 (actual)",
+        marker=dict(color="#90a4ae", size=10, symbol="circle"),
     ))
+
+    # 2030 forecast — coloured dots
+    fig_f2030.add_trace(go.Scatter(
+        x=f2030_merged["AWPRI_forecast"],
+        y=f2030_merged["country_iso2"],
+        mode="markers",
+        name="2030 (forecast)",
+        marker=dict(color=f2030_merged["bar_color"], size=10, symbol="diamond"),
+        text=[f"2030: {v:.3f}" for v in f2030_merged["AWPRI_forecast"]],
+        hovertemplate="<b>%{y}</b><br>2030 forecast: %{x:.3f}<extra></extra>",
+    ))
+
+    # Lines connecting 2022 to 2030 for each country
+    for _, row in f2030_merged.iterrows():
+        line_color = "#d32f2f" if row["AWPRI_forecast"] > row["AWPRI_score"] else "#388e3c"
+        fig_f2030.add_shape(
+            type="line",
+            x0=row["AWPRI_score"], x1=row["AWPRI_forecast"],
+            y0=row["country_iso2"], y1=row["country_iso2"],
+            line=dict(color=line_color, width=1.5, dash="dot"),
+        )
+
     fig_f2030.update_layout(
-        barmode="overlay", height=600,
-        margin=dict(l=0,r=0,t=10,b=0),
-        xaxis=dict(range=[0,1], title="AWPRI Score"),
+        height=650,
+        margin=dict(l=0, r=0, t=10, b=0),
+        xaxis=dict(range=[0, 1], title="AWPRI Score (0 = lowest risk, 1 = highest risk)"),
+        yaxis=dict(title=""),
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
+        plot_bgcolor="rgba(0,0,0,0)",
     )
     st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030")
-
     st.caption(
-        "**Chart guide:** Grey bars = 2022 actual AWPRI score. Coloured bars = 2030 projected score. "
-        "Bar colour reflects projected risk level — consistent with the colour scale used across all pages: "
-        "🔴 Red = High risk (AWPRI ≥ 0.6) · 🟡 Amber = Moderate risk (0.4–0.6) · 🟢 Green = Low risk (< 0.4). "
-        "Longer coloured bar vs grey bar = risk is projected to increase by 2030."
+        "**How to read this chart:** Each country has two markers — "
+        "⬤ grey circle = 2022 actual AWPRI score, ◆ coloured diamond = 2030 projected score. "
+        "The dotted line shows the direction of change: "
+        "🔴 red line = risk projected to increase · 🟢 green line = risk projected to decrease. "
+        "Diamond colour reflects projected risk level: "
+        "🔴 High risk (≥0.6) · 🟡 Moderate (0.4–0.6) · 🟢 Low (<0.4)."
     )
 
 
