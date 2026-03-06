@@ -19,6 +19,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import streamlit.components.v1 as components
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 from nowcast import Nowcaster, RISK_TIER_LABELS, VAR_LABELS, VAR_LAYERS, REGIONS
@@ -346,7 +347,132 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar, use_container_width=True, key="radar_single")
+            st.plotly_chart(fig_radar, use_container_width=True, key="radar_main")
+            
+            # Inject hover-to-enlarge modal for desktop/tablet only
+            components.html("""
+<style>
+  #radar-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.75);
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+  }
+  #radar-modal-overlay.active {
+    display: flex;
+  }
+  #radar-modal-box {
+    background: #1e1e2e;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 16px;
+    width: 80vw;
+    max-width: 900px;
+    height: 80vh;
+    max-height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #radar-modal-close {
+    position: absolute;
+    top: 10px; right: 16px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    line-height: 1;
+  }
+  #radar-modal-title {
+    color: #ccc;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-family: sans-serif;
+  }
+  #radar-modal-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+  }
+</style>
+
+<div id="radar-modal-overlay">
+  <div id="radar-modal-box">
+    <button id="radar-modal-close" onclick="closeRadarModal()">✕</button>
+    <div id="radar-modal-title">Variable Risk Profile — Enlarged View (click ✕ or outside to close)</div>
+    <div id="radar-modal-content" style="width:100%;height:100%;"></div>
+  </div>
+</div>
+
+<script>
+// Only activate on non-touch devices (desktop/tablet with mouse)
+function isTouchOnly() {
+  return !window.matchMedia('(hover: hover)').matches;
+}
+
+function closeRadarModal() {
+  document.getElementById('radar-modal-overlay').classList.remove('active');
+}
+
+// Close on overlay background click
+document.getElementById('radar-modal-overlay').addEventListener('click', function(e) {
+  if (e.target === this) closeRadarModal();
+});
+
+// Close on Escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeRadarModal();
+});
+
+function openRadarModal(plotlyDiv) {
+  if (isTouchOnly()) return;
+  const overlay = document.getElementById('radar-modal-overlay');
+  const content = document.getElementById('radar-modal-content');
+  
+  // Clone the plotly chart into the modal
+  content.innerHTML = '';
+  const clone = plotlyDiv.cloneNode(true);
+  clone.style.width = '100%';
+  clone.style.height = '100%';
+  content.appendChild(clone);
+  
+  // Resize Plotly in the clone
+  if (window.Plotly && clone.data) {
+    window.Plotly.relayout(clone, {width: content.offsetWidth, height: content.offsetHeight - 20});
+  }
+  
+  overlay.classList.add('active');
+}
+
+// Attach hover listener to the radar chart
+function attachRadarHover() {
+  // Find all plotly charts on the page
+  const plots = window.parent.document.querySelectorAll('.js-plotly-plot');
+  plots.forEach(function(plot) {
+    // Target only polar/radar charts
+    if (plot.querySelector('.polar')) {
+      plot.style.cursor = 'zoom-in';
+      plot.addEventListener('mouseenter', function() {
+        openRadarModal(plot);
+      });
+    }
+  });
+}
+
+// Try attaching after a short delay to ensure Plotly has rendered
+setTimeout(attachRadarHover, 1500);
+setTimeout(attachRadarHover, 3000);
+</script>
+""", height=0)
+            
             st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         with col_vars:
