@@ -107,6 +107,17 @@ with st.sidebar:
     st.caption("Model: PCA + K-Means + Random Forest + ARIMA")
     st.caption("© 2026 AWPRI Project")
 
+st.sidebar.divider()
+with st.sidebar:
+    with st.popover("👤 Builder: Jason Hung"):
+        st.markdown("### Jason Hung")
+        st.markdown(
+            "Jason Hung is a PhD in Sociology who transitions into the AI safety research "
+            "career path as a researcher-builder. He develops this prototype as the final "
+            "project for the **Futurekind AI Fellowship** run by Electric Sheep."
+        )
+        st.markdown("🌐 [jasonhungresume.com](https://jasonhungresume.com)")
+
 # ══════════════════════════════════════════════════════════════════════════════
 # PAGE 1 — GLOBAL OVERVIEW
 # ══════════════════════════════════════════════════════════════════════════════
