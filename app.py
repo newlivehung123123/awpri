@@ -485,11 +485,49 @@ elif page == "🔍 Country Deep-Dive":
         with col_d:
             st.subheader("⚠️ Key Risk Drivers")
             for d in result["key_risk_drivers"]:
-                st.markdown(f"🔴 **{d['label']}** — +{d['above_mean']:.3f} above global mean")
+                score = result["var_scores"][d["var"]]["score"]
+                global_mean = score - d["above_mean"]
+                layer = result["var_scores"][d["var"]]["layer"]
+                col_a, col_b = st.columns([5, 1])
+                with col_a:
+                    st.markdown(
+                        f"🔴 **{d['label']}**  \n"
+                        f"<span style='color:#ef9a9a'>Score: {score:.3f}</span> &nbsp;·&nbsp; "
+                        f"<span style='color:#9e9e9e'>Global avg: {global_mean:.3f}</span> &nbsp;·&nbsp; "
+                        f"<span style='color:#9e9e9e;font-size:0.85em'>{layer}</span>",
+                        unsafe_allow_html=True
+                    )
+                with col_b:
+                    with st.popover("ⓘ"):
+                        st.markdown(f"**{d['label']}**")
+                        st.markdown(f"- **This country's score:** {score:.3f}")
+                        st.markdown(f"- **Global average:** {global_mean:.3f}")
+                        st.markdown(f"- **Deviation:** +{d['above_mean']:.3f} above mean")
+                        st.markdown(f"- **Layer:** {layer}")
+                        st.markdown(f"- **What this means:** This variable is among the strongest risk drivers for this country. A higher score indicates greater risk. Reducing this variable's score through targeted policy would have the most impact on the overall AWPRI.")
         with col_s:
             st.subheader("✅ Key Strengths")
             for s in result["key_strengths"]:
-                st.markdown(f"🟢 **{s['label']}** — -{s['below_mean']:.3f} below global mean")
+                score = result["var_scores"][s["var"]]["score"]
+                global_mean = score + s["below_mean"]
+                layer = result["var_scores"][s["var"]]["layer"]
+                col_a, col_b = st.columns([5, 1])
+                with col_a:
+                    st.markdown(
+                        f"🟢 **{s['label']}**  \n"
+                        f"<span style='color:#a5d6a7'>Score: {score:.3f}</span> &nbsp;·&nbsp; "
+                        f"<span style='color:#9e9e9e'>Global avg: {global_mean:.3f}</span> &nbsp;·&nbsp; "
+                        f"<span style='color:#9e9e9e;font-size:0.85em'>{layer}</span>",
+                        unsafe_allow_html=True
+                    )
+                with col_b:
+                    with st.popover("ⓘ"):
+                        st.markdown(f"**{s['label']}**")
+                        st.markdown(f"- **This country's score:** {score:.3f}")
+                        st.markdown(f"- **Global average:** {global_mean:.3f}")
+                        st.markdown(f"- **Deviation:** -{s['below_mean']:.3f} below mean")
+                        st.markdown(f"- **Layer:** {layer}")
+                        st.markdown(f"- **What this means:** This variable is one of this country's strongest performing areas relative to global peers. It is actively pulling the overall AWPRI score down, indicating effective existing policy or structural advantage in this area.")
 
     else:
         # ── COMPARE MODE ──
