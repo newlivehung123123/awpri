@@ -119,10 +119,8 @@ st.markdown("""
         }
     }
     function attachToCharts() {
-        var charts = document.querySelectorAll(js-plotly-plot, .stPlotlyChart');
+        var charts = document.querySelectorAll('.js-plotly-plot, .stPlotlyChart');
         charts.forEach(function(chart) {
-            if (!chart.dataset.toastAttached) {
-                chart.dataset.toastAttached = '1';
                 chart.addEventListener('touchstart', showToast, { passive: true });
             }
         });
