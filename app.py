@@ -804,12 +804,32 @@ elif page == "⚙️ Policy Simulator":
 
     # ── Policy details ──
     st.subheader("Policy Details")
+    st.caption(
+        "Each policy intervention is characterised by three implementation dimensions: "
+        "**Timeline** = estimated years until the policy reaches full effect on AWPRI scores (based on typical legislative and behavioural change cycles); "
+        "**Cost** = relative fiscal burden on government (Low / Medium / High); "
+        "**Feasibility** = likelihood of political adoption given current institutional capacity "
+        "(High = achievable within existing frameworks, Medium = requires moderate reform, Low = requires major political will). "
+        "Effect sizes are modelled as multiplicative reductions on the relevant normalised variable scores."
+    )
     for pol in sim_result["policies_applied"]:
         with st.expander(f"📋 {pol['label']}"):
-            st.markdown(f"**Description:** {pol['description']}")
-            st.markdown(f"**Timeline:** {pol['timeline']}")
-            st.markdown(f"**Cost:** {pol['cost']} &nbsp;&nbsp; **Feasibility:** {pol['feasibility']}")
-            st.markdown(f"**Real-world examples:** {pol['examples']}")
+            st.markdown(f"**What this policy does:** {pol['description']}")
+            st.markdown(
+                f"**Timeline:** {pol['timeline']} &nbsp;·&nbsp; "
+                f"*How long until full effect on risk scores, based on typical policy implementation cycles.*"
+            )
+            st.markdown(
+                f"**Implementation cost:** {pol['cost']} &nbsp;·&nbsp; "
+                f"*Relative fiscal burden on national government.*"
+            )
+            st.markdown(
+                f"**Political feasibility:** {pol['feasibility']} &nbsp;·&nbsp; "
+                f"*Likelihood of adoption: High = achievable within existing frameworks; "
+                f"Medium = requires moderate institutional reform; "
+                f"Low = requires significant political will and structural change.*"
+            )
+            st.markdown(f"**Real-world precedents:** {pol['examples']}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
