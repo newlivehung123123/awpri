@@ -86,6 +86,47 @@ if "compare_country" not in st.session_state:
 if "policy_intensities" not in st.session_state:
     st.session_state.policy_intensities = {pid: 100 for pid in POLICIES.keys()}
 
+# Mobile zoom reset hint
+st.markdown("""
+<style>
+.zoom-toast {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    z-index: 99999;
+    text-align: center;
+    pointer-events: none;
+}
+</style>
+<div class="zoom-toast" id="zoom-toast">📱 Double-tap to reset zoom</div>
+<script>
+(function() {
+    let lastScale = 1;
+    let toastTimer = null;
+    
+    window.addEventListener('touchmove', function(e) {
+        if (e.touches.length >= 2) {
+            const toast = document.getElementById('zoom-toast');
+            if (toast) {
+                toast.style.display = 'block';
+                clearTimeout(toastTimer);
+                toastTimer = setTimeout(function() {
+                    toast.style.display = 'none';
+                }, 3000);
+            }
+        }
+    }, { passive: true });
+})();
+</script>
+""", unsafe_allow_html=True)
+
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown("### 🐾 Animal Welfare & Policy Risk Index")
