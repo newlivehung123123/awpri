@@ -172,7 +172,6 @@ if page == "🌍 Global Overview":
             labels={"AWPRI_score": "AWPRI Risk Score"},
         )
         fig_map.update_layout(
-        dragmode=False,
             margin=dict(l=0, r=0, t=0, b=0),
             geo=dict(showframe=False, showcoastlines=True,
                      projection_type="natural earth"),
@@ -180,7 +179,7 @@ if page == "🌍 Global Overview":
             height=420,
             clickmode="event+select",
         )
-        st.plotly_chart(fig_map, use_container_width=True, key="global_map", config={"displayModeBar": False, "scrollZoom": False})
+        st.plotly_chart(fig_map, use_container_width=True, key="global_map", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
         # ── Download rankings ──
         csv_rankings = year_df[["country_iso2", "country_name", "AWPRI_score", "L1_score", "L2_score", "L3_score", "risk_archetype"]].to_csv(index=False)
@@ -225,7 +224,6 @@ if page == "🌍 Global Overview":
             marker_color=col,
         ))
     fig_layers.update_layout(
-        dragmode=False,
         barmode="group",
         height=320,
         margin=dict(l=0, r=0, t=10, b=0),
@@ -233,7 +231,7 @@ if page == "🌍 Global Overview":
         yaxis=dict(range=[0, 1], title="Score"),
         xaxis=dict(title="Country"),
     )
-    st.plotly_chart(fig_layers, use_container_width=True, key="layer_breakdown", config={"displayModeBar": False, "scrollZoom": False})
+    st.plotly_chart(fig_layers, use_container_width=True, key="layer_breakdown", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
     # ── Trend: worsening vs improving ──
     st.subheader(f"Risk Trajectory 2004 → {selected_year}")
@@ -253,10 +251,9 @@ if page == "🌍 Global Overview":
         labels={"change": "AWPRI Change", "country_iso2": "Country"},
         height=300,
     )
-    fig_trend.update_layout(
-        dragmode=False,margin=dict(l=0,r=0,t=10,b=0),
+    fig_trend.update_layout(margin=dict(l=0,r=0,t=10,b=0),
                              legend=dict(orientation="h", yanchor="bottom", y=1.02))
-    st.plotly_chart(fig_trend, use_container_width=True, key="trend_chart", config={"displayModeBar": False, "scrollZoom": False})
+    st.plotly_chart(fig_trend, use_container_width=True, key="trend_chart", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -336,7 +333,6 @@ elif page == "🔍 Country Deep-Dive":
                 hovertemplate="<b>%{theta}</b><br>Global avg: %{r:.3f}<extra></extra>",
             ))
             fig_radar.update_layout(
-        dragmode=False,
                 polar=dict(
                     radialaxis=dict(visible=True, range=[0,1]),
                     angularaxis=dict(tickfont=dict(size=9)),
@@ -351,7 +347,7 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar, use_container_width=True, key="radar_main", config={"displayModeBar": False, "scrollZoom": False})
+            st.plotly_chart(fig_radar, use_container_width=True, key="radar_main", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
             # Native dialog popup using st.dialog
             if st.button("🔍 Click to enlarge radar chart", key="open_radar_dialog", use_container_width=True):
@@ -393,7 +389,7 @@ elif page == "🔍 Country Deep-Dive":
                         hoverlabel=dict(bgcolor="#1e1e2e", bordercolor="#fff", font=dict(size=13, color="white")),
                         hovermode="closest",
                     )
-                    st.plotly_chart(fig_large, use_container_width=True, config={"displayModeBar": False, "scrollZoom": False})
+                    st.plotly_chart(fig_large, use_container_width=True, config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
                     st.caption("All 15 variables shown. Higher score = greater risk. Cyan = global average. Close by pressing Escape or clicking outside.")
                     if st.button("Close", key="close_radar_dialog"):
                         st.session_state.show_radar_dialog = False
@@ -475,13 +471,12 @@ elif page == "🔍 Country Deep-Dive":
 
         fig_traj.add_vline(x=2022, line_dash="dot", line_color="gray", annotation_text="Last historical data (2022)", annotation_position="top left")
         fig_traj.update_layout(
-        dragmode=False,
             height=320, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
-        st.plotly_chart(fig_traj, use_container_width=True, key="traj_single", config={"displayModeBar": False, "scrollZoom": False})
+        st.plotly_chart(fig_traj, use_container_width=True, key="traj_single", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
         # ── Key drivers and strengths ──
         col_d, col_s = st.columns(2)
@@ -601,7 +596,7 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar1, use_container_width=True, key="radar_compare1", config={"displayModeBar": False, "scrollZoom": False})
+            st.plotly_chart(fig_radar1, use_container_width=True, key="radar_compare1", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
             st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         with col_rad2:
@@ -639,7 +634,7 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar2, use_container_width=True, key="radar_compare2", config={"displayModeBar": False, "scrollZoom": False})
+            st.plotly_chart(fig_radar2, use_container_width=True, key="radar_compare2", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
             st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         # ── Trajectory comparison ──
@@ -664,12 +659,11 @@ elif page == "🔍 Country Deep-Dive":
         ))
         fig_traj_comp.add_vline(x=2022, line_dash="dot", line_color="gray", annotation_text="Last historical data (2022)", annotation_position="top left")
         fig_traj_comp.update_layout(
-        dragmode=False,
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
         )
-        st.plotly_chart(fig_traj_comp, use_container_width=True, key="traj_compare", config={"displayModeBar": False, "scrollZoom": False})
+        st.plotly_chart(fig_traj_comp, use_container_width=True, key="traj_compare", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -791,13 +785,12 @@ elif page == "⚙️ Policy Simulator":
         policy_enacted_year = min(traj.keys())
         fig_sim.add_vline(x=policy_enacted_year, line_dash="dot", line_color="gray", annotation_text="Policy Enacted", annotation_position="top right")
         fig_sim.update_layout(
-        dragmode=False,
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
-        st.plotly_chart(fig_sim, use_container_width=True, key="policy_trajectory", config={"displayModeBar": False, "scrollZoom": False})
+        st.plotly_chart(fig_sim, use_container_width=True, key="policy_trajectory", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
     with col_detail:
         st.subheader("Layer Impact")
@@ -985,13 +978,12 @@ elif page == "📈 Forecasts 2030":
         
         fig_multi.add_vline(x=2022, line_dash="dot", line_color="gray")
         fig_multi.update_layout(
-        dragmode=False,
             height=450, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="v", yanchor="top", y=0.99),
         )
-        st.plotly_chart(fig_multi, use_container_width=True, key="multi_forecast", config={"displayModeBar": False, "scrollZoom": False})
+        st.plotly_chart(fig_multi, use_container_width=True, key="multi_forecast", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
 
         # ── Download button ──
         fc_data = forecasts[forecasts["country_iso2"].isin(multi_countries)]
@@ -1055,7 +1047,6 @@ elif page == "📈 Forecasts 2030":
         )
 
     fig_f2030.update_layout(
-        dragmode=False,
         height=650,
         margin=dict(l=0, r=0, t=10, b=0),
         xaxis=dict(range=[0, 1], title="AWPRI Score (0 = lowest risk, 1 = highest risk)"),
@@ -1063,7 +1054,7 @@ elif page == "📈 Forecasts 2030":
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
         plot_bgcolor="rgba(0,0,0,0)",
     )
-    st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030", config={"displayModeBar": False, "scrollZoom": False})
+    st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030", config={"displayModeBar": False, "scrollZoom": False, "staticPlot": False})
     st.caption(
         "**How to read this chart:** Each country has two markers — "
         "⬤ grey circle = 2022 actual AWPRI score, ◆ coloured diamond = 2030 projected score. "
