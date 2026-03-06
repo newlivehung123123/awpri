@@ -25,7 +25,7 @@ from nowcast import Nowcaster, RISK_TIER_LABELS, VAR_LABELS, VAR_LAYERS, REGIONS
 from policy_sim import PolicySimulator, POLICIES
 
 # ── Page config ───────────────────────────────────────────────────────────────
-st.set_page_config(page_icon="🐾", 
+st.set_page_config(
     page_title="AWPRI — Animal Welfare & Policy Risk Index",
     page_icon="🐾",
     layout="wide",
