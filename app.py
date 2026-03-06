@@ -707,6 +707,13 @@ elif page == "⚙️ Policy Simulator":
 
     with col_chart:
         st.subheader("Trajectory: Baseline vs. With Policy")
+        st.caption(
+            f"📌 This simulation asks: *'If {sim_result['country_name']} enacted these policies starting from its 2022 baseline, "
+            f"how would its AWPRI risk score change through 2030?'* "
+            f"The dotted line marks 2022 — the last year of historical data and the point where the simulation begins. "
+            f"The orange dashed line shows the projected baseline (no policy). "
+            f"The green line shows the projected trajectory with your selected interventions."
+        )
         traj = sim_result["trajectory"]
 
         hist = norm[norm["country_iso2"]==sim_country].sort_values("year")
