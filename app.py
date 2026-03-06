@@ -19,7 +19,6 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import streamlit.components.v1 as components
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
 from nowcast import Nowcaster, RISK_TIER_LABELS, VAR_LABELS, VAR_LAYERS, REGIONS
@@ -80,6 +79,8 @@ if "selected_country" not in st.session_state:
     st.session_state.selected_country = "VN"
 if "selected_year" not in st.session_state:
     st.session_state.selected_year = 2022
+if "show_radar_dialog" not in st.session_state:
+    st.session_state.show_radar_dialog = False
 if "compare_country" not in st.session_state:
     st.session_state.compare_country = "CN"
 if "policy_intensities" not in st.session_state:
@@ -349,186 +350,53 @@ elif page == "🔍 Country Deep-Dive":
             )
             st.plotly_chart(fig_radar, use_container_width=True, key="radar_main")
 
-            # Build data payload for the popup chart
-            import json as _json
-            radar_payload = _json.dumps({
-                "country": result["country_name"],
-                "tier_color": tier_color,
-                "var_names": var_names,
-                "var_values": var_values,
-                "global_avg": global_avg,
-            })
+            # Native dialog popup using st.dialog
+            if st.button("🔍 Click to enlarge radar chart", key="open_radar_dialog", use_container_width=True):
+                st.session_state.show_radar_dialog = True
 
-            components.html(f"""
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  #popup-trigger {{
-    display: block;
-    width: 100%;
-    padding: 8px 16px;
-    background: #2d2d3e;
-    color: #ccc;
-    border: 1px solid #555;
-    border-radius: 6px;
-    cursor: zoom-in;
-    font-size: 13px;
-    text-align: center;
-    margin-top: 6px;
-    font-family: sans-serif;
-  }}
-  #popup-trigger:hover {{ background: #3d3d5e; color: white; }}
+            if st.session_state.get("show_radar_dialog", False):
+                @st.dialog("Variable Risk Profile — Enlarged View", width="large")
+                def show_radar_popup():
+                    fig_large = go.Figure()
+                    fig_large.add_trace(go.Scatterpolar(
+                        r=var_values + [var_values[0]],
+                        theta=var_names + [var_names[0]],
+                        fill="toself",
+                        name=result["country_name"],
+                        line_color=tier_color,
+                        fillcolor=tier_color,
+                        opacity=0.6,
+                        hovertemplate="<b>%{theta}</b><br>Score: %{r:.3f}<br>Higher = more risk<extra></extra>",
+                    ))
+                    fig_large.add_trace(go.Scatterpolar(
+                        r=global_avg + [global_avg[0]],
+                        theta=var_names + [var_names[0]],
+                        fill="toself",
+                        name="Global Average",
+                        line_color="#00bcd4",
+                        fillcolor="#00bcd4",
+                        opacity=0.35,
+                        hovertemplate="<b>%{theta}</b><br>Global avg: %{r:.3f}<extra></extra>",
+                    ))
+                    fig_large.update_layout(
+                        polar=dict(
+                            radialaxis=dict(visible=True, range=[0, 1]),
+                            angularaxis=dict(tickfont=dict(size=11)),
+                            domain=dict(x=[0.05, 0.95], y=[0.05, 0.95])
+                        ),
+                        showlegend=True,
+                        height=600,
+                        margin=dict(l=100, r=100, t=40, b=40),
+                        hoverlabel=dict(bgcolor="#1e1e2e", bordercolor="#fff", font=dict(size=13, color="white")),
+                        hovermode="closest",
+                    )
+                    st.plotly_chart(fig_large, use_container_width=True)
+                    st.caption("All 15 variables shown. Higher score = greater risk. Cyan = global average. Close by pressing Escape or clicking outside.")
+                    if st.button("Close", key="close_radar_dialog"):
+                        st.session_state.show_radar_dialog = False
+                        st.rerun()
 
-  html, body {{
-    margin: 0; padding: 0;
-    width: 100%; height: 100%;
-    background: transparent;
-  }}
-  #popup-overlay {{
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100vw; height: 100vh;
-    background: rgba(10,10,20,0.95);
-    z-index: 999999;
-    justify-content: center;
-    align-items: center;
-  }}
-  #popup-overlay.open {{ display: flex; }}
-
-  #popup-box {{
-    background: #1a1a2e;
-    border: 1px solid #555;
-    border-radius: 14px;
-    padding: 20px;
-    width: 85vw;
-    max-width: 950px;
-    height: 85vh;
-    max-height: 850px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }}
-  #popup-close {{
-    position: absolute;
-    top: 12px; right: 16px;
-    font-size: 22px; color: #ccc;
-    cursor: pointer; background: none;
-    border: none; font-family: sans-serif;
-  }}
-  #popup-close:hover {{ color: white; }}
-  #popup-chart {{ width: 100%; flex: 1; }}
-</style>
-</head>
-<body style="margin:0;background:transparent">
-
-<button id="popup-trigger" onclick="openPopup()">🔍 Click to enlarge radar chart</button>
-
-<div id="popup-overlay" onclick="handleOverlayClick(event)">
-  <div id="popup-box">
-    <button id="popup-close" onclick="closePopup()">✕</button>
-    <div id="popup-chart"></div>
-  </div>
-</div>
-
-<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
-<script>
-var data = {radar_payload};
-var rendered = false;
-
-function openPopup() {{
-  document.getElementById('popup-overlay').classList.add('open');
-  // Expand iframe to fill viewport
-  window.frameElement && (window.frameElement.style.height = '100vh');
-  window.frameElement && (window.frameElement.style.position = 'fixed');
-  window.frameElement && (window.frameElement.style.top = '0');
-  window.frameElement && (window.frameElement.style.left = '0');
-  window.frameElement && (window.frameElement.style.width = '100vw');
-  window.frameElement && (window.frameElement.style.zIndex = '999998');
-  if (!rendered) {{
-    renderChart();
-    rendered = true;
-  }}
-}}
-
-function closePopup() {{
-  document.getElementById('popup-overlay').classList.remove('open');
-  // Restore iframe to button size
-  window.frameElement && (window.frameElement.style.height = '55px');
-  window.frameElement && (window.frameElement.style.position = '');
-  window.frameElement && (window.frameElement.style.top = '');
-  window.frameElement && (window.frameElement.style.left = '');
-  window.frameElement && (window.frameElement.style.width = '');
-  window.frameElement && (window.frameElement.style.zIndex = '');
-}}
-
-function handleOverlayClick(e) {{
-  if (e.target === document.getElementById('popup-overlay')) closePopup();
-}}
-
-document.addEventListener('keydown', function(e) {{
-  if (e.key === 'Escape') closePopup();
-}});
-
-function renderChart() {{
-  var names = data.var_names.concat([data.var_names[0]]);
-  var vals  = data.var_values.concat([data.var_values[0]]);
-  var avgs  = data.global_avg.concat([data.global_avg[0]]);
-
-  var trace1 = {{
-    type: 'scatterpolar',
-    r: vals, theta: names,
-    fill: 'toself',
-    name: data.country,
-    line: {{color: data.tier_color, width: 2}},
-    fillcolor: data.tier_color,
-    opacity: 0.65,
-    hovertemplate: '<b>%{{theta}}</b><br>Score: %{{r:.3f}}<br>Higher = more risk<extra></extra>'
-  }};
-
-  var trace2 = {{
-    type: 'scatterpolar',
-    r: avgs, theta: names,
-    fill: 'toself',
-    name: 'Global Average',
-    line: {{color: '#00bcd4', width: 2}},
-    fillcolor: '#00bcd4',
-    opacity: 0.35,
-    hovertemplate: '<b>%{{theta}}</b><br>Global avg: %{{r:.3f}}<extra></extra>'
-  }};
-
-  var layout = {{
-    title: {{
-      text: data.country + ' — Variable Risk Profile (All 15 Variables)',
-      font: {{size: 16, color: '#ffffff'}},
-      x: 0.5
-    }},
-    polar: {{
-      radialaxis: {{visible: true, range: [0,1], color: '#888'}},
-      angularaxis: {{tickfont: {{size: 11, color: '#ddd'}}}},
-      bgcolor: '#1a1a2e'
-    }},
-    paper_bgcolor: '#1a1a2e',
-    plot_bgcolor: '#1a1a2e',
-    font: {{color: '#ffffff'}},
-    showlegend: true,
-    legend: {{font: {{color: '#fff'}}, bgcolor: 'rgba(0,0,0,0)'}},
-    margin: {{l: 100, r: 100, t: 80, b: 60}},
-    hoverlabel: {{
-      bgcolor: '#2d2d3e',
-      bordercolor: '#ffffff',
-      font: {{size: 13, color: 'white'}}
-    }}
-  }};
-
-  var config = {{responsive: true, displayModeBar: false}};
-  Plotly.newPlot('popup-chart', [trace1, trace2], layout, config);
-}}
-</script>
-</body>
-</html>
-""", height=600)
+                show_radar_popup()
 
         with col_vars:
             st.subheader("Variable Breakdown")
