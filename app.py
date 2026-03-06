@@ -814,22 +814,38 @@ elif page == "⚙️ Policy Simulator":
     )
     for pol in sim_result["policies_applied"]:
         with st.expander(f"📋 {pol['label']}"):
-            st.markdown(f"**What this policy does:** {pol['description']}")
+            st.markdown(f"<span style='color:#90caf9;font-weight:600'>What this policy does</span><br><span style='color:#e0e0e0'>{pol['description']}</span>", unsafe_allow_html=True)
+            st.markdown("<hr style='border-color:#333;margin:8px 0'>", unsafe_allow_html=True)
             st.markdown(
-                f"**Timeline:** {pol['timeline']} &nbsp;·&nbsp; "
-                f"*How long until full effect on risk scores, based on typical policy implementation cycles.*"
+                f"<span style='color:#90caf9;font-weight:600'>⏱ Timeline</span> "
+                f"<span style='color:#ffffff;font-size:1.05em'>{pol['timeline']}</span><br>"
+                f"<span style='color:#9e9e9e;font-size:0.88em'>How long until this policy reaches full effect on AWPRI scores, "
+                f"based on typical legislative and behavioural change cycles.</span>",
+                unsafe_allow_html=True
+            )
+            cost_color = {"Low": "#81c784", "Medium": "#ffb74d", "High": "#e57373"}.get(pol['cost'], "#ffffff")
+            feasibility_color = {"High": "#81c784", "Medium": "#ffb74d", "Low": "#e57373"}.get(pol['feasibility'], "#ffffff")
+            st.markdown(
+                f"<span style='color:#90caf9;font-weight:600'>💰 Implementation Cost</span> "
+                f"<span style='color:{cost_color};font-weight:600'>{pol['cost']}</span><br>"
+                f"<span style='color:#9e9e9e;font-size:0.88em'>Relative fiscal burden on national government. "
+                f"Low = minimal new spending required; Medium = moderate budget allocation needed; High = major public investment required.</span>",
+                unsafe_allow_html=True
             )
             st.markdown(
-                f"**Implementation cost:** {pol['cost']} &nbsp;·&nbsp; "
-                f"*Relative fiscal burden on national government.*"
+                f"<span style='color:#90caf9;font-weight:600'>🏛 Political Feasibility</span> "
+                f"<span style='color:{feasibility_color};font-weight:600'>{pol['feasibility']}</span><br>"
+                f"<span style='color:#9e9e9e;font-size:0.88em'>Likelihood of political adoption. "
+                f"High = achievable within existing frameworks; Medium = requires moderate institutional reform; "
+                f"Low = requires significant political will and structural change.</span>",
+                unsafe_allow_html=True
             )
+            st.markdown("<hr style='border-color:#333;margin:8px 0'>", unsafe_allow_html=True)
             st.markdown(
-                f"**Political feasibility:** {pol['feasibility']} &nbsp;·&nbsp; "
-                f"*Likelihood of adoption: High = achievable within existing frameworks; "
-                f"Medium = requires moderate institutional reform; "
-                f"Low = requires significant political will and structural change.*"
+                f"<span style='color:#90caf9;font-weight:600'>🌍 Real-world precedents</span><br>"
+                f"<span style='color:#e0e0e0'>{pol['examples']}</span>",
+                unsafe_allow_html=True
             )
-            st.markdown(f"**Real-world precedents:** {pol['examples']}")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
