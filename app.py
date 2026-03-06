@@ -321,13 +321,15 @@ elif page == "🔍 Country Deep-Dive":
                 fill="toself", name=result["country_name"],
                 line_color=tier_color, fillcolor=tier_color,
                 opacity=0.6,
+                hovertemplate="<b>%{theta}</b><br>Score: %{r:.3f}<br>Higher = more risk<extra></extra>",
             ))
             fig_radar.add_trace(go.Scatterpolar(
                 r=global_avg + [global_avg[0]],
                 theta=var_names + [var_names[0]],
                 fill="toself", name="Global Average",
-                line_color="#9e9e9e", fillcolor="#9e9e9e",
-                opacity=0.3,
+                line_color="#00bcd4", fillcolor="#00bcd4",
+                opacity=0.35,
+                hovertemplate="<b>%{theta}</b><br>Global avg: %{r:.3f}<extra></extra>",
             ))
             fig_radar.update_layout(
                 polar=dict(
@@ -337,8 +339,15 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 showlegend=True, height=550,
                 margin=dict(l=80, r=80, t=40, b=40),
+                hoverlabel=dict(
+                    bgcolor="#1e1e2e",
+                    bordercolor="#ffffff",
+                    font=dict(size=13, color="white"),
+                ),
+                hovermode="closest",
             )
             st.plotly_chart(fig_radar, use_container_width=True, key="radar_single")
+            st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         with col_vars:
             st.subheader("Variable Breakdown")
@@ -479,12 +488,14 @@ elif page == "🔍 Country Deep-Dive":
                 theta=var_names + [var_names[0]],
                 fill="toself", name=result["country_name"],
                 line_color=tier_color, fillcolor=tier_color, opacity=0.6,
+                hovertemplate="<b>%{theta}</b><br>Score: %{r:.3f}<br>Higher = more risk<extra></extra>",
             ))
             fig_radar1.add_trace(go.Scatterpolar(
                 r=global_avg + [global_avg[0]],
                 theta=var_names + [var_names[0]],
                 fill="toself", name="Global Avg",
-                line_color="#9e9e9e", fillcolor="#9e9e9e", opacity=0.3,
+                line_color="#00bcd4", fillcolor="#00bcd4", opacity=0.35,
+                hovertemplate="<b>%{theta}</b><br>Global avg: %{r:.3f}<extra></extra>",
             ))
             fig_radar1.update_layout(
                 polar=dict(
@@ -492,9 +503,16 @@ elif page == "🔍 Country Deep-Dive":
                     angularaxis=dict(tickfont=dict(size=9)),
                     domain=dict(x=[0.05, 0.95], y=[0.05, 0.95])
                 ),
-                height=550, margin=dict(l=80, r=80, t=40, b=40)
+                height=550, margin=dict(l=80, r=80, t=40, b=40),
+                hoverlabel=dict(
+                    bgcolor="#1e1e2e",
+                    bordercolor="#ffffff",
+                    font=dict(size=13, color="white"),
+                ),
+                hovermode="closest",
             )
             st.plotly_chart(fig_radar1, use_container_width=True, key="radar_compare1")
+            st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         with col_rad2:
             st.subheader(f"{compare_country} Risk Profile")
@@ -508,12 +526,14 @@ elif page == "🔍 Country Deep-Dive":
                 theta=var_names2 + [var_names2[0]],
                 fill="toself", name=result2["country_name"],
                 line_color=tier_color2, fillcolor=tier_color2, opacity=0.6,
+                hovertemplate="<b>%{theta}</b><br>Score: %{r:.3f}<br>Higher = more risk<extra></extra>",
             ))
             fig_radar2.add_trace(go.Scatterpolar(
                 r=global_avg2 + [global_avg2[0]],
                 theta=var_names2 + [var_names2[0]],
                 fill="toself", name="Global Avg",
-                line_color="#9e9e9e", fillcolor="#9e9e9e", opacity=0.3,
+                line_color="#00bcd4", fillcolor="#00bcd4", opacity=0.35,
+                hovertemplate="<b>%{theta}</b><br>Global avg: %{r:.3f}<extra></extra>",
             ))
             fig_radar2.update_layout(
                 polar=dict(
@@ -521,9 +541,16 @@ elif page == "🔍 Country Deep-Dive":
                     angularaxis=dict(tickfont=dict(size=9)),
                     domain=dict(x=[0.05, 0.95], y=[0.05, 0.95])
                 ),
-                height=550, margin=dict(l=80, r=80, t=40, b=40)
+                height=550, margin=dict(l=80, r=80, t=40, b=40),
+                hoverlabel=dict(
+                    bgcolor="#1e1e2e",
+                    bordercolor="#ffffff",
+                    font=dict(size=13, color="white"),
+                ),
+                hovermode="closest",
             )
             st.plotly_chart(fig_radar2, use_container_width=True, key="radar_compare2")
+            st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         # ── Trajectory comparison ──
         st.divider()
