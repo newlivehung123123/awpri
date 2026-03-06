@@ -1007,11 +1007,6 @@ elif page == "📈 Forecasts 2030":
     f2030 = f2030.sort_values("AWPRI_forecast", ascending=False).reset_index(drop=True)
     f2030.index += 1
 
-    f2030["color"] = f2030["trend"].apply(
-        lambda x: "#d32f2f" if "WORSENING" in str(x).upper() or "↑" in str(x)
-                  else "#388e3c"
-    )
-
     fig_f2030 = go.Figure()
     baseline_2022 = norm[norm["year"]==2022][["country_iso2","AWPRI_score"]]
     f2030_merged = f2030.merge(baseline_2022, on="country_iso2")
@@ -1024,12 +1019,15 @@ elif page == "📈 Forecasts 2030":
         orientation="h",
         marker_color="#90a4ae",
     ))
+    f2030_merged["bar_color"] = f2030_merged["AWPRI_forecast"].apply(
+        lambda x: "#d32f2f" if x >= 0.6 else "#ff8f00" if x >= 0.4 else "#388e3c"
+    )
     fig_f2030.add_trace(go.Bar(
         y=f2030_merged["country_iso2"],
         x=f2030_merged["AWPRI_forecast"],
-        name="2030 (forecast)",
+        name="2030 forecast — 🔴 High risk (≥0.6)  🟡 Moderate (0.4–0.6)  🟢 Low (<0.4)",
         orientation="h",
-        marker_color=f2030_merged["color"],
+        marker_color=f2030_merged["bar_color"],
         opacity=0.85,
     ))
     fig_f2030.update_layout(
@@ -1039,6 +1037,13 @@ elif page == "📈 Forecasts 2030":
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
     )
     st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030")
+
+    st.caption(
+        "**Chart guide:** Grey bars = 2022 actual AWPRI score. Coloured bars = 2030 projected score. "
+        "Bar colour reflects projected risk level — consistent with the colour scale used across all pages: "
+        "🔴 Red = High risk (AWPRI ≥ 0.6) · 🟡 Amber = Moderate risk (0.4–0.6) · 🟢 Green = Low risk (< 0.4). "
+        "Longer coloured bar vs grey bar = risk is projected to increase by 2030."
+    )
 
 
 # ══════════════════════════════════════════════════════════════════════════════
