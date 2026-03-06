@@ -650,12 +650,14 @@ elif page == "🔍 Country Deep-Dive":
         fig_traj_comp.add_trace(go.Scatter(
             x=list(traj1.keys()), y=list(traj1.values()),
             mode="lines+markers", name=f"{selected_country}",
-            line=dict(color=tier_color, width=2),
+            line=dict(color="#f57c00", width=2),
+            marker=dict(size=5),
         ))
         fig_traj_comp.add_trace(go.Scatter(
             x=list(traj2.keys()), y=list(traj2.values()),
             mode="lines+markers", name=f"{compare_country}",
-            line=dict(color=tier_color2, width=2),
+            line=dict(color="#42a5f5", width=2),
+            marker=dict(size=5),
         ))
         fig_traj_comp.add_vline(x=2022, line_dash="dot", line_color="gray")
         fig_traj_comp.update_layout(
