@@ -459,7 +459,8 @@ elif page == "🔍 Country Deep-Dive":
             ))
 
         fig_traj.add_vline(x=2022, line_dash="dot", line_color="gray",
-                           annotation_text="Now", annotation_position="top right")
+                           annotation_text="Last historical data point (2022)",
+                           annotation_position="top left")
         fig_traj.update_layout(
             height=320, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
@@ -647,7 +648,9 @@ elif page == "🔍 Country Deep-Dive":
             line=dict(color="#42a5f5", width=2),
             marker=dict(size=5),
         ))
-        fig_traj_comp.add_vline(x=2022, line_dash="dot", line_color="gray")
+        fig_traj_comp.add_vline(x=2022, line_dash="dot", line_color="gray",
+                                annotation_text="Last historical data point (2022)",
+                                annotation_position="top left")
         fig_traj_comp.update_layout(
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
