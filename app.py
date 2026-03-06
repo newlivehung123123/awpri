@@ -109,27 +109,26 @@ st.markdown("""
 <div id="zoom-toast">📱 Double-tap chart to reset zoom</div>
 <script>
 (function() {
-    let toastTimer = null;
+    var toastTimer = null;
     function showToast() {
-        const toast = document.getElementById('zoom-toast');
+        var toast = document.getElementById('zoom-toast');
         if (toast) {
             toast.style.display = 'block';
             clearTimeout(toastTimer);
-            toastTimer = setTimeout(function() {
-                toast.style.display = 'none';
-            }, 2500);
+            toastTimer = setTimeout(function() { toast.style.display = 'none'; }, 2500);
         }
     }
-    document.addEventListener('touchmove', function(e) {
-        if (e.touches.length >= 2) {
-            showToast();
-        }
-    }, { passive: true });
-    document.addEventListener('touchstart', function(e) {
-        if (e.touches.length >= 2) {
-            showToast();
-        }
-    }, { passive: true });
+    function attachToCharts() {
+        var charts = document.querySelectorAll(js-plotly-plot, .stPlotlyChart');
+        charts.forEach(function(chart) {
+            if (!chart.dataset.toastAttached) {
+                chart.dataset.toastAttached = '1';
+                chart.addEventListener('touchstart', showToast, { passive: true });
+            }
+        });
+    }
+    // Attach now and keep checking as Streamlit rerenders
+    setInterval(attachToCharts, 1000);
 })();
 </script>
 """, unsafe_allow_html=True)
