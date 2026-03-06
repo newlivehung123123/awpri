@@ -459,7 +459,6 @@ elif page == "🔍 Country Deep-Dive":
             ))
 
         fig_traj.add_vline(x=2022, line_dash="dot", line_color="gray", annotation_text="Last historical data (2022)", annotation_position="top left")
-                           annotation_position="top left")
         fig_traj.update_layout(
             height=320, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
@@ -648,7 +647,6 @@ elif page == "🔍 Country Deep-Dive":
             marker=dict(size=5),
         ))
         fig_traj_comp.add_vline(x=2022, line_dash="dot", line_color="gray", annotation_text="Last historical data (2022)", annotation_position="top left")
-                                annotation_position="top left")
         fig_traj_comp.update_layout(
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
@@ -775,7 +773,6 @@ elif page == "⚙️ Policy Simulator":
         ))
         policy_enacted_year = min(traj.keys())
         fig_sim.add_vline(x=policy_enacted_year, line_dash="dot", line_color="gray",
-                          annotation_text="Policy Enacted", annotation_position="top right")
         fig_sim.update_layout(
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
