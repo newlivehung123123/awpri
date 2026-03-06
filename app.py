@@ -445,7 +445,7 @@ elif page == "🔍 Country Deep-Dive":
             fc_lower  = list(forecasts[forecasts["country_iso2"]==selected_country]["lower_95"])
             fc_upper  = list(forecasts[forecasts["country_iso2"]==selected_country]["upper_95"])
             fig_traj.add_trace(go.Scatter(
-                x=[2022] + fc_years, y=[traj[2022]] + fc_scores,
+                x=[2022] + fc_years, y=[traj.get(2022, list(traj.values())[-1])] + fc_scores,
                 mode="lines+markers", name="ARIMA Forecast",
                 line=dict(color=tier_color, width=2, dash="dash"),
                 marker=dict(size=5),
