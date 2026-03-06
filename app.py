@@ -172,6 +172,7 @@ if page == "🌍 Global Overview":
             labels={"AWPRI_score": "AWPRI Risk Score"},
         )
         fig_map.update_layout(
+        dragmode=False,
             margin=dict(l=0, r=0, t=0, b=0),
             geo=dict(showframe=False, showcoastlines=True,
                      projection_type="natural earth"),
@@ -224,6 +225,7 @@ if page == "🌍 Global Overview":
             marker_color=col,
         ))
     fig_layers.update_layout(
+        dragmode=False,
         barmode="group",
         height=320,
         margin=dict(l=0, r=0, t=10, b=0),
@@ -251,7 +253,8 @@ if page == "🌍 Global Overview":
         labels={"change": "AWPRI Change", "country_iso2": "Country"},
         height=300,
     )
-    fig_trend.update_layout(margin=dict(l=0,r=0,t=10,b=0),
+    fig_trend.update_layout(
+        dragmode=False,margin=dict(l=0,r=0,t=10,b=0),
                              legend=dict(orientation="h", yanchor="bottom", y=1.02))
     st.plotly_chart(fig_trend, use_container_width=True, key="trend_chart", config={"displayModeBar": False, "scrollZoom": False})
 
@@ -333,6 +336,7 @@ elif page == "🔍 Country Deep-Dive":
                 hovertemplate="<b>%{theta}</b><br>Global avg: %{r:.3f}<extra></extra>",
             ))
             fig_radar.update_layout(
+        dragmode=False,
                 polar=dict(
                     radialaxis=dict(visible=True, range=[0,1]),
                     angularaxis=dict(tickfont=dict(size=9)),
@@ -471,6 +475,7 @@ elif page == "🔍 Country Deep-Dive":
 
         fig_traj.add_vline(x=2022, line_dash="dot", line_color="gray", annotation_text="Last historical data (2022)", annotation_position="top left")
         fig_traj.update_layout(
+        dragmode=False,
             height=320, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
@@ -659,6 +664,7 @@ elif page == "🔍 Country Deep-Dive":
         ))
         fig_traj_comp.add_vline(x=2022, line_dash="dot", line_color="gray", annotation_text="Last historical data (2022)", annotation_position="top left")
         fig_traj_comp.update_layout(
+        dragmode=False,
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
@@ -785,6 +791,7 @@ elif page == "⚙️ Policy Simulator":
         policy_enacted_year = min(traj.keys())
         fig_sim.add_vline(x=policy_enacted_year, line_dash="dot", line_color="gray", annotation_text="Policy Enacted", annotation_position="top right")
         fig_sim.update_layout(
+        dragmode=False,
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
@@ -978,6 +985,7 @@ elif page == "📈 Forecasts 2030":
         
         fig_multi.add_vline(x=2022, line_dash="dot", line_color="gray")
         fig_multi.update_layout(
+        dragmode=False,
             height=450, yaxis=dict(range=[0,1], title="AWPRI Score"),
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
@@ -1047,6 +1055,7 @@ elif page == "📈 Forecasts 2030":
         )
 
     fig_f2030.update_layout(
+        dragmode=False,
         height=650,
         margin=dict(l=0, r=0, t=10, b=0),
         xaxis=dict(range=[0, 1], title="AWPRI Score (0 = lowest risk, 1 = highest risk)"),
