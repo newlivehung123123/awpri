@@ -840,11 +840,11 @@ elif page == "⚙️ Policy Simulator":
                 f"Based on typical legislative adoption and behavioural change cycles in the literature."
             )
             st.markdown(
-                f"<div style='margin:6px 0'>"
                 f"<span style='color:#90caf9;font-weight:600'>⏱ Timeline</span>&nbsp;"
                 f"<span style='color:#ffffff;font-weight:600'>{pol['timeline']}</span>"
-                f"</div>"
-                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>{timeline_tooltip}</div>",
+                f"<span style='color:#aaaaaa;font-size:0.8em;cursor:help;margin-left:6px' "
+                f"title='This figure is assigned based on typical implementation timelines for this policy type drawn from comparative policy literature. It determines the slope of the green trajectory line in the chart above — a longer timeline means a more gradual reduction in risk score.'>ⓘ</span><br>"
+                f"<span style='color:#9e9e9e;font-size:0.83em'>Estimated years until this policy reaches its full effect on AWPRI scores. Modelled as linear interpolation: at year 0 = no change; at year N = full variable reduction applied.</span>",
                 unsafe_allow_html=True
             )
 
@@ -860,8 +860,10 @@ elif page == "⚙️ Policy Simulator":
                 f"<div style='margin:6px 0'>"
                 f"<span style='color:#90caf9;font-weight:600'>💰 Implementation Cost</span>&nbsp;"
                 f"<span style='color:{cost_color};font-weight:600'>{pol['cost']}</span>"
+                f"<span style='color:#aaaaaa;font-size:0.8em;cursor:help;margin-left:6px' "
+                f"title='Cost rating is assigned by the research team based on: Low = policy achievable within existing ministry budgets with no new legislation; Medium = requires dedicated budget line or new legislation (est. 0.1–0.5% GDP); High = requires major cross-departmental investment or international coordination (est. >0.5% GDP).'>ⓘ</span>"
                 f"</div>"
-                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>{cost_tooltip}</div>",
+                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>Relative fiscal burden on national government.</div>",
                 unsafe_allow_html=True
             )
 
@@ -877,8 +879,10 @@ elif page == "⚙️ Policy Simulator":
                 f"<div style='margin:6px 0'>"
                 f"<span style='color:#90caf9;font-weight:600'>🏛 Political Feasibility</span>&nbsp;"
                 f"<span style='color:{feas_color};font-weight:600'>{pol['feasibility']}</span>"
+                f"<span style='color:#aaaaaa;font-size:0.8em;cursor:help;margin-left:6px' "
+                f"title='Feasibility is rated by the research team using three criteria: (1) compatibility with existing legal frameworks, (2) historical adoption rate of similar policies across the 25 AWPRI countries, and (3) degree of vested-interest opposition based on agricultural industry concentration data. High = all three criteria favourable; Medium = one or two criteria unfavourable; Low = majority of criteria unfavourable.'>ⓘ</span>"
                 f"</div>"
-                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>{feas_tooltip}</div>",
+                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>Likelihood of political adoption given typical institutional capacity.</div>",
                 unsafe_allow_html=True
             )
 
