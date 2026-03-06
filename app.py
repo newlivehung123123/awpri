@@ -179,7 +179,7 @@ if page == "🌍 Global Overview":
             height=420,
             clickmode="event+select",
         )
-        st.plotly_chart(fig_map, use_container_width=True, key="global_map")
+        st.plotly_chart(fig_map, use_container_width=True, key="global_map", config={"displayModeBar": False, "scrollZoom": False})
 
         # ── Download rankings ──
         csv_rankings = year_df[["country_iso2", "country_name", "AWPRI_score", "L1_score", "L2_score", "L3_score", "risk_archetype"]].to_csv(index=False)
@@ -231,7 +231,7 @@ if page == "🌍 Global Overview":
         yaxis=dict(range=[0, 1], title="Score"),
         xaxis=dict(title="Country"),
     )
-    st.plotly_chart(fig_layers, use_container_width=True, key="layer_breakdown")
+    st.plotly_chart(fig_layers, use_container_width=True, key="layer_breakdown", config={"displayModeBar": False, "scrollZoom": False})
 
     # ── Trend: worsening vs improving ──
     st.subheader(f"Risk Trajectory 2004 → {selected_year}")
@@ -253,7 +253,7 @@ if page == "🌍 Global Overview":
     )
     fig_trend.update_layout(margin=dict(l=0,r=0,t=10,b=0),
                              legend=dict(orientation="h", yanchor="bottom", y=1.02))
-    st.plotly_chart(fig_trend, use_container_width=True, key="trend_chart")
+    st.plotly_chart(fig_trend, use_container_width=True, key="trend_chart", config={"displayModeBar": False, "scrollZoom": False})
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -347,7 +347,7 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar, use_container_width=True, key="radar_main")
+            st.plotly_chart(fig_radar, use_container_width=True, key="radar_main", config={"displayModeBar": False, "scrollZoom": False})
 
             # Native dialog popup using st.dialog
             if st.button("🔍 Click to enlarge radar chart", key="open_radar_dialog", use_container_width=True):
@@ -389,7 +389,7 @@ elif page == "🔍 Country Deep-Dive":
                         hoverlabel=dict(bgcolor="#1e1e2e", bordercolor="#fff", font=dict(size=13, color="white")),
                         hovermode="closest",
                     )
-                    st.plotly_chart(fig_large, use_container_width=True)
+                    st.plotly_chart(fig_large, use_container_width=True, config={"displayModeBar": False, "scrollZoom": False})
                     st.caption("All 15 variables shown. Higher score = greater risk. Cyan = global average. Close by pressing Escape or clicking outside.")
                     if st.button("Close", key="close_radar_dialog"):
                         st.session_state.show_radar_dialog = False
@@ -476,7 +476,7 @@ elif page == "🔍 Country Deep-Dive":
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
-        st.plotly_chart(fig_traj, use_container_width=True, key="traj_single", config={"displayModeBar": False})
+        st.plotly_chart(fig_traj, use_container_width=True, key="traj_single", config={"displayModeBar": False, "scrollZoom": False})
 
         # ── Key drivers and strengths ──
         col_d, col_s = st.columns(2)
@@ -596,7 +596,7 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar1, use_container_width=True, key="radar_compare1")
+            st.plotly_chart(fig_radar1, use_container_width=True, key="radar_compare1", config={"displayModeBar": False, "scrollZoom": False})
             st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         with col_rad2:
@@ -634,7 +634,7 @@ elif page == "🔍 Country Deep-Dive":
                 ),
                 hovermode="closest",
             )
-            st.plotly_chart(fig_radar2, use_container_width=True, key="radar_compare2")
+            st.plotly_chart(fig_radar2, use_container_width=True, key="radar_compare2", config={"displayModeBar": False, "scrollZoom": False})
             st.caption("💡 Hover over any point to see the variable name and score. On mobile, tap a point.")
 
         # ── Trajectory comparison ──
@@ -663,7 +663,7 @@ elif page == "🔍 Country Deep-Dive":
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
         )
-        st.plotly_chart(fig_traj_comp, use_container_width=True, key="traj_compare", config={"displayModeBar": False})
+        st.plotly_chart(fig_traj_comp, use_container_width=True, key="traj_compare", config={"displayModeBar": False, "scrollZoom": False})
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -790,7 +790,7 @@ elif page == "⚙️ Policy Simulator":
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
-        st.plotly_chart(fig_sim, use_container_width=True, key="policy_trajectory")
+        st.plotly_chart(fig_sim, use_container_width=True, key="policy_trajectory", config={"displayModeBar": False, "scrollZoom": False})
 
     with col_detail:
         st.subheader("Layer Impact")
@@ -983,7 +983,7 @@ elif page == "📈 Forecasts 2030":
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="v", yanchor="top", y=0.99),
         )
-        st.plotly_chart(fig_multi, use_container_width=True, key="multi_forecast", config={"displayModeBar": False})
+        st.plotly_chart(fig_multi, use_container_width=True, key="multi_forecast", config={"displayModeBar": False, "scrollZoom": False})
 
         # ── Download button ──
         fc_data = forecasts[forecasts["country_iso2"].isin(multi_countries)]
@@ -1054,7 +1054,7 @@ elif page == "📈 Forecasts 2030":
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
         plot_bgcolor="rgba(0,0,0,0)",
     )
-    st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030", config={"displayModeBar": False})
+    st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030", config={"displayModeBar": False, "scrollZoom": False})
     st.caption(
         "**How to read this chart:** Each country has two markers — "
         "⬤ grey circle = 2022 actual AWPRI score, ◆ coloured diamond = 2030 projected score. "
