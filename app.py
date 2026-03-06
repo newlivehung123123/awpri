@@ -737,7 +737,8 @@ elif page == "⚙️ Policy Simulator":
             line=dict(color="#388e3c", width=2),
             marker=dict(size=4),
         ))
-        fig_sim.add_vline(x=hist_years[-1], line_dash="dot", line_color="gray",
+        policy_enacted_year = min(traj.keys())
+        fig_sim.add_vline(x=policy_enacted_year, line_dash="dot", line_color="gray",
                           annotation_text="Policy Enacted", annotation_position="top right")
         fig_sim.update_layout(
             height=350, yaxis=dict(range=[0,1], title="AWPRI Score"),
