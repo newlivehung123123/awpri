@@ -114,22 +114,10 @@ if page == "🌍 Global Overview":
     st.title("🌍 Global Animal Welfare Risk Overview")
     st.caption("Animal Welfare and Policy Risk Index (AWPRI) — higher scores indicate greater risk")
 
-    col_year, col_play = st.columns([3, 1])
-    
-    with col_year:
-        selected_year = st.select_slider(
-            "Select year", options=YEARS_HIST, value=st.session_state.selected_year, key="year_slider"
-        )
-        st.session_state.selected_year = selected_year
-    
-    with col_play:
-        if st.button("▶ Play Animation", key="play_btn"):
-            with st.spinner("Animating 2004→2022..."):
-                anim_placeholder = st.empty()
-                for yr in YEARS_HIST:
-                    anim_placeholder.write(f"**Year: {yr}**")
-                    time.sleep(0.3)
-                st.session_state.selected_year = selected_year
+    selected_year = st.select_slider(
+        "Select year", options=YEARS_HIST, value=st.session_state.selected_year, key="year_slider"
+    )
+    st.session_state.selected_year = selected_year
 
     year_df = norm[norm["year"] == selected_year].merge(
         clusters[["country_iso2","risk_archetype"]], on="country_iso2", how="left"
