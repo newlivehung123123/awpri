@@ -223,11 +223,11 @@ if page == "🌍 Global Overview":
     st.plotly_chart(fig_layers, use_container_width=True, key="layer_breakdown")
 
     # ── Trend: worsening vs improving ──
-    st.subheader("Risk Trajectory 2004 → 2022")
+    st.subheader(f"Risk Trajectory 2004 → {selected_year}")
     df_2004 = norm[norm["year"]==2004][["country_iso2","AWPRI_score"]].rename(columns={"AWPRI_score":"s2004"})
-    df_2022 = norm[norm["year"]==2022][["country_iso2","AWPRI_score"]].rename(columns={"AWPRI_score":"s2022"})
-    trend_df = df_2004.merge(df_2022, on="country_iso2")
-    trend_df["change"] = trend_df["s2022"] - trend_df["s2004"]
+    df_end = norm[norm["year"]==selected_year][["country_iso2","AWPRI_score"]].rename(columns={"AWPRI_score":"s_end"})
+    trend_df = df_2004.merge(df_end, on="country_iso2")
+    trend_df["change"] = trend_df["s_end"] - trend_df["s2004"]
     trend_df["direction"] = trend_df["change"].apply(lambda x: "Worsening ↑" if x > 0 else "Improving ↓")
     trend_df["country_name"] = trend_df["country_iso2"].map(COUNTRY_NAMES)
     trend_df = trend_df.sort_values("change", ascending=False)
@@ -236,7 +236,7 @@ if page == "🌍 Global Overview":
         trend_df, x="country_iso2", y="change",
         color="direction",
         color_discrete_map={"Worsening ↑": "#d32f2f", "Improving ↓": "#388e3c"},
-        hover_data={"country_name": True, "s2004": ":.3f", "s2022": ":.3f"},
+        hover_data={"country_name": True, "s2004": ":.3f", "s_end": ":.3f"},
         labels={"change": "AWPRI Change", "country_iso2": "Country"},
         height=300,
     )
