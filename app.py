@@ -812,38 +812,101 @@ elif page == "⚙️ Policy Simulator":
         "(High = achievable within existing frameworks, Medium = requires moderate reform, Low = requires major political will). "
         "Effect sizes are modelled as multiplicative reductions on the relevant normalised variable scores."
     )
+    # Tooltip helper — renders ⓘ with hover popup
+    def info_tooltip(label, value, value_color, tooltip_html):
+        return (
+            f"<div style='margin:6px 0'>"
+            f"<span style='color:#90caf9;font-weight:600'>{label}</span>&nbsp;"
+            f"<span style='color:{value_color};font-weight:600'>{value}</span>&nbsp;"
+            f"<span style='position:relative;display:inline-block'>"
+            f"<span style='color:#90caf9;cursor:help;font-size:0.9em' "
+            f"title='{tooltip_html}'>ⓘ</span>"
+            f"</span></div>"
+            f"<div style='color:#9e9e9e;font-size:0.83em;margin:-4px 0 8px 0'>{tooltip_html}</div>"
+        )
+
     for pol in sim_result["policies_applied"]:
         with st.expander(f"📋 {pol['label']}"):
-            st.markdown(f"<span style='color:#90caf9;font-weight:600'>What this policy does</span><br><span style='color:#e0e0e0'>{pol['description']}</span>", unsafe_allow_html=True)
-            st.markdown("<hr style='border-color:#333;margin:8px 0'>", unsafe_allow_html=True)
             st.markdown(
-                f"<span style='color:#90caf9;font-weight:600'>⏱ Timeline</span> "
-                f"<span style='color:#ffffff;font-size:1.05em'>{pol['timeline']}</span><br>"
-                f"<span style='color:#9e9e9e;font-size:0.88em'>How long until this policy reaches full effect on AWPRI scores, "
-                f"based on typical legislative and behavioural change cycles.</span>",
+                f"<div style='color:#e0e0e0;margin-bottom:10px'>{pol['description']}</div>",
                 unsafe_allow_html=True
             )
+            st.markdown("<hr style='border-color:#333;margin:6px 0'>", unsafe_allow_html=True)
+
+            # Timeline
+            timeline_tooltip = (
+                f"Estimated years until this policy reaches its full effect on AWPRI scores. "
+                f"Modelled as linear interpolation: at year 0 = no change; at year N = full variable reduction applied. "
+                f"Based on typical legislative adoption and behavioural change cycles in the literature."
+            )
+            st.markdown(
+                f"<div style='margin:6px 0'>"
+                f"<span style='color:#90caf9;font-weight:600'>⏱ Timeline</span>&nbsp;"
+                f"<span style='color:#ffffff;font-weight:600'>{pol['timeline']}</span>"
+                f"</div>"
+                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>{timeline_tooltip}</div>",
+                unsafe_allow_html=True
+            )
+
+            # Cost
             cost_color = {"Low": "#81c784", "Medium": "#ffb74d", "High": "#e57373"}.get(pol['cost'], "#ffffff")
-            feasibility_color = {"High": "#81c784", "Medium": "#ffb74d", "Low": "#e57373"}.get(pol['feasibility'], "#ffffff")
-            st.markdown(
-                f"<span style='color:#90caf9;font-weight:600'>💰 Implementation Cost</span> "
-                f"<span style='color:{cost_color};font-weight:600'>{pol['cost']}</span><br>"
-                f"<span style='color:#9e9e9e;font-size:0.88em'>Relative fiscal burden on national government. "
-                f"Low = minimal new spending required; Medium = moderate budget allocation needed; High = major public investment required.</span>",
-                unsafe_allow_html=True
+            cost_tooltip = (
+                "Relative fiscal burden on national government. "
+                "Low = achievable within existing budgets, minimal new spending. "
+                "Medium = requires dedicated budget allocation (est. 0.1–0.5% GDP). "
+                "High = major public investment required (est. >0.5% GDP or multi-year programme)."
             )
             st.markdown(
-                f"<span style='color:#90caf9;font-weight:600'>🏛 Political Feasibility</span> "
-                f"<span style='color:{feasibility_color};font-weight:600'>{pol['feasibility']}</span><br>"
-                f"<span style='color:#9e9e9e;font-size:0.88em'>Likelihood of political adoption. "
-                f"High = achievable within existing frameworks; Medium = requires moderate institutional reform; "
-                f"Low = requires significant political will and structural change.</span>",
+                f"<div style='margin:6px 0'>"
+                f"<span style='color:#90caf9;font-weight:600'>💰 Implementation Cost</span>&nbsp;"
+                f"<span style='color:{cost_color};font-weight:600'>{pol['cost']}</span>"
+                f"</div>"
+                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>{cost_tooltip}</div>",
                 unsafe_allow_html=True
             )
-            st.markdown("<hr style='border-color:#333;margin:8px 0'>", unsafe_allow_html=True)
+
+            # Feasibility
+            feas_color = {"High": "#81c784", "Medium": "#ffb74d", "Low": "#e57373"}.get(pol['feasibility'], "#ffffff")
+            feas_tooltip = (
+                "Likelihood of political adoption given typical institutional capacity. "
+                "High = achievable within existing legal and administrative frameworks, cross-party support likely. "
+                "Medium = requires moderate institutional reform or coalition building. "
+                "Low = requires significant political will, structural change, or faces strong vested-interest opposition."
+            )
+            st.markdown(
+                f"<div style='margin:6px 0'>"
+                f"<span style='color:#90caf9;font-weight:600'>🏛 Political Feasibility</span>&nbsp;"
+                f"<span style='color:{feas_color};font-weight:600'>{pol['feasibility']}</span>"
+                f"</div>"
+                f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 10px 0'>{feas_tooltip}</div>",
+                unsafe_allow_html=True
+            )
+
+            # Effect size
+            effects = pol.get('variables', {})
+            if effects:
+                effect_lines = "".join(
+                    f"<li><code style='color:#80cbc4'>{var}</code>: score multiplied by "
+                    f"<strong style='color:#fff'>{round(mult,2)}</strong> "
+                    f"(i.e. {round((1-mult)*100)}% reduction in risk on this variable)</li>"
+                    for var, mult in effects.items()
+                )
+                st.markdown(
+                    f"<div style='margin:6px 0'>"
+                    f"<span style='color:#90caf9;font-weight:600'>📐 How the score is calculated</span>"
+                    f"</div>"
+                    f"<div style='color:#9e9e9e;font-size:0.83em;margin:-2px 0 6px 0'>"
+                    f"This policy applies multiplicative reductions to the following normalised variables [0–1 scale]. "
+                    f"Each variable's new score = old score × multiplier. "
+                    f"Reduced scores lower the relevant layer average (L1/L2/L3), which lowers the composite AWPRI.</div>"
+                    f"<ul style='color:#ccc;font-size:0.85em;margin:4px 0 10px 16px'>{effect_lines}</ul>",
+                    unsafe_allow_html=True
+                )
+
+            st.markdown("<hr style='border-color:#333;margin:6px 0'>", unsafe_allow_html=True)
             st.markdown(
                 f"<span style='color:#90caf9;font-weight:600'>🌍 Real-world precedents</span><br>"
-                f"<span style='color:#e0e0e0'>{pol['examples']}</span>",
+                f"<span style='color:#e0e0e0;font-size:0.9em'>{pol['examples']}</span>",
                 unsafe_allow_html=True
             )
 

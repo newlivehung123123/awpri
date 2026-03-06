@@ -250,6 +250,7 @@ class PolicySimulator:
                 "cost":        policy["cost"],
                 "feasibility": policy["feasibility"],
                 "examples":    policy["examples"],
+                "variables":   policy.get("variables", {}),
             })
 
         return {
