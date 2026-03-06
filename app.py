@@ -871,6 +871,262 @@ elif page == "📖 Methodology":
 
     st.divider()
 
+    st.markdown("## 🔢 How AWPRI is Calculated")
+    st.markdown("AWPRI follows a 4-step process from raw data to final score:")
+
+    with st.expander("Step 1 — Raw Data Collection", expanded=False):
+        st.markdown("""
+    Each variable is collected from its source at the country-year level (25 countries × 19 years = 475 observations).
+    
+    **Example:** For Vietnam 2022, FAOSTAT reports 2.3 billion farmed animals total population and 97 million people, giving a raw value of 23.7 animals per capita.
+    
+    Raw values differ in unit and scale — some are percentages, some are counts, some are index scores — so they cannot be compared directly. This is why normalisation is required.
+        """)
+
+    with st.expander("Step 2 — Risk Direction Assignment", expanded=False):
+        st.markdown("""
+    Each variable is assigned a **risk direction** before normalisation — whether a higher raw value means higher or lower welfare risk.
+    
+    | Variable | Higher value = | Risk Direction |
+    |---|---|---|
+    | Farmed animals per capita | More animals in industrial systems | ↑ Higher risk |
+    | Animal rights framework (V-Dem) | Stronger legal protections | ↓ Lower risk — **inverted** |
+    | Rule of law (V-Dem) | Stronger institutions | ↓ Lower risk — **inverted** |
+    | Aquaculture % of production | More intensive aquaculture | ↑ Higher risk |
+    | Plant protein ratio | More plant-based diet | ↓ Lower risk — **inverted** |
+    | Civic space (V-Dem) | More open civil society | ↓ Lower risk — **inverted** |
+    | Civil liberties (V-Dem) | Stronger civil liberties | ↓ Lower risk — **inverted** |
+    | Meat consumption kg/capita | Higher consumption | ↑ Higher risk |
+    | AI governance framework | Framework adopted | ↓ Lower risk — **inverted** |
+    | Public concern for animals | Higher concern | ↓ Lower risk — **inverted** |
+    | AI welfare research output | More research | ↓ Lower risk — **inverted** |
+    | AI sentience research output | More research | ↓ Lower risk — **inverted** |
+    | Speciesist bias in AI research | Higher bias ratio | ↑ Higher risk |
+    | Livestock AI patent intensity | More livestock AI patents | ↑ Higher risk |
+    | Animal rights trend | Improving trend | ↓ Lower risk — **inverted** |
+    
+    Variables marked **inverted** are subtracted from 1 after normalisation so that the final score always means: **higher = more risk**.
+        """)
+
+    with st.expander("Step 3 — Min-Max Normalisation to [0, 1]", expanded=False):
+        st.markdown("""
+    Each variable is normalised using **cross-sectional min-max scaling** within each year:
+    
+    ```
+    normalised = (value - min_in_year) / (max_in_year - min_in_year)
+    ```
+    
+    This benchmarks each country against its contemporaneous peers — a country's score reflects its position relative to other countries **in the same year**, not against a fixed historical baseline.
+    
+    **Example:** In 2022, farmed animals per capita ranged from 2.1 (Nigeria) to 64.3 (Denmark) across the 25 countries.
+    - Denmark: (64.3 - 2.1) / (64.3 - 2.1) = **1.00** (highest risk on this variable)
+    - Nigeria: (2.1 - 2.1) / (64.3 - 2.1) = **0.00** (lowest risk on this variable)
+    - Vietnam: (23.7 - 2.1) / (64.3 - 2.1) = **0.35**
+    
+    After normalisation, inverted variables are transformed: `risk_score = 1 - normalised_score`
+    
+    So a country with very strong rule of law (normalised = 0.95) gets a risk score of 1 - 0.95 = **0.05** (low risk).
+        """)
+
+    with st.expander("Step 4 — Layer Aggregation to Final AWPRI Score", expanded=False):
+        st.markdown("""
+    Normalised variables are grouped into 3 layers and averaged within each layer:
+    
+    ```
+    L1 (Current State)      = mean(farmed_animals, aquaculture, animal_rights, rule_of_law, meat_consumption)
+    L2 (Policy Trajectory)  = mean(animal_rights_trend, plant_protein, civic_space, civil_liberties, public_concern)
+    L3 (AI Amplification)   = mean(ai_governance, ai_aw_research, ai_sentience, speciesist_bias, patent_intensity)
+    
+    AWPRI = mean(L1, L2, L3)
+           = (L1 + L2 + L3) / 3
+    ```
+    
+    All layers are weighted **equally at 33.3%** each — reflecting the equal theoretical importance of current conditions, policy direction, and AI governance capacity.
+    
+    **Example — Vietnam 2022:**
+    - L1 = mean(0.35, 0.89, 0.08, 0.78, 0.06) = **0.43**
+    - L2 = mean(0.64, 0.69, 0.73, 0.82, 0.44) = **0.66**  
+    - L3 = mean(1.00, 0.60, 0.60, 0.35, 0.60) = **0.63**
+    - AWPRI = (0.43 + 0.66 + 0.63) / 3 = **0.57**
+    
+    The final score of 0.57 places Vietnam in the **High Risk** archetype, ranked 2nd out of 25 countries in 2022.
+        """)
+
+    st.divider()
+
+    st.markdown("## 🎯 How to Read a Score")
+    st.markdown("""
+| Score Range | Risk Level | Meaning |
+|---|---|---|
+| 0.70 – 1.00 | 🔴 Critical Risk | Severe welfare risk — weak governance, massive industrial scale, no AI oversight |
+| 0.55 – 0.69 | 🟠 High Risk | Significant risk — multiple structural vulnerabilities |
+| 0.40 – 0.54 | 🟡 Moderate Risk | Moderate risk — some protections but key gaps remain |
+| 0.25 – 0.39 | 🟢 Lower Risk | Relatively protected — strong institutions with remaining challenges |
+| 0.00 – 0.24 | 🟢 Minimal Risk | Strong protections across all dimensions |
+
+**Important caveats:**
+- Scores are **relative** — they measure risk compared to the 25 countries in the panel, not against an absolute standard
+- A score of 0.30 means lower risk than most peers, not that welfare is adequate in absolute terms
+- Scores change year-to-year as countries improve or worsen **relative to each other**
+- The index measures **risk of inadequate protection**, not actual observed animal suffering
+    """)
+
+    st.divider()
+
+    st.markdown("## 📐 Variable Definitions & Measurement")
+
+    st.markdown("### Layer 1 — Current State")
+    var_details_l1 = {
+        "Farmed Animals (per capita)": {
+            "source": "FAOSTAT — livestock and poultry headcount",
+            "raw_unit": "Total farmed land animals / national population",
+            "risk_direction": "↑ Higher = more risk",
+            "normalisation": "Min-max across 25 countries per year",
+            "interpretation": "Countries with more animals per person in industrial systems have greater welfare exposure regardless of regulation quality."
+        },
+        "Aquaculture % of Production": {
+            "source": "FAOSTAT — Food Balance Sheets",
+            "raw_unit": "Aquaculture tonnage / total fish production (%)",
+            "risk_direction": "↑ Higher = more risk",
+            "normalisation": "Min-max across 25 countries per year",
+            "interpretation": "Intensive aquaculture carries higher welfare risks than wild-catch due to stocking density and slaughter practices."
+        },
+        "Animal Rights Framework": {
+            "source": "V-Dem v15 — v2carig_ord variable",
+            "raw_unit": "Ordinal scale 0–4 (0=no rights, 4=strong rights)",
+            "risk_direction": "↓ Higher V-Dem score = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Measures whether animal welfare is recognised in law and enforced in practice."
+        },
+        "Rule of Law": {
+            "source": "V-Dem v15 — v2x_rule variable",
+            "raw_unit": "Continuous 0–1 (higher = stronger rule of law)",
+            "risk_direction": "↓ Higher V-Dem score = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Weak rule of law means existing animal welfare laws are less likely to be enforced."
+        },
+        "Meat Consumption (kg/capita)": {
+            "source": "FAOSTAT — Food Balance Sheets",
+            "raw_unit": "kg of meat consumed per person per year",
+            "risk_direction": "↑ Higher = more risk",
+            "normalisation": "Min-max across 25 countries per year",
+            "interpretation": "Higher per-capita meat consumption indicates larger demand driving intensive production."
+        },
+    }
+
+    for var_name, details in var_details_l1.items():
+        with st.expander(f"📊 {var_name}"):
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown(f"**Source:** {details['source']}")
+                st.markdown(f"**Raw unit:** {details['raw_unit']}")
+            with col2:
+                st.markdown(f"**Risk direction:** {details['risk_direction']}")
+                st.markdown(f"**Normalisation:** {details['normalisation']}")
+            st.markdown(f"**Interpretation:** {details['interpretation']}")
+
+    st.markdown("### Layer 2 — Policy Trajectory")
+    var_details_l2 = {
+        "Animal Rights Trend": {
+            "source": "V-Dem v15 — year-on-year change in v2carig_ord",
+            "raw_unit": "Annual change in animal rights ordinal score",
+            "risk_direction": "↓ Positive trend = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Captures whether animal welfare legislation is improving or deteriorating over time."
+        },
+        "Plant Protein Ratio": {
+            "source": "FAOSTAT — Food Balance Sheets protein supply",
+            "raw_unit": "Plant protein (g/day) / total protein (g/day)",
+            "risk_direction": "↓ Higher ratio = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Higher plant protein share indicates dietary transition away from animal products."
+        },
+        "Civic Space & NGO Freedom": {
+            "source": "V-Dem v15 — v2x_civlib composite",
+            "raw_unit": "Continuous 0–1 (higher = more open civic space)",
+            "risk_direction": "↓ Higher V-Dem score = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Open civic space enables animal welfare NGOs to operate, investigate, and advocate."
+        },
+        "Civil Liberties": {
+            "source": "V-Dem v15 — v2x_civlib variable",
+            "raw_unit": "Continuous 0–1 (higher = stronger civil liberties)",
+            "risk_direction": "↓ Higher V-Dem score = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Strong civil liberties protect whistleblowers and journalists exposing welfare violations."
+        },
+        "Public Concern for Animals": {
+            "source": "Google Trends — search interest index for animal welfare terms",
+            "raw_unit": "Normalised search interest 0–100 per country",
+            "risk_direction": "↓ Higher concern = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Public concern drives political pressure for stronger welfare legislation and corporate accountability."
+        },
+    }
+
+    for var_name, details in var_details_l2.items():
+        with st.expander(f"📊 {var_name}"):
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown(f"**Source:** {details['source']}")
+                st.markdown(f"**Raw unit:** {details['raw_unit']}")
+            with col2:
+                st.markdown(f"**Risk direction:** {details['risk_direction']}")
+                st.markdown(f"**Normalisation:** {details['normalisation']}")
+            st.markdown(f"**Interpretation:** {details['interpretation']}")
+
+    st.markdown("### Layer 3 — AI Amplification")
+    var_details_l3 = {
+        "AI Governance Framework": {
+            "source": "AWPRI Database — compiled by author from OECD AI Policy Observatory",
+            "raw_unit": "Binary 0/1 — whether national AI ethics framework exists covering agriculture",
+            "risk_direction": "↓ Framework adopted = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Countries without AI governance frameworks have no oversight of AI systems deployed in livestock operations."
+        },
+        "AI Welfare Research Output": {
+            "source": "OpenAlex API — publication counts matching AI + animal welfare queries",
+            "raw_unit": "Annual publication count per country",
+            "risk_direction": "↓ More research = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Research output signals national capacity to develop AI tools that improve welfare monitoring."
+        },
+        "AI Sentience Research Output": {
+            "source": "OpenAlex API — publication counts matching AI + animal sentience queries",
+            "raw_unit": "Annual publication count per country",
+            "risk_direction": "↓ More research = lower risk (inverted)",
+            "normalisation": "Min-max, then 1 - score",
+            "interpretation": "Sentience research underpins the scientific basis for welfare protections in AI-driven systems."
+        },
+        "Speciesist Bias in AI Research": {
+            "source": "OpenAlex API — ratio of livestock productivity papers to welfare papers",
+            "raw_unit": "Ratio: productivity-focused AI papers / welfare-focused AI papers",
+            "risk_direction": "↑ Higher ratio = more risk",
+            "normalisation": "Min-max across 25 countries per year",
+            "interpretation": "A high ratio means national AI research prioritises production efficiency over animal welfare."
+        },
+        "Livestock AI Patent Intensity": {
+            "source": "PATSTAT / LENS.org — patent filings in livestock AI technology classes",
+            "raw_unit": "Patent applications per year per country in livestock AI classes",
+            "risk_direction": "↑ Higher = more risk",
+            "normalisation": "Min-max across 25 countries per year",
+            "interpretation": "High patent intensity indicates rapid AI-driven intensification of livestock systems without corresponding welfare oversight."
+        },
+    }
+
+    for var_name, details in var_details_l3.items():
+        with st.expander(f"📊 {var_name}"):
+            col1, col2 = st.columns(2)
+            with col1:
+                st.markdown(f"**Source:** {details['source']}")
+                st.markdown(f"**Raw unit:** {details['raw_unit']}")
+            with col2:
+                st.markdown(f"**Risk direction:** {details['risk_direction']}")
+                st.markdown(f"**Normalisation:** {details['normalisation']}")
+            st.markdown(f"**Interpretation:** {details['interpretation']}")
+
+    st.divider()
+
     st.markdown("## Index Structure")
     st.markdown("""
     AWPRI is composed of **15 variables** across **3 layers**, each weighted equally:
@@ -884,24 +1140,9 @@ elif page == "📖 Methodology":
 
     st.divider()
 
-    st.markdown("## Variables")
-    var_table = pd.DataFrame([{
-        "Variable": VAR_LABELS[v],
-        "Layer": VAR_LAYERS[v],
-        "Source": (
-            "FAOSTAT" if v in ["farmed_animals_per_capita","aquaculture_pct","meat_consumption_kg","plant_protein_risk"] else
-            "V-Dem v15" if v in ["animal_rights_risk","rule_of_law_risk","civic_space_risk","civil_liberties_risk","animal_rights_delta_risk"] else
-            "Google Trends" if v == "public_concern_risk" else
-            "AWPRI / Binary" if v == "ai_governance_risk" else
-            "OpenAlex / PATSTAT"
-        ),
-        "Time Coverage": "2004–2022 annual",
-    } for v in VAR_LABELS])
-    st.dataframe(var_table, use_container_width=True, hide_index=True)
-
-    st.divider()
-
-    st.markdown("## ML Model")
+    st.markdown("""
+## ML Model
+    """)
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("""
