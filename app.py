@@ -1007,6 +1007,7 @@ elif page == "📈 Forecasts 2030":
     f2030 = f2030.sort_values("AWPRI_forecast", ascending=False).reset_index(drop=True)
     f2030.index += 1
 
+    baseline_2022 = norm[norm["year"]==2022][["country_iso2","AWPRI_score"]]
     fig_f2030 = go.Figure()
     f2030_merged = f2030.merge(baseline_2022, on="country_iso2")
     f2030_merged = f2030_merged.sort_values("AWPRI_forecast", ascending=True)
