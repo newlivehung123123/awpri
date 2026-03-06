@@ -118,15 +118,16 @@ st.markdown("""
             toastTimer = setTimeout(function() { toast.style.display = 'none'; }, 2500);
         }
     }
-    function attachToCharts() {
-        var charts = document.querySelectorAll('.js-plotly-plot, .stPlotlyChart');
-        charts.forEach(function(chart) {
-                chart.addEventListener('touchstart', showToast, { passive: true });
+    document.addEventListener('touchstart', function(e) {
+        var el = e.target;
+        while (el) {
+            if (el.classList && (el.classList.contains('js-plotly-plot') || el.classList.contains('stPlotlyChart'))) {
+                showToast();
+                break;
             }
-        });
-    }
-    // Attach now and keep checking as Streamlit rerenders
-    setInterval(attachToCharts, 1000);
+            el = el.parentElement;
+        }
+    }, { passive: true });
 })();
 </script>
 """, unsafe_allow_html=True)
