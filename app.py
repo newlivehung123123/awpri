@@ -476,7 +476,7 @@ elif page == "🔍 Country Deep-Dive":
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="h", yanchor="bottom", y=1.02),
         )
-        st.plotly_chart(fig_traj, use_container_width=True, key="traj_single")
+        st.plotly_chart(fig_traj, use_container_width=True, key="traj_single", config={"displayModeBar": False})
 
         # ── Key drivers and strengths ──
         col_d, col_s = st.columns(2)
@@ -663,7 +663,7 @@ elif page == "🔍 Country Deep-Dive":
             xaxis=dict(title="Year"),
             margin=dict(l=0,r=0,t=10,b=0),
         )
-        st.plotly_chart(fig_traj_comp, use_container_width=True, key="traj_compare")
+        st.plotly_chart(fig_traj_comp, use_container_width=True, key="traj_compare", config={"displayModeBar": False})
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -983,7 +983,7 @@ elif page == "📈 Forecasts 2030":
             margin=dict(l=0,r=0,t=10,b=0),
             legend=dict(orientation="v", yanchor="top", y=0.99),
         )
-        st.plotly_chart(fig_multi, use_container_width=True, key="multi_forecast")
+        st.plotly_chart(fig_multi, use_container_width=True, key="multi_forecast", config={"displayModeBar": False})
 
         # ── Download button ──
         fc_data = forecasts[forecasts["country_iso2"].isin(multi_countries)]
@@ -1054,7 +1054,7 @@ elif page == "📈 Forecasts 2030":
         legend=dict(orientation="h", yanchor="bottom", y=1.01),
         plot_bgcolor="rgba(0,0,0,0)",
     )
-    st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030")
+    st.plotly_chart(fig_f2030, use_container_width=True, key="rank_2030", config={"displayModeBar": False})
     st.caption(
         "**How to read this chart:** Each country has two markers — "
         "⬤ grey circle = 2022 actual AWPRI score, ◆ coloured diamond = 2030 projected score. "
