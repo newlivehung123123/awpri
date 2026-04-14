@@ -1006,7 +1006,7 @@ elif page == "📈 Forecasts 2030":
             if not fc.empty:
                 fig_multi.add_trace(go.Scatter(
                     x=[2022]+list(fc["year"]),
-                    y=[float(hist[hist["year"]==2022]["AWPRI_score"])]+list(fc["AWPRI_forecast"]),
+                    y=[float(hist[hist["year"]==2022]["AWPRI_score"].iloc[0])]+list(fc["AWPRI_forecast"]),
                     mode="lines", name=f"{iso2} (forecast)",
                     line=dict(color=color, width=2, dash="dash"),
                 ))
