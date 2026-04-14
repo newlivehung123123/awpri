@@ -3,7 +3,7 @@
 An AI/ML-driven prototype for assessing animal welfare policy risk across 25 countries (2004–2030). Built for the **Futurekind AI Fellowship**.
 
 ## 🚀 Live Dashboard
-**[Launch AWPRI Dashboard →](https://awpri-dashboard.streamlit.app)**
+**[Launch AWPRI Dashboard →](https://awpri.aiinsocietyhub.com/)**
 
 ## What It Does
 - **Nowcasting** — real-time risk scores for any country, any year (2004–2022)
